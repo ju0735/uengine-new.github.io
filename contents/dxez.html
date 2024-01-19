@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- Change the value of lang="en" attribute if your website's language is not English.
+You can find the code of your language here - https://www.w3schools.com/tags/ref_language_codes.asp -->
 <html lang="en">
     <head>
         
@@ -9,6 +11,7 @@
         
         <!-- Favicon -->
         <link rel="icon" href="../images/favicon.png" type="image/png" sizes="any">
+        <!-- <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">          -->
 
         <!-- CSS -->
         <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -27,7 +30,6 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
 
     </head>
-
     <body class="appear-animate">
         
         <!-- Page Loader -->        
@@ -44,12 +46,14 @@
         <div class="page" id="top">
             
             <!-- Navigation Panel -->
-            <nav class="main-nav dark light-after-scroll transparent stick-fixed wow-menubar">
+            <nav class="main-nav transparent stick-fixed wow-menubar">
                 <div class="main-nav-sub full-wrapper">
                     
+                    <!-- Logo  (* Add your text or image to the link tag. Use SVG or PNG image format. 
+                    If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
+                    image size for support of retina screens. See details in the template documentation. *) -->
                     <div class="nav-logo-wrap local-scroll">
                         <a href="../index.html" class="logo">
-                            <img src="../images/logo-w.png" alt="uEngine Logo" width="105" height="34" class="logo-white" />
                             <img src="../images/logo-b.png" alt="uEngine Logo" width="105" height="34" class="logo-dark" />
                         </a>
                     </div>
@@ -147,10 +151,64 @@
                                 
                             </li>
                             <!-- End Item With Sub -->
+                      
+                            <!-- Item With Sub -->
+                            <!-- <li>
+                                <a href="#" class="mn-has-sub active">AI For AI <i class="mi-chevron-down"></i></a> -->
+                                
+                                <!-- Sub Megamenu -->
+                                <!-- <ul class="mn-sub mn-has-multi"> -->
+                                    
+                                    <!-- Sub Column -->
+                                    <!-- <li class="mn-sub-multi">
+                                        <span class="mn-group-title">&lt;Products&gt;</span>
+                                        <ul>
+                                            <li>
+                                                <a href="#" style="font-size: 18px;">AI App Generator</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" style="font-size: 18px;">A...</a>
+                                            </li>
+                                        </ul>
 
+                                        <span class="mn-group-title" style="margin-top: 20px;">&lt;Services&gt;</span>
+                                        <ul>
+                                            <li>
+                                                <a href="#" style="font-size: 18px;">Education</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" style="font-size: 18px;">Consulting</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul style="margin-top: 30px;">
+                                            <li>
+                                                <a href="#" style="font-size: 18px;">Case Studies</a>
+                                            </li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- End Sub Column -->                                    
+                                <!-- </ul> -->
+                                <!-- End Sub Megamenu -->
+                                
+                            <!-- </li> -->
+                            <!-- End Item With Sub -->
                         </ul>
                         
                         <ul class="items-end clearlist">
+                            
+                            <!-- Languages -->
+                            <!-- <li>
+                                <a href="#" class="mn-has-sub opacity-1">En <i class="mi-chevron-down"></i></a>
+                                
+                                <ul class="mn-sub to-left">                                    
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">French</a></li>
+                                    <li><a href="#">German</a></li>                                    
+                                </ul>
+                                
+                            </li> -->
+                            <!-- End Languages -->  
                                                       
                             <li><a href="newsWebinars.html" class="opacity-1 no-hover"><span class="link-hover-anim underline" data-link-animate="y">News & Webinars</span></a></li>
                             
@@ -166,7 +224,8 @@
             <main id="main">
             
                 <!-- Header Section -->
-                <section class="page-section bg-dark-1 bg-dark-alpha-80 light-content parallax-5" style="background-image: url(../images/full-width-images/section-bg-7.jpg)">
+                <section class="page-section pb-100 pb-sm-60 bg-gray-light-1 bg-light-alpha-90 bg-scroll" style="background-image: url(../images/full-width-images/section-bg-2.jpg)">
+                    <div class="position-absolute top-0 bottom-0 start-0 end-0 bg-gradient-white"></div>
                     <div class="container position-relative pt-50">
                             
                         <!-- Section Content -->
@@ -177,11 +236,11 @@
                                 <div class="col-md-8 offset-md-2">
                                     
                                     <h2 class="section-caption-border mb-30 mb-xs-20 wow fadeInUp" data-wow-duration="1.2s">
-                                        Our Services
+                                        Our Products
                                     </h2>
-                                    
-                                    <h1 class="hs-title-1 mb-40">
-                                        <span class="wow charsAnimIn" data-splitting="chars">Consulting Services</span>
+                                        
+                                    <h1 class="hs-title-1 mb-0">
+                                        <span class="wow charsAnimIn" data-splitting="chars">DXEZ Platform</span>
                                     </h1>
                                
                                </div>
@@ -202,40 +261,33 @@
                         
                         <div class="row">
                             
-                            <div class="col-sm-5 mb-xs-50">
+                            <div class="col-sm-5 mb-xs-50 mt-n10">
                                 <div class="call-action-4-images">
-                                    <div class="call-action-4-image-1">
-                                        <img src="../images/demo-strong/section-image-1.jpg" alt="Image description" class="wow scaleOutIn" data-wow-duration="1.2s" />
-                                    </div>
-                                    <div class="call-action-4-image-2" data-rellax-y data-rellax-speed="0.7" data-rellax-percentage="0.25">
-                                        <img src="../images/demo-strong/section-image-2.jpg" alt="Image description" class="wow scaleOutIn" data-wow-duration="1.2s" data-wow-offset="0" />
-                                    </div>                                    
+                                    <img src="https://1143804133-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzQ9hScB4MuRIvcxNxhpI%2Fuploads%2FmTK8QW3JasRb3BDUb5ts%2Fimage.png?alt=media&token=438e255a-67e4-4542-98ab-ca2997f22131"  alt="Image description" class="wow scaleOutIn" data-wow-duration="1.2s" />
                                 </div>
                             </div>
                             
-                            <div class="col-sm-7 col-xl-6 offset-xl-1 mt-n10">
+                            <div class="col-sm-7 col-xl-6 offset-xl-1 mt-n20 mt-sm-n100">
                                 
                                 <div class="wow linesAnimIn" data-splitting="lines">
-                                    <p class="testimonials-6-author mt-0 mb-40">
-                                        uEngine은 uEngine관련 관련 모든분야에 대해 컨설팅 서비스를 제공합니다.<br>
-                                        이 서비스는 제품의 설치와 사용 그리고 커스터마이징 및 uEngine BPM과 연계된 공개 SW 적용 등에 대해 포괄적으로 제공합니다.
+                                    <p class="lead mt-0 mb-10" style="font-size: 22px; font-weight: 600;">
+                                        기능 및 시나리오:
                                     </p>
-
-                                    <p class="testimonials-6-text">
-                                        BPMS 시스템 컨설팅
+                                    <p class="mb-40" style="color: #333; font-size: 18px;">
+                                        . 비즈니스 기회 탐색 (페르소나, 고객 여정 지도, 비즈니스 모델 캔버스)<br>
+                                        . 이벤트 스토밍 모델링 (프로세스 모델링, 소프트웨어 모델링)<br>
+                                        . 모델에서 코드 생성 및 생성된 모델을 GitLab에 푸시<br>
+                                        . 푸시된 코드는 GitLab과 연결된 Gitpod에서 온라인으로 개발<br>
+                                        . GitLab CI - 빌드는 GitLab 푸시와 동시에 발생<br>
+                                        . 컨테이너 이미지 생성<br>
+                                        . 각 개발자에게 kind를 사용한 테스트 샌드박스 제공<br>
+                                        . 빌드가 성공하면 개발자의 Kubernetes 클러스터에 배포 (Argo CD를 사용)<br>
+                                        . 배포된 마이크로서비스의 상태는 Kubersphere를 통해 확인
                                     </p>
-                                    <p class="mb-40" style="color: #555; font-size: 16px;">
-                                        uEngine에서는 uEngine BPM 구축(BPMS)을 위한 컨설팅 서비스를 제공합니다. 이 서비스는 on/off line 동시 지원이 가능하며, 숙련 된 엔지니어가 참여하여 프로젝트가 안정적으로 진행될 수 있도록 지원하는 서비스입니다. 프로세스 분석 및 설계에서부터 교육에 이르는 모든 영역을 지원합니다.
-                                        <br><br>
-                                        또한 프로젝트 진행을 위한 분석, 설계, 문제해결, 기술지원 및 교육을 대상으로 프로젝트에 대해 제기된 문제와 질문에 대해 즉각적으로 접수하여 컨설팅 시간을 상호 합의한 후 답변과 지원을 원격지원 도구(전화, 이메일, 원격제어)를 통해 서비스를 제공합니다.
-                                    </p>
-
-                                    <p class="testimonials-6-text">
-                                        공개 SW 적용 (uEngine BPM 연계) 서비스
-                                    </p>
-                                    <p class="mb-40" style="color: #555; font-size: 16px;">
-                                        uEngine 제품과 연계된 알프레스코(Alfresco), 몬드리안(BI Mondrian), 라이프레이(liferay) 등의 공개 SW를 적용함에 있어 설치 및 uEngine BPM과의 연동에 대한 서비스를 제공합니다.
-                                    </p>
+                                </div>
+                                
+                                <div class="local-scroll wow fadeInUp" data-wow-offset="0">
+                                    <a href="https://github.com/msa-ez/platform" class="btn btn-mod btn-large btn-round btn-hover-anim" target="_blank" style="background-color: #fff; border: 2px solid #111;color:#111;"><span>Github</span></a>
                                 </div>
                                 
                             </div>
@@ -244,42 +296,9 @@
                     
                     </div>
                 </section>
-                <!-- End About Section -->
-                
-                
-                <!-- Divider -->
-                <hr class="mt-0 mb-0"/>
-                <!-- End Divider -->
-                
-                
-                <!-- Call Action Section -->
-                <section class="page-section">
-                    <div class="container position-relative">
-                        
-                        <!-- Decorative Waves -->
-                        <div class="position-relative">
-                            <div class="decoration-21 d-none d-lg-block" data-rellax-y data-rellax-speed="0.7" data-rellax-percentage="0.5">
-                                <img src="../images/decoration-3.svg" alt="" />
-                            </div>
-                        </div>
-                        <!-- End Decorative Waves -->
-                        
-                        <div class="row text-center wow fadeInUp">
-                            <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                                <p class="section-title-tiny mb-50 mb-sm-30">
-                                    질문이 있거나 더 많은 정보가 필요하시면 언제든지 연락 주세요.
-                                </p>
-                                <div class="local-scroll">
-                                    <a class="btn btn-mod btn-large btn-round btn-hover-anim"><span>Contact us</span></a>
-                                </div>
-                            </div>                             
-                        </div>
-                        
-                    </div>
-                </section>
-                <!-- End Call Action Section -->                
-                
-            </main>
+                <!-- End About Section -->  
+           
+           </main>
             
             <!-- Footer -->
             <footer class="page-section footer bg-gray-light-1 pb-30">
@@ -354,7 +373,23 @@
                                     
                                 </div>
                                 <!-- End Footer Widget -->
-                                
+
+                                <!-- Footer Widget -->
+                                <!-- <div class="col-sm-4 mt-30">
+                                    
+                                    <h3 class="fw-title">AI For AI</h3>
+                                    
+                                    <ul class="fw-menu clearlist">                                        
+                                        <li><a href="#">AI App Generator</a></li>
+                                        <li><a href="#">A...</a></li>
+                                        <li><a href="#">Education</a></li>
+                                        <li><a href="#">Consulting</a></li>
+                                        <li><a href="#">Case Studies</a></li>
+                                    </ul>
+                                    
+                                </div> -->
+                                <!-- End Footer Widget -->
+
                                 <!-- Footer Widget -->
                                 <div class="col-sm-4 mt-30">
                                     
@@ -363,6 +398,57 @@
                                     </ul>
                                 </div>
                                 <!-- End Footer Widget -->
+
+                                <!-- Footer Widget -->
+                                <!-- <div class="col-sm-4 mt-30">
+                                    
+                                    <h3 class="fw-title">Social Media</h3>
+                                    
+                                    <ul class="fw-menu clearlist">
+                                        <li>
+                                            <a href="https://www.facebook.com/groups/cloudswmoding" rel="noopener nofollow" target="_blank">
+                                                <i class="fa-facebook"></i>
+                                                Facebook
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/channel/UCWXNEfACspVtCa-hyYBC76g" rel="noopener nofollow" target="_blank">
+                                                <i class="fa-youtube"></i>
+                                                Youtube
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" rel="noopener nofollow" target="_blank">
+                                                <i class="fa-pinterest"></i>
+                                                Pinterest
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" rel="noopener nofollow" target="_blank">
+                                                <i class="fa-linkedin"></i>
+                                                LinkedIn
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    
+                                </div> -->
+                                <!-- End Footer Widget -->
+                                
+                                <!-- Footer Widget -->
+                                <!-- <div class="col-sm-4 mt-30">
+                                    
+                                    <h3 class="fw-title">Legal & Press</h3>
+                                    
+                                    <ul class="fw-menu clearlist">                                     
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="#">Presskit</a></li>
+                                    </ul>
+                                    
+                                </div> -->
+                                <!-- End Footer Widget -->  
+
                             </div>                            
                         </div>
                         
