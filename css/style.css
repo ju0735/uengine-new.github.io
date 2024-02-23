@@ -12522,7 +12522,8 @@ html:not(.mobile) .owl-animate-fadeInDown{
 }
 .history ol li dl dd {
     color: #444;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
     /* padding-bottom: 28px; */
 }
 .history ol li.last dl {
