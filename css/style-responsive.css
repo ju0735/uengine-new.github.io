@@ -783,6 +783,10 @@
     .testimonials-6-icon{
         font-size: 7em;
     }
+    .testimonials-6-icon-center{
+        font-size: 7em;
+        left: 0.3em;
+    }
     .services-8-icon{
         margin-bottom: 25px;
     }

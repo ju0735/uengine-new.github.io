@@ -57,7 +57,7 @@
     z-index: -1;
 }
 .features-2-item:hover:before{
-    opacity: 1;
+    /* opacity: 1; */
 }
 .features-2-label{
     font-weight: 500;
