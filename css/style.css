@@ -6469,9 +6469,9 @@ img.services-image{
     transition: opacity .27s var(--ease-default);
     z-index: -1;
 }
-/* .features-2-item:hover:before{
+.features-2-item:hover:before{
     opacity: .57;
-} */
+}
 .features-2-label{
     position: absolute;
     top: 18px;
