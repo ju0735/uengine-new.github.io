@@ -12451,7 +12451,7 @@ html:not(.mobile) .owl-animate-fadeInDown{
     border-left: none !important;
 }
 
-/* 회사연혁 */
+/* 회사연혁 스타일 추가 */
 .history h3 {
     text-align: center;
     margin: 20px 0 30px;
@@ -12520,8 +12520,13 @@ html:not(.mobile) .owl-animate-fadeInDown{
     border-radius: 14px;
     box-sizing: border-box;
 }
+.history ol li dl dt {
+    /* border-bottom: 2px solid #111; */
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
 .history ol li dl dd {
-    color: #444;
+    color: #281e1e;
     margin-bottom: 20px;
     line-height: 1.5;
     /* padding-bottom: 28px; */
