@@ -1131,6 +1131,7 @@ function init_page_sliders(){
             lazyLoad: true,
             addClassActive : true,
             navigationText: ['<span class="visually-hidden">Previous Slide</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="57px" viewBox="0 0 27 57" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.005,28.500 L27.000,54.494 L24.000,56.994 L0.005,28.500 L24.000,0.006 L27.000,2.506 L5.005,28.500 Z"/></svg>', '<span class="visually-hidden">Next Slide</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="57px" viewBox="0 0 27 57" fill="currentColor" aria-hidden="true" focusable="false"><path d="M21.995,28.500 L-0.000,54.494 L3.000,56.994 L26.995,28.500 L3.000,0.006 L-0.000,2.506 L21.995,28.500 Z"/></svg>'],
+            // navigationText: ['<span class="visually-hidden">Previous Slide</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="57px" viewBox="0 0 27 57" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.005,28.500 L27.000,54.494 L24.000,56.994 L0.005,28.500 L24.000,0.006 L27.000,2.506 L5.005,28.500 Z"/></svg>', '<span class="visually-hidden">Next Slide</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="57px" viewBox="0 0 27 57" fill="currentColor" aria-hidden="true" focusable="false"><path d="M21.995,28.500 L-0.000,54.494 L3.000,56.994 L26.995,28.500 L3.000,0.006 L-0.000,2.506 L21.995,28.500 Z"/></svg>'],
             afterInit: owl_keynav,
             afterAction: owl_update
         });
@@ -1838,3 +1839,44 @@ $(document).ready(function(){
         });
     })();
 });
+
+
+/* ---------------------------------------------
+ interview modal
+ --------------------------------------------- */
+ $(function(){
+  
+    if ($('.popup-video').length > 0) {
+        $('.popup-video').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
+        });
+    }
+  
+});
+
+var embed_lyaer;
+
+function close()
+
+{
+
+// 닫기를 눌렀을때 불리는 함수
+
+	embed_lyaer=$('#popup').html(); // popup id에 잇는 html을 embed_lyaer 글로벌 변수에 담아 놓음.
+
+	$('#popup').html(''); //popup id에 html 을 제거 
+
+}
+
+function open(){
+
+// 열기를 눌렀을때 불리는 함수
+
+$('#popup').html(embed_lyaer); //닫기를 눌렀을때 저장한 글로벌 변수를 다시 popup id에 넣어줌.
+
+}

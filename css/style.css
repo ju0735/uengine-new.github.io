@@ -12451,11 +12451,8 @@ html:not(.mobile) .owl-animate-fadeInDown{
     border-left: none !important;
 }
 
-/* 회사연혁 스타일 추가 */
-.history h3 {
-    text-align: center;
-    margin: 20px 0 30px;
-}
+
+/* 회사연혁 */
 .history p {
     text-align: center;
     margin-bottom: 5px;
@@ -12467,7 +12464,8 @@ html:not(.mobile) .owl-animate-fadeInDown{
 }
 .history ol li h4 {
     position: absolute;
-    top: -7px;
+    /* top: -7px; */
+    top: 0;
     left: 0;
     color: #000;
     font-size: 28px;
@@ -12520,7 +12518,7 @@ html:not(.mobile) .owl-animate-fadeInDown{
     border-radius: 14px;
     box-sizing: border-box;
 }
-.history ol li dl dt {
+.history ol li dl dt span {
     /* border-bottom: 2px solid #111; */
     text-decoration: underline;
     padding-bottom: 5px;
@@ -12533,4 +12531,17 @@ html:not(.mobile) .owl-animate-fadeInDown{
 }
 .history ol li.last dl {
     padding-bottom: 0 !important;
+}
+
+/* 뉴스룸 */
+.newsroom h2 {
+    line-height: 1.5;
+}
+
+/* 인터뷰 모달창 */
+.popup-video {
+    display: block;
+}
+.vd-box {
+    display: none;
 }
