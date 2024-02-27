@@ -1839,3 +1839,44 @@ $(document).ready(function(){
         });
     })();
 });
+
+
+/* ---------------------------------------------
+ interview modal
+ --------------------------------------------- */
+ $(function(){
+  
+    if ($('.popup-video').length > 0) {
+        $('.popup-video').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
+        });
+    }
+  
+});
+
+var embed_lyaer;
+
+function close()
+
+{
+
+// 닫기를 눌렀을때 불리는 함수
+
+	embed_lyaer=$('#popup').html(); // popup id에 잇는 html을 embed_lyaer 글로벌 변수에 담아 놓음.
+
+	$('#popup').html(''); //popup id에 html 을 제거 
+
+}
+
+function open(){
+
+// 열기를 눌렀을때 불리는 함수
+
+$('#popup').html(embed_lyaer); //닫기를 눌렀을때 저장한 글로벌 변수를 다시 popup id에 넣어줌.
+
+}

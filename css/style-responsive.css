@@ -791,6 +791,34 @@
         margin-bottom: 25px;
     }
     
+    /* 회사연혁 */
+    .history ol li h4 {
+        display: none;
+    }
+    .history ol li dt {
+        font-size: 24px;
+    }
+    .history ol li dl {
+        position: relative;
+        margin-left: 10px;
+        padding-left: 35px;
+        font-size: 16px;
+    }
+
+    /* 뉴스룸 */
+    .newsroom h2 {
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+    
+    /* 인터뷰 모달창 */
+    .popup-video {
+        display: none;
+    }
+    .vd-box {
+        display: block;
+    }
 }
 
 
