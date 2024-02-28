@@ -867,7 +867,8 @@
 
     /* 인터뷰 */
     .vd-box {
-        width: 440px;
+        width: 400px;
+        height: 260px;
     }     
 }
     
@@ -1045,8 +1046,8 @@
 
     /* 인터뷰 */
     .vd-box {
-        width: 400px;
-        height: 260px;
+        width: 340px;
+        height: 220px;
     }     
 }
     
@@ -1054,8 +1055,8 @@
 @media only screen and (max-width: 360px) {
     /* 인터뷰 */
     .vd-box {
-        width: 340px;
-        height: 200px;
+        width: 280px;
+        height: 185px;
     }
 }
 
