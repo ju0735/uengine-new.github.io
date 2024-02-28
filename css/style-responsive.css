@@ -818,6 +818,8 @@
     }
     .vd-box {
         display: block;
+        width: 510px;
+        height: 320px;
     }
 }
 
@@ -862,7 +864,11 @@
     .contact-2-text{
         font-size: 16px;
     }
-     
+
+    /* 인터뷰 */
+    .vd-box {
+        width: 440px;
+    }     
 }
     
 @media only screen and (max-width: 480px) {
@@ -1036,8 +1042,22 @@
         margin-bottom: 37px;
         font-size: 18px;
     }
-}
 
+    /* 인터뷰 */
+    .vd-box {
+        width: 400px;
+        height: 260px;
+    }     
+}
+    
+
+@media only screen and (max-width: 360px) {
+    /* 인터뷰 */
+    .vd-box {
+        width: 340px;
+        height: 200px;
+    }
+}
 
 /* ==============================
    Max Height 768
@@ -1063,7 +1083,6 @@
     .min-height-100vh{
         min-height: 374px;
     }
-    
 }
 
 
