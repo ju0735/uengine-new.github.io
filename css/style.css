@@ -10969,7 +10969,7 @@ a.blog-item-more:hover{
 .testimonials-slider-1 blockquote{
     position: relative;
     margin: 0 0 1.5em 0;
-    padding-left: 1.9778em;
+    /* padding-left: 1.9778em; */
     font-size: 46px;
     border: none;
     background: none;    

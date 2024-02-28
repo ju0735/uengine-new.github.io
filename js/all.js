@@ -1859,24 +1859,38 @@ $(document).ready(function(){
   
 });
 
-var embed_lyaer;
 
-function close()
+/* ---------------------------------------------
+ index count - cookie
+ --------------------------------------------- */
+//접속할 때 호출
+// this.checkCount(req.cookies.connect_time, res);
 
-{
+// exports.checkCount = (connect_time, res) => {
+//     let today = moment();
 
-// 닫기를 눌렀을때 불리는 함수
+//     if (connect_time) {
+//         if (moment(connect_time).isAfter(today, 'day')) {
+//             res.cookie('connect_time', today.format("YYYY-MM-DD"), {
+//                 maxAge: 60 * 60 * 24 * 1000
+//         });
+//             this.connectCount();
+//         } else {
+//             often.log('pass');
+//         }
+//     } else {
+//         res.cookie('connect_time', today.format("YYYY-MM-DD"), {
+//             maxAge: 60 * 60 * 24 * 1000
+//         });
+        
+//         this.connectCount();
+//     }
+// }
 
-	embed_lyaer=$('#popup').html(); // popup id에 잇는 html을 embed_lyaer 글로벌 변수에 담아 놓음.
 
-	$('#popup').html(''); //popup id에 html 을 제거 
-
-}
-
-function open(){
-
-// 열기를 눌렀을때 불리는 함수
-
-$('#popup').html(embed_lyaer); //닫기를 눌렀을때 저장한 글로벌 변수를 다시 popup id에 넣어줌.
-
-}
+// exports.connectCount = () => {
+//   async function start() {
+// 	//데이터베이스 로직
+//   }
+//   start();
+// }
