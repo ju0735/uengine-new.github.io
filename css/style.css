@@ -4269,7 +4269,10 @@ a.logo:hover{
     background-image: linear-gradient(0deg, transparent 0%, var(--color-dark-2) 100%);
 }
 .bg-gradient-white{
-    background-image: linear-gradient(0deg, #fff 0%, transparent 80%);
+    background-image: linear-gradient(0deg, #fff 0%, transparent 60%);
+}
+.bg-gradient-white100{
+    background-image: linear-gradient(0deg, #fff 0%, transparent 100%);
 }
 .bg-gradient-dark{
     background-image: linear-gradient(0deg, var(--color-dark-1) 0%, transparent 60%);
