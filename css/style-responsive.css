@@ -811,7 +811,6 @@
         line-height: 1.5;
     }
 
-    
     /* 인터뷰 모달창 */
     .popup-video {
         display: none;
@@ -1051,7 +1050,6 @@
     }     
 }
     
-
 @media only screen and (max-width: 360px) {
     /* 인터뷰 */
     .vd-box {
