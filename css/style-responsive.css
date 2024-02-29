@@ -260,10 +260,13 @@
     .big-icon-link-gradient{
         font-size: calc(1.653rem + 1.58vw);
     }
-    .testimonials-6-item,
+    /* .testimonials-6-item,
     .testimonials-6-text{
         font-size: calc(0.915rem + 1.05vw);
-    }    
+    }     */
+    .testimonials-6-text{
+        font-size: calc(1.3rem + 1.05vw);
+    }
     .ci-text.large{
         font-size: calc(0.904rem + 0.48vw);
     }
@@ -781,11 +784,17 @@
         margin-top: 30px;
     }
     .testimonials-6-icon{
-        font-size: 7em;
+        font-size: 5em;
+        /* font-size: 7em; */
     }
     .testimonials-6-icon-center{
+        font-size: 5em;
+        left: 0.1em;
+        /* font-size: 7em; 
+        left: 0.3em; */
+    }
+    .testimonials-6-icon-news{
         font-size: 7em;
-        left: 0.3em;
     }
     .services-8-icon{
         margin-bottom: 25px;

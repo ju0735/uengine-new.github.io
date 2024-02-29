@@ -11587,7 +11587,8 @@ html:not(.mobile) .owl-animate-fadeInDown{
     top: -0.21em;
     left: -0.3em;
     font-family: Georgia, Times, Serif;
-    font-size: 11em;
+    font-size: 9em;
+    /* font-size: 11em; */
     font-weight: 700;
     line-height: 1;
     color: var(--color-primary-light-1);
@@ -11595,7 +11596,18 @@ html:not(.mobile) .owl-animate-fadeInDown{
 .testimonials-6-icon-center{
     position: absolute;
     top: -0.21em;
-    left: 0.85em;
+    left: 1.15em;
+    /* left: 0.85em; */
+    font-family: Georgia, Times, Serif;
+    font-size: 9em;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-primary-light-1);
+}
+.testimonials-6-icon-news{
+    position: absolute;
+    top: -0.15em;
+    left: -0.07em;
     font-family: Georgia, Times, Serif;
     font-size: 11em;
     font-weight: 700;
@@ -12537,6 +12549,9 @@ html:not(.mobile) .owl-animate-fadeInDown{
 }
 
 /* 뉴스룸 */
+.newsroom {
+    position: relative;
+}
 .newsroom h2 {
     line-height: 1.5;
 }
