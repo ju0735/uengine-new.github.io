@@ -12555,6 +12555,13 @@ html:not(.mobile) .owl-animate-fadeInDown{
 .newsroom h2 {
     line-height: 1.5;
 }
+.show-more {
+    display: none;
+}
+.more-btn {
+    width: 180px; 
+    margin: 20px auto;
+}
 
 /* 인터뷰 모달창 */
 .popup-video {
