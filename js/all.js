@@ -1858,3 +1858,31 @@ $(document).ready(function(){
     }
   
 });
+
+
+/* ---------------------------------------------
+ newsroom modal
+ --------------------------------------------- */
+ $(document).ready(function() {
+    $("#more-btn-01").click(function() {
+        $("#show-more-01").show();
+        $("#more-btn-01").hide();
+    });
+
+    $("#more-btn-02").click(function() {
+        $("#show-more-02").show();
+        $("#more-btn-02").hide();
+    });
+
+    $("#more-btn-03").click(function() {
+        $("#show-more-03").show();
+        $("#more-btn-03").hide();
+    });
+
+    $("#more-btn-04").click(function() {
+        $("#show-more-04").show();
+        $("#more-btn-04").hide();
+    });
+
+});
+
