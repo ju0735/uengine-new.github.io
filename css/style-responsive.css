@@ -44,7 +44,7 @@
     .hs-line{
         height: 87vh;
     }
-    .hs-title-1{
+    .hs-title-1, .hs-title-0{
         font-size: calc(1.5rem + 3vw);
     }
     .hs-title-2{
@@ -911,6 +911,9 @@
         font-size: 2.58em;
         line-height: 0;
         opacity: 1;
+    }
+    .blog-item-body.chat-gpt blockquote p {
+        font-size: 17px;
     }
     .page-section,
     .split-column-left,
