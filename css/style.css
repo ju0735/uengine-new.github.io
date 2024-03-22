@@ -10138,8 +10138,9 @@ a.link-to-top.color:before{
 .blog-item-body.chat-gpt{
     font-size: 17px;
 }
-.blog-item-body.chat-gpt p.mid-title{
+.blog-item-body.chat-gpt p.mid-title {
     font-size: 19px;
+    margin-bottom: 10px;
 }
 .blog-item-body.chat-gpt p b, 
 .blog-item-body.chat-gpt ol li b{
