@@ -626,7 +626,19 @@
     .portfolio-3-image{
         border-radius: 30px;
     }
-    
+
+    .main-slide{
+        display: block;
+    }
+    .main-slide-img{
+        width: 70%;
+        margin: 0 auto 30px;
+    }
+    .main-slide-txt{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 767px) {
