@@ -85,6 +85,8 @@
     }
     .hs-title-11i{
         font-size: calc(0.86rem + 0.57vw);
+        font-weight: normal;
+        margin-left: 15px;
     }
     .hs-title-12{
         font-size: calc(1.294rem + 4.78vw);
