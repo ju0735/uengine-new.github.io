@@ -170,8 +170,8 @@ Primary use: Multipurpose Template
    ============================== */
   
 :root{
-    --font-global: 'DM Sans', sans-serif;
-    --font-alt: 'DM Sans', sans-serif;
+    --font-global: 'Pretendard', 'DM Sans', sans-serif;
+    --font-alt: 'Pretendard', 'DM Sans', sans-serif;
     --font-serif: Georgia, 'Times New Roman', Times, serif;
     --full-wrapper-margin-x: 30px;
     --container-width: 1350px;
@@ -1089,6 +1089,13 @@ hr.gray{
     font-weight: 500;
     /* text-transform: uppercase; */
     letter-spacing: 0.06em;
+}
+.hs-title-11i{
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 100 !important;
+    letter-spacing: 0.06em;
+    line-height: 1.5;
 }
 .hs-title-12{
     margin-top: 0;
