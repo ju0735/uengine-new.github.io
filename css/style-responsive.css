@@ -80,8 +80,11 @@
     .hs-title-10{
         font-size: calc(1.827rem + 1.96vw);
     }
-    .hs-title-11, .hs-title-11i{
+    .hs-title-11{
         font-size: calc(0.76rem + 0.57vw);
+    }
+    .hs-title-11i{
+        font-size: calc(0.86rem + 0.57vw);
     }
     .hs-title-12{
         font-size: calc(1.294rem + 4.78vw);
@@ -632,7 +635,7 @@
     }
     .main-slide-img{
         width: 70%;
-        margin: 0 auto 30px;
+        margin: -10px auto 30px;
     }
     .main-slide-txt{
         width: 100%;
