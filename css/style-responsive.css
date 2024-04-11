@@ -920,14 +920,14 @@
         border-radius: var(--border-radius-default);
     }
     .blog-item-body blockquote p:before{
-        display: block;
+        /* display: block;
         margin-top: 1em;
         position: static;
         top: 0;
         left: 0;
         font-size: 2.58em;
         line-height: 0;
-        opacity: 1;
+        opacity: 1; */
     }
     .blog-item-body.chat-gpt blockquote p {
         font-size: 17px;
