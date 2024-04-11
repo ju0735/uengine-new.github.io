@@ -10179,7 +10179,7 @@ a.link-to-top.color:before{
     font-weight: 600;
     line-height: 1.7;
 }
-.blog-item-body.chat-gpt blockquote p::before{
+.blog-item-body.chat-gpt blockquote p:before{
     top: -0.1em;
     left: 0.1em;
 }
