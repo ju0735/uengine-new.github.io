@@ -12544,6 +12544,9 @@ html:not(.mobile) .owl-animate-fadeInDown{
 .border-right-white {
     border-right: 1px solid #fff;
 }
+.fw700 {
+    font-weight: 700 !important;
+}
 
 
 /* 회사연혁 */
