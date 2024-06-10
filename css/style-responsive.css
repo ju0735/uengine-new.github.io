@@ -846,6 +846,9 @@
         width: 510px;
         height: 320px;
     }
+    .m-post-prev-img {
+        display: block;
+    }
 }
 
 
