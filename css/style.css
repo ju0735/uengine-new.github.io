@@ -12654,7 +12654,7 @@ html:not(.mobile) .owl-animate-fadeInDown{
 .popup-video {
     display: block;
 }
-.vd-box {
+.vd-box, .m-post-prev-img {
     display: none;
 }
 
