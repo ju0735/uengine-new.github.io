@@ -12547,6 +12547,9 @@ html:not(.mobile) .owl-animate-fadeInDown{
 .fw700 {
     font-weight: 700 !important;
 }
+.txt-left {
+    text-align: left;
+}
 
 
 /* 회사연혁 */
