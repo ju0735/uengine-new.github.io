@@ -253,95 +253,19 @@
                                 <div class="blog-item mb-80 mb-xs-40">
                                     
                                     <div class="blog-item-body chat-gpt">
-                                    
-                                        <!-- Media Gallery -->
-                                        <div class="blog-media mb-40 mb-xs-30">
-                                            <div>
-                                                <img src="../../images/blog/From-LegacySystem-to-Modernization.jpg" alt="레거시 시스템에서 모더나이제이션으로 변환: 헌집다오 새집줄게" />
-                                            </div>
-                                        </div>                                        
-
-                                        <div class="mb-80">
-                                            <p>
-                                                &nbsp;지난  &nbsp;"<a href="blog1.html"><b>비즈니스 로직을 SQL에 관리하는 시스템과 도메인 클래스에서 관리하는 시스템의 차이점 Part1</b></a>"  &nbsp;과
-                                                <br>  &nbsp;"<a href="blog2.html"><b>비즈니스 로직을 SQL에 관리하는 시스템과 도메인 클래스에서 관리하는 시스템의 차이점 Part2</b></a>"  &nbsp;에서 급여계산 예제를 통해 Stored Procedure를 사용하는 Transaction Script 접근과 Java에서 도메인 클래스를 사용하는 접근 방식에 대해 비교해 보았는데요,
-                                                오늘은 Part3에 관한 내용으로 <b>'스토어드 프로시저에서 자바 클린 아키텍처로 전환하면 얻을 수 있는 장점'</b> 을 먼저 알아보겠습니다.
-                                            </p>
-                                        </div>
-                                        
                                         <blockquote>
                                             <p>
-                                                &nbsp;<span style="text-decoration: underline;">스토어드 프로시저</span>에서 <span style="text-decoration: underline;">자바 클린 아키텍처</span>로 전환할 때의 이점
+                                                &nbsp;MSA Easy 레거시 모더나이저 - Stored procedure to Java 데모 영상
                                             </p>
                                         </blockquote>
 
-                                        <div class="mb-80 mt-10">
-                                            <ul>
-                                                <li class="mb-10"><b style="font-weight: bold;">유지보수성 향상:</b> 스토어드 프로시저는 데이터베이스 시스템에 종속적이어서, 변경이 필요할 때마다 데이터베이스 전문가의 개입이 필요합니다. 이는 유지보수 과정에서 특정 전문 지식을 요구하며, 접근성이 제한됩니다. 반면, 자바와 같은 범용 프로그래밍 언어로 로직을 이전하면, 더 넓은 범위의 개발자가 시스템을 이해하고 수정할 수 있어 유지보수성이 크게 향상됩니다. 이는 자바가 제공하는 풍부한 문서와 커뮤니티 지원 덕분에 가능하며, 시스템의 유연성과 접근성을 높여줍니다.</li>
-                                                <li class="mb-10"><b style="font-weight: bold;">테스트와 디버깅 용이성:</b> 스토어드 프로시저는 데이터베이스 내부에서 실행되기 때문에 테스트와 디버깅이 복잡하고 어려운 반면, 자바로 로직을 이전하면 모던 개발 환경에서 제공하는 다양한 테스트 및 디버깅 도구를 활용할 수 있습니다. 자바 환경은 단위 테스트, 통합 테스트 등을 쉽게 구현할 수 있으며, 디버깅 시 시각적 도구와 로깅 기능을 통해 문제를 빠르고 정확하게 식별할 수 있습니다.</li>
-                                                <li class="mb-10"><b style="font-weight: bold;">확장성 및 유연성:</b> 자바와 같은 범용 프로그래밍 언어로 작성된 코드는 플랫폼 독립적이며, 다양한 운영 체제와 환경에서 실행될 수 있습니다. 이는 클라우드 기반 아키텍처와 같은 현대적인 인프라에 쉽게 통합되어 시스템의 확장성과 유연성을 크게 향상시킵니다. 반면, 스토어드 프로시저는 특정 데이터베이스 시스템에 종속되어 있어, 다른 환경으로의 이전이나 확장이 어렵습니다. 이로 인해 클라우드와 같은 새로운 기술 환경에 적응하는 데 제한이 있으며, 시스템의 확장성과 유연성이 자바에 비해 상대적으로 낮습니다.</li>
-                                                <li class="mb-10"><b style="font-weight: bold;">개발 효율성 증가:</b> 자바는 강력한 라이브러리와 프레임워크를 지원하며, 전 세계적으로 활발한 개발자 커뮤니티가 있어 다양한 개발 리소스와 지원을 받을 수 있습니다. 이는 개발 속도와 효율성을 크게 향상시키는 요소입니다. 반면, 스토어드 프로시저는 특정 데이터베이스 시스템에 종속되어 있으며, 사용할 수 있는 라이브러리나 도구가 제한적이고, 개발자 커뮤니티도 자바만큼 크지 않습니다. 이로 인해 개발과 유지보수 과정에서 자바에 비해 상대적으로 더 적은 지원을 받게 되며, 개발의 유연성과 속도가 제한될 수 있습니다.</li>
-                                                <li><b style="font-weight: bold;">시스템의 안정성 및 보안 강화:</b> 자바는 가비지 컬렉션을 통한 자동 메모리 관리와 구조화된 예외 처리 메커니즘을 제공하여 메모리 누수와 예외 상황을 효과적으로 관리합니다. 반면, 스토어드 프로시저는 데이터베이스 엔진에 의존한 메모리 관리와 더 제한적인 예외 처리 기능을 가지고 있어, 자바만큼 세밀한 제어가 어렵습니다. 또한, 자바는 다양한 보안 프레임워크와 라이브러리를 통해 강력한 보안 기능을 제공하는 반면, 스토어드 프로시저는 이러한 보안 기능을 내장하고 있지 않아 보안 측면에서 유연성과 확장성이 제한됩니다.</li>
-                                            </ul>
+                                        <!-- Video -->
+                                        <div class="blog-media mb-80 mb-xs-30">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/idgCzlfANW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            <!-- <p class="mt-10" style="text-align: center; font-weight: bold;">Stored procedure to Java - MSA Easy 레거시 모더나이저 데모 영상</p> -->
                                         </div>
 
-                                        <blockquote>
-                                            <p>
-                                                &nbsp;자바로 전환 시 <span style="text-decoration: underline;">AI 기반 자동화 전환</span>과 <span style="text-decoration: underline;">사람이 직접 전환</span>할 때의 차이
-                                            </p>
-                                        </blockquote>
-    
-                                        <div>
-                                            <table class="tbl-default chat-gpt border-right-aaa">
-                                                <thead class="tbl-title-md-gray chat-gpt">
-                                                    <tr>
-                                                        <th class="border-right-white"></th>
-                                                        <th class="border-right-white" style="padding:7px 4px;">사람에 의한 직접 전환</th>
-                                                        <th style="background-color: white; border-top: 1px solid white; border-bottom: 1px solid white;"></th>
-                                                        <th class="border-right-white" style="padding:7px 4px;">AI 기반 자동화 전환</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><strong>개발 과정</strong></td>
-                                                        <td>복잡하고 전문가의 개입 필요</td>
-                                                        <td style="border-bottom: 1px solid white;"></td>
-                                                        <td>AI가 자동으로 복잡성 해결</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><strong>인건비</strong></td>
-                                                        <td>전문가 집중으로 비용 상승</td>
-                                                        <td style="border-bottom: 1px solid white;"></td>
-                                                        <td>자동화로 인건비 절감</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><strong>유지보수</strong></td>
-                                                        <td>코드 이해 및 수정 어려움</td>
-                                                        <td style="font-size: 30px; padding: 10px; border-bottom: 1px solid white;">➜</td>
-                                                        <td>클린 아키텍처로 유지보수 용이</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><strong>오류 가능성</strong></td>
-                                                        <td>수동 개입으로 오류 발생 가능</td>
-                                                        <td style="border-bottom: 1px solid white;"></td>
-                                                        <td>AI 정확도로 오류 최소화</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><strong>협업 효율</strong></td>
-                                                        <td>제한적 커뮤니케이션</td>
-                                                        <td style="border-bottom: 1px solid white;"></td>
-                                                        <td>유비쿼터스 언어로 커뮤니케이션 강화</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-
-                                        </div>
-
-                                        <p class="mb-80">
-                                            이와 같이, 자바로 전환 시 AI 기반 자동화 전환과 사람이 직접 전환했을 때의 차이는 여러 측면에서 나타납니다. <span style="font-weight: bold;">AI 기반 자동화 전환은 시간과 비용을 절감하고, 오류를 최소화하여, 효율을 높일 수 있는 반면,</span> 사람이 직접 전환할 때는 깊은 이해와 경험이 필요하며, 추가적인 최적화 작업과 테스트가 요구됩니다.
-                                        </p>
                                         
-
                                         <blockquote>
                                             <p>
                                                 &nbsp;<b>레거시 모더나이저</b>
@@ -357,7 +281,7 @@
                                             </p>
                                         </div>
 
-                                        <div class="mb-80">
+                                        <div class="mb-40">
                                             <!-- <p class="mt-10" style="text-decoration: underline; margin-bottom: 10px;"><b>목표</b></p> -->
                                             <p class="mt-10">
                                                 AI 기반 레거시 모더나이저 도구는 기존의 복잡한 스토어드 프로시저를 현대적이고 클린한 자바 아키텍처로 변환하도록 설계되었습니다. 이 도구는 단순한 표면적 변환을 넘어, 구조적이고 문법적인 변화를 포함하여 공유 데이터베이스 절차 방식에서 견고한 객체 지향 모델로의 전환을 지원합니다.
@@ -413,12 +337,111 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
+            
                                                     <p class="mt-n30"><a href="https://medium.com/@ahmedbehairy/rag-vector-databases-vs-knowledge-graphs-f22697b1a940" target="_blank">Source: RAG: Vector Databases vs Knowledge Graphs? | by Ahmed Behairy | Medium</a></p>
                                                 </li>
                                                 <li class="mb-10"><b style="font-weight: bold;">자바로 전환:</b> LLM AI 기술을 활용하여 레거시 코드를 자바로 자동 전환합니다. 이를 통해 수동 코드 재작성의 필요성을 줄이고, 인간의 오류 가능성을 최소화합니다. AI는 복잡한 비즈니스 로직을 정확하게 해석하고 변환하여, 개발자와 도메인 전문가가 쉽게 이해하고 유지할 수 있는 현대적이고 클린한 자바 아키텍처로 전환합니다. 이 자동화된 번역 프로세스는 시간과 비용을 절감하며, 코드의 일관성과 품질을 보장합니다.</li>
                                                 <li><b style="font-weight: bold;">결과 검증:</b> 테스팅 AI를 통해 자동으로 테스트 케이스를 생성하고 실행함으로써 기존 레거시 코드와의 비교를 가능하게 합니다. 이를 통해 자동화된 테스트를 통해 기존 데이터에 기반하여 애플리케이션의 변환이 정확하게 이루어졌는지를 실시간으로 확인할 수 있습니다. 이 기능은 기존 시스템의 기능적 완전성을 유지하면서도 새로운 아키텍처로의 전환이 원활하게 진행될 수 있도록 보장합니다.</li>
                                             </ul>
+
+                                            
                                         </div>
+
+                                    
+
+                                        <div class="mb-80">
+                                            <!-- <p>
+                                                &nbsp;지난  &nbsp;"<a href="blog1.html"><b>비즈니스 로직을 SQL에 관리하는 시스템과 도메인 클래스에서 관리하는 시스템의 차이점 Part1</b></a>"  &nbsp;과
+                                                <br>  &nbsp;"<a href="blog2.html"><b>비즈니스 로직을 SQL에 관리하는 시스템과 도메인 클래스에서 관리하는 시스템의 차이점 Part2</b></a>"  &nbsp;에서 급여계산 예제를 통해 Stored Procedure를 사용하는 Transaction Script 접근과 Java에서 도메인 클래스를 사용하는 접근 방식에 대해 비교해 보았는데요,
+                                                오늘은 Part3에 관한 내용으로 <b>'스토어드 프로시저에서 자바 클린 아키텍처로 전환하면 얻을 수 있는 장점'</b> 을 먼저 알아보겠습니다.
+                                            </p> -->
+                                            <p>
+                                                &nbsp;이러한 레거시 모더나이저를 통해 <span style="text-decoration: underline; font-weight: bold;">스토어드 프로시저를 자바 클린 아키텍처로 전환해야 하는 이유와 장점</span>에는 어떤 것이 있을까요?
+                                            </p>
+                                        </div>
+                                        
+                                        <blockquote>
+                                            <p>
+                                                &nbsp;<span style="text-decoration: underline;">스토어드 프로시저</span>에서 <span style="text-decoration: underline;">자바 클린 아키텍처</span>로 전환할 때의 이점
+                                            </p>
+                                        </blockquote>
+
+                                        <div class="mb-80 mt-10">
+                                            <ul>
+                                                <li class="mb-10"><b style="font-weight: bold;">유지보수성 향상:</b> 스토어드 프로시저는 데이터베이스 시스템에 종속적이어서, 변경이 필요할 때마다 데이터베이스 전문가의 개입이 필요합니다. 이는 유지보수 과정에서 특정 전문 지식을 요구하며, 접근성이 제한됩니다. 반면, 자바와 같은 범용 프로그래밍 언어로 로직을 이전하면, 더 넓은 범위의 개발자가 시스템을 이해하고 수정할 수 있어 유지보수성이 크게 향상됩니다. 이는 자바가 제공하는 풍부한 문서와 커뮤니티 지원 덕분에 가능하며, 시스템의 유연성과 접근성을 높여줍니다.</li>
+                                                <li class="mb-10"><b style="font-weight: bold;">테스트와 디버깅 용이성:</b> 스토어드 프로시저는 데이터베이스 내부에서 실행되기 때문에 테스트와 디버깅이 복잡하고 어려운 반면, 자바로 로직을 이전하면 모던 개발 환경에서 제공하는 다양한 테스트 및 디버깅 도구를 활용할 수 있습니다. 자바 환경은 단위 테스트, 통합 테스트 등을 쉽게 구현할 수 있으며, 디버깅 시 시각적 도구와 로깅 기능을 통해 문제를 빠르고 정확하게 식별할 수 있습니다.</li>
+                                                <li class="mb-10"><b style="font-weight: bold;">확장성 및 유연성:</b> 자바와 같은 범용 프로그래밍 언어로 작성된 코드는 플랫폼 독립적이며, 다양한 운영 체제와 환경에서 실행될 수 있습니다. 이는 클라우드 기반 아키텍처와 같은 현대적인 인프라에 쉽게 통합되어 시스템의 확장성과 유연성을 크게 향상시킵니다. 반면, 스토어드 프로시저는 특정 데이터베이스 시스템에 종속되어 있어, 다른 환경으로의 이전이나 확장이 어렵습니다. 이로 인해 클라우드와 같은 새로운 기술 환경에 적응하는 데 제한이 있으며, 시스템의 확장성과 유연성이 자바에 비해 상대적으로 낮습니다.</li>
+                                                <li class="mb-10"><b style="font-weight: bold;">개발 효율성 증가:</b> 자바는 강력한 라이브러리와 프레임워크를 지원하며, 전 세계적으로 활발한 개발자 커뮤니티가 있어 다양한 개발 리소스와 지원을 받을 수 있습니다. 이는 개발 속도와 효율성을 크게 향상시키는 요소입니다. 반면, 스토어드 프로시저는 특정 데이터베이스 시스템에 종속되어 있으며, 사용할 수 있는 라이브러리나 도구가 제한적이고, 개발자 커뮤니티도 자바만큼 크지 않습니다. 이로 인해 개발과 유지보수 과정에서 자바에 비해 상대적으로 더 적은 지원을 받게 되며, 개발의 유연성과 속도가 제한될 수 있습니다.</li>
+                                                <li><b style="font-weight: bold;">시스템의 안정성 및 보안 강화:</b> 자바는 가비지 컬렉션을 통한 자동 메모리 관리와 구조화된 예외 처리 메커니즘을 제공하여 메모리 누수와 예외 상황을 효과적으로 관리합니다. 반면, 스토어드 프로시저는 데이터베이스 엔진에 의존한 메모리 관리와 더 제한적인 예외 처리 기능을 가지고 있어, 자바만큼 세밀한 제어가 어렵습니다. 또한, 자바는 다양한 보안 프레임워크와 라이브러리를 통해 강력한 보안 기능을 제공하는 반면, 스토어드 프로시저는 이러한 보안 기능을 내장하고 있지 않아 보안 측면에서 유연성과 확장성이 제한됩니다.</li>
+                                            </ul>
+                                        </div>
+
+
+                                        <!-- <blockquote>
+                                            <p>
+                                                &nbsp;<span style="text-decoration: underline;">벡터 데이터베이스</span>와 <span style="text-decoration: underline;">그래프 데이터베이스</span>를 이용한 RAG 기법의 차이
+                                            </p>
+                                        </blockquote> -->
+                                        
+                                       
+                                        
+
+                                        <blockquote>
+                                            <p>
+                                                &nbsp;레거시 모더나이저를 통한 AI 기반 자동화 전환의 장점
+                                            </p>
+                                        </blockquote>
+    
+                                        <div>
+                                            <table class="tbl-default chat-gpt border-right-aaa">
+                                                <thead class="tbl-title-md-gray chat-gpt">
+                                                    <tr>
+                                                        <th class="border-right-white"></th>
+                                                        <th class="border-right-white" style="padding:7px 4px;">사람에 의한 직접 전환</th>
+                                                        <th style="background-color: white; border-top: 1px solid white; border-bottom: 1px solid white;"></th>
+                                                        <th class="border-right-white" style="padding:7px 4px;">AI 기반 자동화 전환</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><strong>개발 과정</strong></td>
+                                                        <td>복잡하고 전문가의 개입 필요</td>
+                                                        <td style="border-bottom: 1px solid white;"></td>
+                                                        <td>AI가 자동으로 복잡성 해결</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>인건비</strong></td>
+                                                        <td>전문가 집중으로 비용 상승</td>
+                                                        <td style="border-bottom: 1px solid white;"></td>
+                                                        <td>자동화로 인건비 절감</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>유지보수</strong></td>
+                                                        <td>코드 이해 및 수정 어려움</td>
+                                                        <td style="font-size: 30px; padding: 10px; border-bottom: 1px solid white;">➜</td>
+                                                        <td>클린 아키텍처로 유지보수 용이</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>오류 가능성</strong></td>
+                                                        <td>수동 개입으로 오류 발생 가능</td>
+                                                        <td style="border-bottom: 1px solid white;"></td>
+                                                        <td>AI 정확도로 오류 최소화</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>협업 효율</strong></td>
+                                                        <td>제한적 커뮤니케이션</td>
+                                                        <td style="border-bottom: 1px solid white;"></td>
+                                                        <td>유비쿼터스 언어로 커뮤니케이션 강화</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                        <p>
+                                            이와 같이, 자바로 전환 시 AI 기반 자동화 전환과 사람이 직접 전환했을 때의 차이는 여러 측면에서 나타납니다. <span style="font-weight: bold;">AI 기반 자동화 전환은 시간과 비용을 절감하고, 오류를 최소화하여, 효율을 높일 수 있는 반면,</span> 사람이 직접 전환할 때는 깊은 이해와 경험이 필요하며, 추가적인 최적화 작업과 테스트가 요구됩니다.
+                                        </p>
+                                        
 
                                         <!-- <blockquote>
                                             <p>
@@ -426,57 +449,12 @@
                                             </p>
                                         </blockquote> -->
 
-
-                                        <!-- <blockquote>
-                                            <p>
-                                                &nbsp;<span style="text-decoration: underline;">벡터 데이터베이스</span>와 <span style="text-decoration: underline;">그래프 데이터베이스</span>를 이용한 RAG 기법의 차이
-                                            </p>
-                                        </blockquote>
-                                        
-                                        <table class="tbl-default chat-gpt border-right-aaa">
-                                            <thead class="tbl-title-md-gray chat-gpt">
-                                                <tr>
-                                                    <th class="border-right-white">측면</th>
-                                                    <th class="border-right-white">벡터 데이터베이스</th>
-                                                    <th class="border-right-white" style="padding:7px 4px;">그래프 데이터베이스 (KG)</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><strong>자료 구조</strong></td>
-                                                    <td><img src="../../images/blog/similarity.jpg" alt="레거시 모더나이저-벡터 데이터베이스" /></td>
-                                                    <td><img src="../../images/blog/relationships.jpg" alt="레거시 모더나이저-그래프 데이터베이스" /></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><strong>데이터 유형</strong></td>
-                                                    <td class="txt-left">텍스트, 이미지, 오디오와 같은 대량의 비구조화된 데이터 관리에 이상적입니다.</td>
-                                                    <td class="txt-left">복잡한 관계를 가진 엔터티 간의 구조화된 데이터에 적합합니다.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><strong>도메인 적합성</strong></td>
-                                                    <td class="txt-left">ML 모델과 데이터 유형의 다양성이 필요한 애플리케이션에서 자주 사용됩니다.</td>
-                                                    <td class="txt-left">특정 도메인에 대한 깊이 있는, 전문화된 지식이 요구되는 애플리케이션에 매우 효과적입니다.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><strong>설명 가능성</strong></td>
-                                                    <td class="txt-left">KG보다는 투명성이 떨어지며, 명확한 경로보다는 유사성 점수에 초점을 맞춥니다.</td>
-                                                    <td class="txt-left">명확한 추론 경로를 제공하여 설명 가능성이 높습니다.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><strong>데이터 무결성</strong></td>
-                                                    <td class="txt-left">데이터 모델링의 유연성이 때때로 엄격한 데이터 일관성을 저해할 수 있습니다.</td>
-                                                    <td class="txt-left">데이터 무결성과 일관성을 유지하며, 신뢰할 수 있는 데이터 표현에 필수적입니다.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><strong>하이브리드 사용 사례</strong></td>
-                                                    <td class="txt-left">KG와 결합되어 구조화된 데이터와 비구조화된 데이터를 모두 효과적으로 처리할 수 있습니다.</td>
-                                                    <td class="txt-left">구조화된 지식과 ML 기능을 활용하기 위해 벡터 데이터베이스와 결합할 수 있습니다.</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-                                        <p class="mb-80 mt-n30"><a href="https://medium.com/@ahmedbehairy/rag-vector-databases-vs-knowledge-graphs-f22697b1a940" target="_blank">Source: RAG: Vector Databases vs Knowledge Graphs? | by Ahmed Behairy | Medium</a></p> -->
-                                        
+                                        <!-- Media Gallery -->
+                                        <div class="blog-media mb-80 mb-xs-30">
+                                            <div>
+                                                <img src="../../images/blog/From-LegacySystem-to-Modernization.jpg" alt="레거시 시스템에서 모더나이제이션으로 변환: 헌집다오 새집줄게" />
+                                            </div>
+                                        </div>    
 
                                         <blockquote>
                                             <p>
@@ -484,11 +462,6 @@
                                             </p>
                                         </blockquote>
 
-                                        <!-- Video -->
-                                        <div class="blog-media mb-80 mb-xs-30">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/idgCzlfANW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            <p class="mt-10" style="text-align: center; font-weight: bold;">Stored procedure to Java - MSA Easy 레거시 모더나이저 데모 영상</p>
-                                        </div>
                                     </div>
 
                                     <!-- Media Gallery -->
