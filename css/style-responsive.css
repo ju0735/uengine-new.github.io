@@ -346,7 +346,11 @@
     .works-grid:not(.work-grid-3) .work-item{
         width: 49.9%;
     } 
-     
+    
+    /* 파트너 */
+    .decoration-image-1.partners{
+        width: 26%;
+    }   
 }
 @media only screen and (max-width: 1199px) {
     
@@ -453,6 +457,10 @@
         border-radius: 30px;
     }
 
+    /* 파트너 */
+    .decoration-image-1.partners{
+        width: 30%;
+    }
 }
   
 @media only screen and (max-width: 991px) {
@@ -555,6 +563,10 @@
         left: 0;
     }
 
+    /* 파트너 */
+    .decoration-image-1.partners{
+        width: 40%;
+    }
 }
   
   
@@ -849,6 +861,14 @@
     }
     .m-post-prev-img {
         display: block;
+    }
+
+    /* 파트너 */
+    .partners-box {
+        width: 100%;
+    }
+    .decoration-image-1.partners{
+        width: 50%;
     }
 }
 
