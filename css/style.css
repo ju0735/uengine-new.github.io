@@ -5241,7 +5241,7 @@ a.logo:hover{
     position: relative;
     left: 0;
     margin: 0 auto;
-    width: 20%;
+    width: 35%;
     pointer-events: auto;
 }
 .decoration-image-1 img{
@@ -12669,9 +12669,13 @@ html:not(.mobile) .owl-animate-fadeInDown{
 }
 
 /* 파트너 */
+.partners-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
 .partners-box {
-    width: 80%;
-    margin: 0 auto;
+    width: 40%;
+    
 }
 
 /* 블로그 - chatGPT 코드블럭 */
