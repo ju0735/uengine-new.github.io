@@ -349,7 +349,7 @@
     
     /* 파트너 */
     .decoration-image-1.partners{
-        width: 26%;
+        width: 50%;
     }   
 }
 @media only screen and (max-width: 1199px) {
@@ -459,7 +459,7 @@
 
     /* 파트너 */
     .decoration-image-1.partners{
-        width: 30%;
+        width: 60%;
     }
 }
   
@@ -563,10 +563,6 @@
         left: 0;
     }
 
-    /* 파트너 */
-    .decoration-image-1.partners{
-        width: 40%;
-    }
 }
   
   
@@ -864,8 +860,12 @@
     }
 
     /* 파트너 */
+    .partners-wrap {
+        display: block;
+    }
     .partners-box {
         width: 100%;
+        margin: 0 auto;
     }
     .decoration-image-1.partners{
         width: 50%;
