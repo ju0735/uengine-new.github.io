@@ -348,7 +348,7 @@
     } 
     
     /* 파트너 */
-    .decoration-image-1.partners{
+    .partners-img{
         width: 50%;
     }   
 }
@@ -458,7 +458,7 @@
     }
 
     /* 파트너 */
-    .decoration-image-1.partners{
+    .partners-img{
         width: 60%;
     }
 }
@@ -867,7 +867,7 @@
         width: 100%;
         margin: 0 auto;
     }
-    .decoration-image-1.partners{
+    .partners-img{
         width: 50%;
     }
 }
