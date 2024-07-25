@@ -12777,3 +12777,13 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 .hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
     color: #f22c3d;
 }
+
+/* 컨텐츠 숨기기 */
+.cont-blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
