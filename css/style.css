@@ -12787,3 +12787,11 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     height: 1px;
     margin: -1px;
 }
+
+/* PC on & 모바일 off */
+.mo-show {
+    display: none;
+}
+.pc-show {
+    display: block;
+}

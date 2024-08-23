@@ -656,6 +656,14 @@
 }
 
 @media only screen and (max-width: 767px) {
+  
+    /* PCoff & 모바일on */
+    .mo-show {
+        display: block;
+    }
+    .pc-show {
+        display: none;
+    }
     
     .fixed-height-small{
         height: 300px;
@@ -874,6 +882,7 @@
     .partners-img{
         width: 50%;
     }
+
 }
 
 
