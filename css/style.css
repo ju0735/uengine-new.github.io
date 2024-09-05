@@ -12777,7 +12777,15 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 .hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
     color: #f22c3d;
 }
-.prose {
+.prose code {
+    background-color: #ececec;
+    border-radius: .25rem;
+    color: #0d0d0d;
+    font-size: .875em;
+    font-weight: 500;
+    padding: .15rem .3rem;
+}
+/* .prose {
     --white: #fff;
     --black: #000;
     --gray-50: #f9f9f9;
@@ -12866,7 +12874,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     font-size: .875em;
     font-weight: 500;
     padding: .15rem .3rem;
-}
+} */
 /* .text-token-text-secondary {
     color: var(--text-secondary);
 }
