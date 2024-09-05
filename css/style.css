@@ -12777,6 +12777,41 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 .hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
     color: #f22c3d;
 }
+/* .text-token-text-secondary {
+    color: var(--text-secondary);
+}
+.text-xs {
+    font-size: .75rem;
+    line-height: 1rem;
+} 
+.py-2 {
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.bg-token-main-surface-secondary {
+    background-color: var(--main-surface-secondary);
+}
+.rounded-t-md {
+    border-top-left-radius: .375rem;
+    border-top-right-radius: .375rem;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.relative {
+    position: relative;
+} */
+
 
 /* 컨텐츠 숨기기 */
 .cont-blind {
