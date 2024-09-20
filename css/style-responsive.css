@@ -563,6 +563,19 @@
         left: 0;
     }
 
+    /* 컨설팅 페이지 */
+    .call-action-4-images.top-img{
+        display: none;
+    }
+    .mo-show-img {
+        display: block;
+    }
+    .pc-title {
+        margin-bottom: 60px;
+    }
+    .pc-show {
+        margin-top: 50px;
+    }
 }
   
   

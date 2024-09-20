@@ -12922,9 +12922,13 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 }
 
 /* PC on & 모바일 off */
-.mo-show {
+.mo-show, .mo-show-img {
     display: none;
 }
 .pc-show {
     display: block;
+}
+
+.pc-title {
+    margin-bottom: -160px; /* 컨설팅 페이지 이미지가 사라지면서 생기는 타이틀 공백 삭제 */
 }
