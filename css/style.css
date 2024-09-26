@@ -11701,6 +11701,11 @@ html:not(.mobile) .owl-animate-fadeInDown{
     font-size: 18px;
     font-weight: 500;
 }
+.testimonials-6-author.howtouse{
+    color: var(--color-dark-4);
+    font-size: 17px;
+    line-height: 1.7;
+}
 .testimonials-6-position{
     font-size: 16px;
 }
@@ -12910,6 +12915,11 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     position: relative;
 } */
 
+/* 헌집다오 새집줄게 이미지 */
+.legacy-to-modernization-img {
+    width: 70%;
+    margin: 0 auto;
+}
 
 /* 컨텐츠 숨기기 */
 .cont-blind {
