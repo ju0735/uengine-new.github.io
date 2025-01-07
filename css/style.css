@@ -12915,8 +12915,17 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     position: relative;
 } */
 
+
+/* Flowchart 이미지 */
+.flowchart-img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
 /* 헌집다오 새집줄게 이미지 */
 .legacy-to-modernization-img {
+    display: block;
     width: 70%;
     margin: 0 auto;
 }
