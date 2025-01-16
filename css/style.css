@@ -12951,3 +12951,77 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 .pc-title {
     margin-bottom: -160px; /* 컨설팅 페이지 이미지가 사라지면서 생기는 타이틀 공백 삭제 */
 }
+
+/* 클릭 시 툴팁 */
+/* 
+.tooptip-box {
+    position: relative;
+}
+
+.popupLayer {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    display: none;
+    background-color: #ffffff;
+    border: solid 2px #d0d0d0;
+    width: 100%;
+    height: auto;
+    padding: 6px 10px;
+    font-size: 15px;
+    line-height: 1.6;
+} */
+/* .popupLayer div {
+    position: absolute;
+    top: 5px;
+    right: 5px
+} */
+
+/* .tooltip-hover {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+} */
+  
+/* .popupLayer {
+    display: none;
+    position: absolute;
+    max-width: 200px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8em;
+    color: white;
+    background: #ff44a9;
+} */
+
+/* .tooltip-hover:hover {
+    color: #000;
+    background-color: #e8e8e8;
+}
+.tooltip-hover:hover.popupLayer {
+    display: block;	
+    
+} */
+
+/* 툴팁 - 기본 세팅 */
+.tooltip-hover {
+    position: relative;
+    display: inline-block;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+  
+.tooltip-hover .tooltiptext {
+    visibility: hidden;
+    width: 500px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    font-size: 14px;
+}
+
