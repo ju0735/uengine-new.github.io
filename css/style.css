@@ -12951,3 +12951,48 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 .pc-title {
     margin-bottom: -160px; /* 컨설팅 페이지 이미지가 사라지면서 생기는 타이틀 공백 삭제 */
 }
+
+/* 툴팁 - 기본 세팅 */
+.tooltip-hover {
+    position: relative;
+    display: inline-block;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+  
+.tooltip-hover .tooltiptext {
+    visibility: hidden;
+    width: 500px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    font-size: 14px;
+}
+
+/* 차트 좌측 라벨 */
+.chart-box {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f6f6f6;
+    padding: 20px;
+}
+.chart-label {
+    display: block;
+    align-content: center;
+    text-align: center;
+    width: 130px;
+    margin-right: 10px;
+}
+.label-count {
+    width: 130px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 17px;
+    background-color: #a1a2c6;
+    color: #fff;
+    margin-top: -20px;
+}

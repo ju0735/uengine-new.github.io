@@ -297,14 +297,33 @@
                                     <div class="offset-lg-1 col-lg-4 mb-md-40 mb-xs-30 wow linesAnimIn" data-splitting="lines">
                                         <blockquote class="mt-20 mb-0">
                                             <p class="mb-20 mb-sm-10 testimonials-6-author">
-                                                2023년 기준, MSA School은 <b style="font-weight: bold;">총 285회</b>의 교육을 통해 <b style="font-weight: bold;">8390명</b>의 수강생에게 <b style="font-weight: bold;">13560시간</b>의 교육을 제공했으며, 많은 선도 기업들이 MSA School의 체계적인 커리큘럼과 높은 교육 품질로 인해 재방문하고 있습니다.
+                                                2024년 기준, MSA School은 <b style="font-weight: bold;">총 334회</b>의 교육을 통해 <b style="font-weight: bold;">9,655명</b>의 수강생에게 <b style="font-weight: bold;">17,864시간</b>의 교육을 제공했으며, 많은 선도 기업들이 MSA School의 체계적인 커리큘럼과 높은 교육 품질로 인해 재방문하고 있습니다.
                                                 <br>MSA School 에는 클라우드 네이티브 전문가가 되는 체계적인 업계 최고 커리큘럼이 준비되어 있으며, 수강하시는 기업을 위해 다양하게 스케줄링된 학습 유형을 제공합니다.
                                             </p>
                                         </blockquote>
                                     </div>
-                                    <div class="col-md-8 col-lg-6 wow linesAnimIn" data-splitting="lines">
-                                        <div class="overflow-hidden">
+                                    <div class="col-lg-6 wow linesAnimIn" data-splitting="lines">
+                                        <!-- <div class="overflow-hidden">
                                             <img src="../images/case/edu-chart-23add.jpg" alt="Image Description" />
+                                        </div> -->
+                                        <div class="chart-box">
+                                            <div class="chart-label">
+                                                <div>
+                                                    <p style="font-weight: bold;">총 교육횟수</p>
+                                                    <p class="label-count">334회</p>
+                                                </div>
+                                                <div>
+                                                    <p style="font-weight: bold;">총 교육수강생</p>
+                                                    <p class="label-count" style="background-color: #96c596;">9,655명</p>
+                                                </div>
+                                                <div>
+                                                    <p style="font-weight: bold;">총 교육시간</p>
+                                                    <p class="label-count" style="background-color: #8bc3da;">17,864시간</p>
+                                                </div>
+                                            </div>
+                                            <div style="background-color: #fff; padding: 20px; border-radius: 20px;">
+                                                <canvas id="bar-chart-horizontal" width="400" height="500"></canvas>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>                                
@@ -518,8 +537,44 @@
         <script src="../js/plugins.js"></script>
         <script src="../js/jquery.ajaxchimp.min.js"></script>             
         <script src="../js/contact-form.js"></script>        
-        <script src="../js/all.js"></script> 
+        <script src="../js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
         <!-- End JS -->       
         
     </body>
+
 </html>
+
+<script>
+new Chart(document.getElementById("bar-chart-horizontal"), {
+    type: 'horizontalBar',
+    data: {
+    labels: ["2019", "2020", "2021", "2022", "2023", "2024"],
+    datasets: [
+        {
+        label: "총 교육횟수",
+        data: [52,58,64,73,28,49],
+        backgroundColor: "#a1a2c6",
+        maxBarThickness: 10
+        },
+        {
+            label: '총 교육수강생',
+            data: [1560,1740,1920,2190,980,1265],
+            backgroundColor: '#96c596',
+            maxBarThickness: 10
+        },
+        {
+            label: '총 교육시간',
+            data: [2030,2360,2560,2890,3720,4304],
+            backgroundColor: '#8bc3da',
+            maxBarThickness: 10
+        },
+    ]
+    },
+    options:{ 
+        legend: {
+            display: false
+        },
+    }
+});
+</script>
