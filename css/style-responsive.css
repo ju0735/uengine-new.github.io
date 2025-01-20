@@ -955,6 +955,20 @@
         width: 400px;
         height: 260px;
     }     
+
+    /* 차트 */
+    .chart-box {
+        display: block;
+    }
+    .chart-label {
+        display: flex;
+        width: auto;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+    .label-count {
+        width: 110px;
+    }
 }
     
 @media only screen and (max-width: 480px) {
