@@ -12996,3 +12996,8 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     color: #fff;
     margin-top: -20px;
 }
+.chart-canvas {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 20px;
+}
