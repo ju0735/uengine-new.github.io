@@ -1173,13 +1173,13 @@
 
     /* 차트 */
     .chart-box {
-        font-size: 13px;
+        font-size: 12px;
     }
     .label-count {
-        width: 80px;
-        height: 24px;
-        line-height: 24px;
-        border-radius: 12px;
+        width: 70px;
+        height: 22px;
+        line-height: 22px;
+        border-radius: 11px;
     }
 }
 
