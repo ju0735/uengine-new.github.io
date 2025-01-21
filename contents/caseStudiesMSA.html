@@ -590,7 +590,7 @@ new Chart(document.getElementById("bar-chart-horizontal"), {
                     var meta = chartInstance.controller.getDatasetMeta(i);
                     meta.data.forEach(function (bar, index) {
                         var data = dataset.data[index];							
-                        ctx.fillText(data, bar._model.x + 5, bar._model.y - 5);
+                        ctx.fillText(data, bar._model.x + 5, bar._model.y - 6);
                     });
                 });
             }
