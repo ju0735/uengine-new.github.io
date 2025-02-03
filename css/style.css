@@ -3970,6 +3970,12 @@ a.logo:hover{
 }
 .mobile-on .mobile-nav{
     display: flex;
+    align-items: center;
+}
+.mobile-chat {
+    color: #111;
+    display: block;
+    margin: -7px 20px 0 0;
 }
 .mobile-nav-icon{
     position: relative;
@@ -4075,6 +4081,9 @@ a.logo:hover{
 .main-nav.dark .mobile-nav{
     background-color: transparent;
     border-color: transparent;
+}
+.main-nav.dark .mobile-chat {
+    color: #fff;
 }
 .main-nav.dark .mobile-nav-icon,
 .main-nav.dark .mobile-nav-icon:before,
