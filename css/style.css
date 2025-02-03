@@ -3972,10 +3972,10 @@ a.logo:hover{
     display: flex;
     align-items: center;
 }
-.mobile-chat {
-    color: #111;
-    display: block;
-    margin: -7px 20px 0 0;
+.mobile-nav .mobile-chat {
+    color: #111 !important; 
+    display: block !important;
+    margin: -7px 20px 0 0 !important;
 }
 .mobile-nav-icon{
     position: relative;
@@ -4082,8 +4082,8 @@ a.logo:hover{
     background-color: transparent;
     border-color: transparent;
 }
-.main-nav.dark .mobile-chat {
-    color: #fff;
+.main-nav.dark .mobile-nav .mobile-chat {
+    color: #fff !important;
 }
 .main-nav.dark .mobile-nav-icon,
 .main-nav.dark .mobile-nav-icon:before,
