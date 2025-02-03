@@ -13001,3 +13001,10 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     padding: 20px; 
     border-radius: 20px;
 }
+
+/* 모바일 문의하기 */
+.mobile-chat {
+    display: none;
+    margin: 16px 20px;
+    color: #fff;
+}

@@ -382,7 +382,15 @@
 /* ==============================
    Tablet landskape
    ============================== */
+    
+@media only screen and (max-width: 1040px) {
 
+    /* 모바일 문의하기 */
+    .mobile-chat {
+        display: block;
+    }
+}
+    
 @media only screen and (max-width: 1024px) {
     
     .hs-paragraph-1{
