@@ -3972,7 +3972,7 @@ a.logo:hover{
     display: flex;
     align-items: center;
 }
-.mobile-nav .mobile-chat {
+.mobile-chat {
     color: #111 !important; 
     display: block !important;
     margin: -7px 20px 0 0 !important;
@@ -4082,7 +4082,7 @@ a.logo:hover{
     background-color: transparent;
     border-color: transparent;
 }
-.main-nav.dark .mobile-nav .mobile-chat {
+.main-nav.dark .mobile-chat {
     color: #fff !important;
 }
 .main-nav.dark .mobile-nav-icon,
