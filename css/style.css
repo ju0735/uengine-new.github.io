@@ -3977,6 +3977,9 @@ a.logo:hover{
     display: block;
     margin: -7px 20px 0 0;
 }
+.pc-chat {
+    display: block;
+}
 .mobile-nav-icon{
     position: relative;
     display: block;
