@@ -382,7 +382,12 @@
 /* ==============================
    Tablet landskape
    ============================== */
-    
+@media only screen and (max-width: 1040px) {
+    .pc-chat {
+        display: none !important;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     
     .hs-paragraph-1{
