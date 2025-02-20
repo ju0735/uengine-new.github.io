@@ -6617,6 +6617,9 @@ img.services-image{
     background: #fff;
     border-radius: var(--border-radius-default);
 }
+.alt-features-item.box-shadow.h170 {
+    height: 170px;
+}
 .alt-features-icon{
     position: relative;
     display: inline-block;
@@ -13012,4 +13015,30 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     background-color: #fff; 
     padding: 20px; 
     border-radius: 20px;
+}
+
+/* 컨설팅 구성 이미지 */
+.composition-pc {
+    display: block;
+}
+.composition-mo {
+    display: none;
+    padding: 20px;
+}
+/* 선도개발 - 수행절차 */
+.procedure-all {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.procedure-wrap {
+    width: 22%;
+}
+.procedure-wrap:first-child {
+    width: 25%;
+}
+.procedure-arrow {
+    border: 20px solid transparent; 
+    width: 2%; 
+    margin-right: -4%;
 }

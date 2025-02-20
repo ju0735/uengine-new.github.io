@@ -300,6 +300,11 @@
     }
     
 }
+@media only screen and (max-width: 1240px) { 
+    .alt-features-item.box-shadow.h170 {
+        padding: 20px;
+    }
+}
 @media only screen and (max-width: 1200px) {
     
     .hs-paragraph-1{
@@ -382,6 +387,23 @@
 /* ==============================
    Tablet landskape
    ============================== */
+@media only screen and (max-width: 1100px) {
+    /* 선도개발-수행절차 */
+    .procedure-all {
+        display: block;
+    }
+    .procedure-wrap, .procedure-wrap:first-child {
+        width: 100%;
+    }
+    .alt-features-item.box-shadow.h170 {
+        height: auto;
+    }
+    .procedure-arrow {
+        transform: rotate(90deg);
+        margin: 30px 0 -50px;
+    }
+}       
+    
 @media only screen and (max-width: 1040px) {
     .pc-chat {
         display: none !important;
@@ -973,6 +995,14 @@
     }
     .label-count {
         width: 110px;
+    }
+    
+    /* 컨설팅 구성 이미지 */
+    .composition-pc {
+        display: none;
+    }
+    .composition-mo {
+        display: block;
     }
 }
     
