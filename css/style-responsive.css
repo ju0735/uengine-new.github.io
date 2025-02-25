@@ -298,11 +298,21 @@
     .form.newsletter-elegant input.newsletter-field {
         font-size: calc(1.309rem + 0.96vw) !important;
     }
-    
+
 }
-@media only screen and (max-width: 1240px) { 
+@media only screen and (max-width: 1248px) { 
+    /* 선도개발-수행절차 */
     .alt-features-item.box-shadow.h170 {
-        padding: 20px;
+        padding: 15px;
+    }
+    .procedure-arrow {
+        margin-right: -4.5%;
+    }
+}
+@media only screen and (max-width: 1208px) { 
+    /* 선도개발-수행절차 */
+    .procedure-box > .alt-features-item.box-shadow {
+        padding: 10px;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -381,7 +391,17 @@
         position: static;
         height: auto;
     }
-    
+
+    /* 선도개발-수행절차 */
+    .procedure-wrap:first-child {
+        width: 27%;
+    }
+    .procedure-wrap:nth-child(3) {
+        width: 23%;
+    }
+    .alt-features-item.box-shadow.h170 {
+        height: 160px;
+    }
 }
 
 /* ==============================
@@ -392,15 +412,22 @@
     .procedure-all {
         display: block;
     }
-    .procedure-wrap, .procedure-wrap:first-child {
+    .procedure-wrap, 
+    .procedure-wrap:first-child, 
+    .procedure-wrap:nth-child(3), 
+    .procedure-wrap:last-child {
         width: 100%;
     }
     .alt-features-item.box-shadow.h170 {
         height: auto;
+        padding: 20px;
+    }
+    .procedure-box > .alt-features-item.box-shadow {
+        padding: 20px;
     }
     .procedure-arrow {
         transform: rotate(90deg);
-        margin: 30px 0 -50px;
+        margin: 30px 0 -20px;
     }
 }       
     
