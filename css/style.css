@@ -6618,7 +6618,10 @@ img.services-image{
     border-radius: var(--border-radius-default);
 }
 .alt-features-item.box-shadow.h170 {
-    height: 170px;
+    height: 150px;
+}
+.procedure-box > .alt-features-item.box-shadow {
+    padding: 20px;
 }
 .alt-features-icon{
     position: relative;
@@ -13032,10 +13035,18 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     align-items: center;
 }
 .procedure-wrap {
-    width: 22%;
+    width: 22.5%;
 }
 .procedure-wrap:first-child {
-    width: 25%;
+    width: 29%;
+}
+.procedure-wrap:last-child {
+    width: 20%;
+}
+.procedure-box {
+    background-color: #fff; 
+    border-radius: 5px; 
+    padding: 20px;
 }
 .procedure-arrow {
     border: 20px solid transparent; 
