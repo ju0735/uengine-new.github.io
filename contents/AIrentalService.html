@@ -3,7 +3,7 @@
     <head>
         
         <title>uEngine &mdash; The AI-first Company</title>
-        <meta name="description" content="AI 개발 생산성 극대화를 위한 최적 환경 임대 서비스 - 프로젝트 기간 동안 필요한 모든 AI 개발 인프라를 한 번에! 고성능 GPU 서버와 최적화된 개발 환경을 즉시 사용하고, 최신 AI 개발 도구를 활용하여 생산성을 높여 보세요.">
+        <meta name="description" content="AI 개발 생산성 극대화를 위한 바이브 코딩 최적 환경 임대 서비스 - 프로젝트 기간 동안 필요한 모든 AI 개발 인프라를 한 번에! 고성능 GPU 서버와 최적화된 개발 환경을 즉시 사용하고, 최신 AI 개발 도구를 활용하여 생산성을 높여 보세요.">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/style.css?after">
         <link rel="stylesheet" href="../css/style-responsive.css">
+
         <link rel="stylesheet" href="../css/vertical-rhythm.min.css">
         <link rel="stylesheet" href="../css/magnific-popup.css">
         <link rel="stylesheet" href="../css/owl.carousel.css">
@@ -242,7 +243,7 @@
                                     </h2>
                                     
                                     <h1 class="hs-title-0 mb-40">
-                                        <span class="wow charsAnimIn" data-splitting="chars">AI 개발 생산성 극대화를 위한 최적 환경 임대 서비스</span>
+                                        <span class="wow charsAnimIn" data-splitting="chars">바이브 코딩 환경 임대 서비스</span>
                                     </h1>
                                
                                </div>
@@ -541,10 +542,110 @@
                                     전문적인 기술 지원과 맞춤형 구성을 통해 AI 개발 프로젝트를 성공적으로 수행하는 데 도움을 드립니다.
                                 </p>
                                 <div class="local-scroll">
-                                    <a class="btn btn-mod btn-large btn-round btn-hover-anim" href="mailto:help@uengine.org">
+                                    <a id="contact_btn" class="btn btn-mod btn-large btn-round btn-hover-anim">
                                         <span>Contact us</span>
                                     </a>
                                 </div>
+
+                                <!-- Contact Form (초기 숨김) -->
+                                <div id="contact_form_container" class="contact-form-container" style="display: none;">
+                                    <div class="form-header">
+                                        <div></div>
+                                        <h2>Contact Us</h2>
+                                        <button id="close_btn" class="close-button">✖</button>
+                                    </div>
+
+                                    <form id="contact_form" action="https://formspree.io/f/movepwda" method="POST" class="form contact-form fadeInUp wch-unset">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <!-- Name -->
+                                                <div class="form-group">
+                                                    <label for="name">이름 <span>*</span></label>
+                                                    <input type="text" name="name" id="name" class="input-lg round form-control" placeholder="Enter your name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!-- Email -->
+                                                <div class="form-group">
+                                                    <label for="email">이메일 <span>*</span></label>
+                                                    <input type="email" name="email" id="email" class="input-lg round form-control" placeholder="Enter your email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <!-- company -->
+                                                <div class="form-group">
+                                                    <label for="company">회사 <span>*</span></label>
+                                                    <input type="text" name="company" id="company" class="input-lg round form-control" placeholder="Enter your company">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!-- position -->
+                                                <div class="form-group">
+                                                    <label for="position">직급</label>
+                                                    <input type="text" name="position" id="position" class="input-lg round form-control" placeholder="Enter your position">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Message -->
+                                        <div class="form-group">
+                                            <label for="message">문의내용 <span>*</span></label>
+                                            <textarea name="message" id="message" class="input-lg round form-control" placeholder="Enter your message"></textarea>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <!-- Inform Tip -->
+                                                <div class="form-tip pt-0">
+                                                    <div class="contact_form_policy">
+                                                        <label style="color: var(--color-gray-light-6);">
+                                                            <input type="checkbox" name="contact_policy" id="contact_policy" value="동의" style="vertical-align: middle; width: 15px; height: 15px;">
+                                                            <span style="color: var(--color-gray-light-6);">(필수)</span>
+                                                            <button id="contact_form_modal_open" data-modal="contact_form_policy_modal" type="button">개인정보 수집 및 이용</button>
+                                                            <span style="color: var(--color-gray-light-6);">에 동의합니다.</span>
+                                                        </label>
+                                                        <div class="contact_form_msg_error" id="contact_policy_error"></div>
+                                                        <div class="contact_form_modal blind" id="contact_form_policy_modal">
+                                                            <div class="contact_form_modal_body">
+                                                                <h1 class="contact_form_modal_title">
+                                                                    개인정보 수집 및 이용
+                                                                </h1>
+                                                                <div class="contact_form_modal_text">
+                                                                    유엔진솔루션즈(이하 "회사")가 문의하신 내용에 대한 답변을 제공하기 위해 개인정보를 수집·이용하고자 하는 경우에는 ｢개인정보 보호법｣등 관계 법령에 따라 본인의 동의가 필요합니다. 
+                                                                    <br>회사 제품 구매 및 컨설팅 문의 응답, 회사가 제공하는 서비스 이용과정을 위한 최소한의 개인정보를 수집하고 이용합니다.
+                                                                    <br>수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료될 경우 즉시 파기됩니다.
+                                                                </div>
+                                                                <div class="contact_form_modal_btn">
+                                                                    <button id="contact_form_modal_close" 
+                                                                        class="contact_form_modal_close_btn btn btn-mod btn-round" 
+                                                                        data-modal="contact_form_policy_modal" 
+                                                                        type="button"
+                                                                        style="background-color: var(--color-dark-3); 
+                                                                        color: var(--color-gray-light-3);">닫기</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact_form_modal_bg" id="contact_form_modal_bg"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <!-- Send Button -->
+                                                <div class="text-end pt-20 pt-xs-40">
+                                                    <button class="submit_btn btn btn-mod btn-large btn-round btn-hover-anim" id="submit_btn" aria-controls="result">
+                                                        <span>Send Message</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                       <div id="result" role="region" aria-live="polite" aria-atomic="true"></div>
+                                    </form>
+
+                                </div>
+
                             </div>                             
                         </div>
                         
@@ -695,7 +796,6 @@
         <script src="../js/jquery.ajaxchimp.min.js"></script>             
         <script src="../js/contact-form.js"></script>        
         <script src="../js/all.js"></script> 
-        <!-- End JS -->       
-        
+        <!-- End JS -->  
     </body>
 </html>
