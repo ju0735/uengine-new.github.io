@@ -299,6 +299,10 @@
         font-size: calc(1.309rem + 0.96vw) !important;
     }
 
+    /* contact us 폼 - 개인정보동의 모달 */
+    #contact_form .contact_form_policy {
+        margin-left: 0;
+    }
 }
 @media only screen and (max-width: 1248px) { 
     /* 선도개발-수행절차 */

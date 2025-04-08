@@ -13053,3 +13053,150 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     width: 2%; 
     margin-right: -4%;
 }
+
+/* contact us 폼 양식 */
+.contact-form-container {
+    /* position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0); */
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+}
+.contact-form-container .close-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#contact_form .form-group {
+    text-align: left;
+}
+
+#contact_form .form-group label {
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+#contact_form .form-group label span {
+    color: red;
+}
+#contact_form .form-group textarea {
+    width: 100%;
+    height: 6.25em;
+    resize: none;
+}
+
+/* contact us 폼 - 개인정보동의 모달 */
+#contact_form .contact_form_policy {
+    /* position: relative; */
+    padding-bottom: 15px;
+    margin-left: -100px;
+}
+
+#contact_form .contact_form_policy label {
+    font-size: 14px;
+    text-align: left;
+}
+
+#contact_form .contact_form_policy label button {
+    color: #3e81f6;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+}
+#contact_form .contact_form_modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#contact_form .contact_form_modal.blind {
+    display: none !important;
+}
+
+#contact_form .contact_form_modal_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    z-index: 1;
+}
+
+#contact_form .contact_form_ad_modal_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    z-index: 1;
+}
+
+#contact_form .contact_form_modal_body {
+    background: #fff;
+    width: 94%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 5px;
+}
+
+#contact_form .contact_form_modal_body p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+#contact_form .contact_form_modal_title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 30px;
+    color: #333;
+}
+
+#contact_form .contact_form_modal_text {
+    font-size: 16px;
+    line-height: 1.71;
+    color: #333;
+    margin: 0 30px;
+    max-height: 200px;
+    overflow-y: auto;
+    white-space: initial !important;
+}
+
+#contact_form .contact_form_modal_btn {
+    padding: 30px;
+    text-align: center;
+}
+
+#contact_form .contact_form_modal_btn button {
+    width: 100px;
+    height: 40px;
+    line-height: 30px;
+    font-size: 14px;
+    background: #e6e6eb;
+    color: #333;
+    cursor: pointer;
+}
+
+#contact_form .contact_form_msg_error {
+    color: red;
+    font-size: 0.9rem;
+}
