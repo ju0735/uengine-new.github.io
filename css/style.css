@@ -4971,11 +4971,11 @@ a.logo:hover{
 .text-gray{
     color: var(--color-gray-1);
 }
-.text-gray a{
+.text-gray a, .text-dark-gray a{
     color: var(--color-dark-1);
     transition: all 0.17s var(--ease-default);
 }
-.text-gray a:hover{
+.text-dark-gray,  a:hover{
     color: var(--color-dark-4);
 }
 .light-content .text-gray{
@@ -4987,7 +4987,7 @@ a.logo:hover{
 .light-content .text-gray a:hover{
     color: #fff;
 }
-.text-gradient{
+.text-gradient, .text-dark-gray a:hover{
 	background: var(--gradient-primary-1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -13199,4 +13199,13 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 #contact_form .contact_form_msg_error {
     color: red;
     font-size: 0.9rem;
+}
+
+/* 이미지 반응형따라 보이기 */
+.mo-img-on {
+    display: none;
+}
+
+.pc-img-on {
+    display: block;
 }
