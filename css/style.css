@@ -13092,7 +13092,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 }
 #contact_form .form-group textarea {
     width: 100%;
-    height: 6.25em;
+    height: 10em;
     resize: none;
 }
 
@@ -13100,7 +13100,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 #contact_form .contact_form_policy {
     /* position: relative; */
     padding-bottom: 15px;
-    margin-left: -100px;
+    text-align: left;
 }
 
 #contact_form .contact_form_policy label {
