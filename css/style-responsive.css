@@ -303,6 +303,15 @@
     #contact_form .contact_form_policy {
         margin-left: 0;
     }
+
+    /* 이미지 반응형따라 보이기 */
+    .mo-img-on {
+        display: block;
+    }
+    
+    .pc-img-on {
+        display: none;
+    }
 }
 @media only screen and (max-width: 1248px) { 
     /* 선도개발-수행절차 */
