@@ -12991,7 +12991,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     font-size: 14px;
 }
 
-/* 차트 좌측 라벨 */
+/* Case Studies 교육실적 차트 좌측 라벨 */
 .chart-box {
     display: flex;
     justify-content: space-around;
@@ -13020,6 +13020,36 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     border-radius: 20px;
 }
 
+/* 바이브코딩 생산성 차트 상단 라벨 */
+.chart-box-vibe {
+    /* display: flex;
+    justify-content: space-around; */
+    background-color: #fff;
+    padding: 20px; 
+    border-radius: 20px;
+}
+.chart-label-vibe {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    /* width: 130px; */
+    margin-right: 10px;
+}
+.label-count-vibe {
+    width: 130px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 17px;
+    background-color: #a1a2c6;
+    color: #fff;
+    margin-top: -20px;
+}
+.chart-canvas-vibe {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 20px;
+}
+
 /* 컨설팅 구성 이미지 */
 .composition-pc {
     display: block;
@@ -13028,6 +13058,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     display: none;
     padding: 20px;
 }
+
 /* 선도개발 - 수행절차 */
 .procedure-all {
     display: flex !important;
@@ -13052,6 +13083,51 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     border: 20px solid transparent; 
     width: 2%; 
     margin-right: -4%;
+}
+
+/* 바이브코딩 - 소프트웨어 개발 라이프사이클과 AI */
+.cycle-all {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.cycle-wrap {
+    width: 16.5%;
+}
+/* .cycle-wrap:first-child {
+    width: 29%;
+}
+.cycle-wrap:last-child {
+    width: 20%;
+} */
+.cycle-box {
+    border: 1px solid black;
+    border-radius: 5px; 
+    padding: 0;
+}
+.cycle-box > .alt-features-item.box-shadow {
+    width: 100%;
+    height: 270px;
+    border-radius: var(--border-radius-default);
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 20px;
+}
+.cycle-box > .alt-features-item.box-shadow h4 {
+    border: 1px dashed #fff;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.cycle-box .features-list-text {
+    font-size: 1rem;
+    /* border-top: 1px dashed #fff; */
+    padding-top: 10px;
+}
+.cycle-arrow {
+    border: 20px solid transparent; 
+    width: 2%; 
+    margin-left: -1%;
+    margin-right: -4.8%;
 }
 
 /* contact us 폼 양식 */
