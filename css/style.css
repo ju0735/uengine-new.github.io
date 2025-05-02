@@ -13351,6 +13351,10 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     box-shadow: var(--shadow-lg);
 } */
 
+/* .importance-point:hover .importance-icon {
+    background: var(--gradient-primary-1);
+} */
+
 .importance-icon {
     display: flex;
     align-items: center;
