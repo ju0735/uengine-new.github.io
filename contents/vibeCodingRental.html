@@ -106,6 +106,134 @@
                     min-height: auto;
                 }
             }
+
+            /* Biz-Dev-Ops Process 내비게이션 스타일 */
+            .process-nav {
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                padding: 20px 15px;
+                margin-bottom: 30px;
+                position: sticky;
+                top: 80px;
+                z-index: 100;
+                transition: all 0.3s ease;
+                max-width: 1100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* 항목 스타일 개선 */
+            .testimonials-6-author-feature .feature-item {
+                margin-bottom: 18px;
+                position: relative;
+                padding-left: 24px;
+                line-height: 1.5;
+            }
+
+            .testimonials-6-author-feature .feature-bullet {
+                position: absolute;
+                left: 0;
+                top: 4px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #3498db;
+            }
+
+            .testimonials-6-author-feature .feature-text {
+                display: inline-block;
+                color: #333;
+                font-weight: 500;
+            }
+
+            .process-steps {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .process-step {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                flex: 1;
+                cursor: pointer;
+                padding: 10px 5px;
+                transition: all 0.3s ease;
+                border-radius: 6px;
+                background-color: transparent;
+            }
+
+            .step-icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #f5f5f5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #555;
+                margin-bottom: 8px;
+                transition: all 0.3s ease;
+            }
+
+            .step-label {
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: #555;
+                transition: all 0.3s ease;
+            }
+
+            .process-section {
+                scroll-margin-top: 150px;
+            }
+
+            .biz-dev-ops-image {
+                max-width: 100%;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+                margin-bottom: 30px;
+            }
+
+            .step-arrow {
+                position: absolute;
+                right: -10px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #aaa;
+                font-weight: bold;
+                z-index: 1;
+            }
+
+            .process-step:last-child .step-arrow {
+                display: none;
+            }
+
+            @media (max-width: 768px) {
+                .process-nav {
+                    overflow-x: auto;
+                    top: 60px;
+                }
+                
+                .process-steps {
+                    width: max-content;
+                    min-width: 100%;
+                }
+                
+                .process-step {
+                    padding: 10px 15px;
+                }
+                
+                .step-label {
+                    font-size: 0.8rem;
+                }
+            }
         </style>
     </head>
 
@@ -382,7 +510,7 @@
                 <!-- <hr class="mt-100 mb-0"/> -->
                 <!-- End Divider -->
 
-                <!-- AI개발 도입의 어려움 -->
+                <!-- AI 네이티브 기억들의 생산성 -->
                 <section class="page-section bg-gray-light-1 bg-light-alpha-90 parallax-5">
                     <div class="container">
 
@@ -519,7 +647,7 @@
                         </div>
                     </div>
                 </section>
-                
+                ㅣ
                 <!-- 바이브 코딩이란 Section -->
                 <section class="page-section bg-gray-light-1 bg-light-alpha-90 parallax-5" style="background-image: url(../images/full-width-images/section-bg-1.jpg)">
                     <div class="container">
@@ -988,7 +1116,7 @@
                                         <div class="col-lg-6">
                                             <div class="alt-features-item">
                                                 <div class="alt-features-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g fill="currentColor"><path fill-rule="evenodd" d="M36.826 13.643L34.5 6.111l-2.326 7.532l-4.5 2.143l4.52 2.152l2.306 6.59l2.306-6.59l4.52-2.152zm-3 1.428l.674-2.182l.674 2.183l1.5.714l-1.48.705l-.694 1.982l-.694-1.982l-1.48-.705z" clip-rule="evenodd"/><path d="m19 16l1-4l1 4l3 1l-3 1l-1 4l-1-4l-3-1z"/><path fill-rule="evenodd" d="M13 39.75v.246a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V29.001a2 2 0 0 1 2-2h3a2 2 0 0 1 1.947 1.539c1.324-.477 2.871-1.045 3.344-1.261c.402-.183.866-.245 1.252-.268a9 9 0 0 1 1.195.021a15 15 0 0 1 1.328.168l.023.004l.007.001h.003l.018.004l6.69 1.5l.041.014l.011.004l.046.014l.189.054c.165.046.402.107.685.169c.575.125 1.3.242 1.975.242c.624 0 1.27.233 1.614.865c.296.542.227 1.138.117 1.55c-.139.514-.425 1.054-.788 1.513c.49-.185 1.027-.404 1.603-.64l.123-.05c1.623-.667 3.547-1.457 5.245-1.737c1.94-.321 3.351.383 3.991 1.632c.57 1.112.438 2.571-.42 3.45c-.215.221-.543.453-.872.666c-.352.229-.785.486-1.266.76a86 86 0 0 1-3.355 1.782c-2.372 1.203-4.858 2.373-5.648 2.662c-.916.335-1.9.367-2.845.318a38 38 0 0 1-1.709-.145a55 55 0 0 0-1.25-.115c-1.928-.146-3.408-.617-4.77-1.05l-.166-.053c-1.408-.446-2.718-.843-4.453-.913c-.396-.016-1.188.014-1.905.048m4.12-10.651c.065-.03.235-.073.538-.091c.284-.017.608-.006.925.018a13 13 0 0 1 1.132.143h.003l6.567 1.473l.045.014q.083.026.23.066c.194.054.468.125.793.196c.585.128 1.37.262 2.168.285a2.4 2.4 0 0 1-.284.543c-.16.232-.335.411-.479.514c-.416.298-.752.422-.956.475a1.3 1.3 0 0 1-.212.04h-.022l-5.362-.064l-.19 1.984l.178-.984l-.178.984l.053.01l.153.027l.556.098c.467.082 1.108.192 1.806.306c1.374.224 3.03.472 3.97.529c.65.04 1.406-.16 2.109-.395c.733-.245 1.562-.584 2.396-.926c1.717-.704 3.466-1.421 4.935-1.664c1.27-.21 1.723.254 1.885.571c.233.455.107.96-.072 1.142c-.043.045-.2.172-.528.385c-.306.197-.701.434-1.165.697a84 84 0 0 1-3.272 1.738c-2.392 1.213-4.772 2.326-5.432 2.568c-.534.196-1.195.243-2.054.199a29 29 0 0 1-1.515-.129a52 52 0 0 0-1.396-.128c-1.692-.128-2.978-.537-4.357-.975l-.125-.04c-1.428-.453-2.956-.924-4.977-1.005c-.455-.018-1.265.01-1.986.044v-7.101c1.406-.503 3.487-1.258 4.12-1.547m2.796-.91l.183-.983zM11 29H8v10.995h3z" clip-rule="evenodd"/></g></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g fill="currentColor"><path fill-rule="evenodd" d="M36.826 13.643L34.5 6.111l-2.326 7.532l-4.5 2.143l4.52 2.152l2.306 6.59l2.306-6.59l4.52-2.152zm-3 1.428l.674-2.182l.674 2.183l1.5.714l-1.48.705l-.694 1.982l-.694-1.982l-1.48-.705zm-8.478 0l-6.249 4.825 6.003 5.175-.679.737-6.884-5.912 7.144-5.578.665.753z" clip-rule="evenodd"/><path d="m19 16l1-4l1 4l3 1l-3 1l-1 4l-1-4l-3-1z"/><path fill-rule="evenodd" d="M13 39.75v.246a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V29.001a2 2 0 0 1 2-2h3a2 2 0 0 1 1.947 1.539c1.324-.477 2.871-1.045 3.344-1.261c.402-.183.866-.245 1.252-.268a9 9 0 0 1 1.195.021a15 15 0 0 1 1.328.168l.023.004l.007.001h.003l.018.004l6.69 1.5l.041.014l.011.004l.046.014l.189.054c.165.046.402.107.685.169c.575.125 1.3.242 1.975.242c.624 0 1.27.233 1.614.865c.296.542.227 1.138.117 1.55c-.139.514-.425 1.054-.788 1.513c.49-.185 1.027-.404 1.603-.64l.123-.05c1.623-.667 3.547-1.457 5.245-1.737c1.94-.321 3.351.383 3.991 1.632c.57 1.112.438 2.571-.42 3.45c-.215.221-.543.453-.872.666c-.352.229-.785.486-1.266.76a86 86 0 0 1-3.355 1.782c-2.372 1.203-4.858 2.373-5.648 2.662c-.916.335-1.9.367-2.845.318a38 38 0 0 1-1.709-.145a55 55 0 0 0-1.25-.115c-1.928-.146-3.408-.617-4.77-1.05l-.166-.053c-1.408-.446-2.718-.843-4.453-.913c-.396-.016-1.188.014-1.905.048m4.12-10.651c.065-.03.235-.073.538-.091c.284-.017.608-.006.925.018a13 13 0 0 1 1.132.143h.003l6.567 1.473l.045.014q.083.026.23.066c.194.054.468.125.793.196c.585.128 1.37.262 2.168.285a2.4 2.4 0 0 1-.284.543c-.16.232-.335.411-.479.514c-.416.298-.752.422-.956.475a1.3 1.3 0 0 1-.212.04h-.022l-5.362-.064l-.19 1.984l.178-.984l-.178.984l.053.01l.153.027l.556.098c.467.082 1.108.192 1.806.306c1.374.224 3.03.472 3.97.529c.65.04 1.406-.16 2.109-.395c.733-.245 1.562-.584 2.396-.926c1.717-.704 3.466-1.421 4.935-1.664c1.27-.21 1.723.254 1.885.571c.233.455.107.96-.072 1.142c-.043.045-.2.172-.528.385c-.306.197-.701.434-1.165.697a84 84 0 0 1-3.272 1.738c-2.392 1.213-4.772 2.326-5.432 2.568c-.534.196-1.195.243-2.054.199a29 29 0 0 1-1.515-.129a52 52 0 0 0-1.396-.128c-1.692-.128-2.978-.537-4.357-.975l-.125-.04c-1.428-.453-2.956-.924-4.977-1.005c-.455-.018-1.265.01-1.986.044v-7.101c1.406-.503 3.487-1.258 4.12-1.547m2.796-.91l.183-.983zM11 29H8v10.995h3z" clip-rule="evenodd"/></g></svg>
                                                 </div>
                                                 <h3 class="alt-features-title">전문 기술 지원</h3>
                                                 <div class="alt-features-descr">
@@ -1077,236 +1205,578 @@
                             </div>
                         </div>
 
-                        <!-- Testimonial -->
-                        <div class="row mb-100 mb-sm-80">                            
-                            
-                            <div class="col-md-6 col-lg-7 offset-lg-1 mb-sm-40">
-                                <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/pc-01.png" alt="시스템 분석 자동화" class="wow scaleOutIn" />
-                                </div>
-                                <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/mo-01.png" alt="시스템 분석 자동화" class="wow scaleOutIn" />
+                        <!-- Process 설명 -->
+                        <div class="row mb-80">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="biz-dev-ops-description">
+                                    <p class="text-center mb-40" style="font-size: 1.2rem;">
+                                        바이브 코딩 플랫폼은 Biz-Dev-Ops Process를 기반으로 서비스의 분석, 설계, 개발, 배포/운영까지 
+                                        전 과정을 AI로 지원합니다. <br>
+                                        DDD & 이벤트스토밍에 기반한 비즈니스 분석, MDD 기반 개발, DevOps 기반 운영 지원을 통합적으로 제공합니다.
+                                    </p>
                                 </div>
                             </div>
-                            
-                            <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
-                                <blockquote class="testimonials-6-item">
-                                                                                    
-                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
-                                    
-                                    <p class="testimonials-6-text mb-40">
-                                        시스템 분석 자동화
-                                    </p>
-                                    
-                                    <div class="section-line mb-10"></div>
-                                    
-                                    <footer>
-                                        <div class="testimonials-6-author-feature">
-                                            ✔ 최신 오픈소스 대형 언어 모델(LLM)을 활용한 요구사항 자동 분석<br> 
-                                            ✔ 하위 도메인별 목적과 비즈니스 가치를 기준으로 서비스 자동 분할<br> 
-                                            ✔ 중요도(핵심(Core), 지원(Supporting), 일반(Generic))에 따라 하위 도메인 자동 분류<br> 
-                                            ✔ 사용자와의 상호작용(Human-in-the-loop)을 통한 최적화된 구현 전략 맞춤화<br> 
-                                            ✔ 분리된 하위 도메인의 비즈니스 우선순위를 자동 선별하여 시각적으로 제시<br> 
-                                        </div>
-                                    </footer>
-                                    
-                                </blockquote>
-                            </div>                            
-                            
                         </div>
-                        <!-- End Testimonial -->
 
-                        <!-- Testimonial -->
-                        <div class="row mb-100 mb-sm-80">                            
-                            
-                            <div class="col-md-6 offset-md-1 col-lg-7 offset-lg-1 order-md-last mb-sm-40">
-                                <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/pc-02.png" alt="설계 자동화" class="wow scaleOutIn" />
-                                </div>
-                                <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/mo-02.png" alt="설계 자동화" class="wow scaleOutIn" />
+                        <!-- 단계별 기능 시각화 -->
+                        <!-- <div class="row mb-80">
+                            <div class="col-12">
+                                <div class="process-visualization">
+                                    <div class="process-stage analysis-stage">
+                                        <div class="stage-header">
+                                            <h3 class="stage-title">1. 분석</h3>
+                                            <div class="stage-features">
+                                                <a href="#value-stream-analysis" class="stage-feature">밸류 스트림 분석</a>
+                                                <a href="#bounded-context" class="stage-feature">바운디드 컨텍스트 분리 자동화</a>
+                                                <a href="#artifact-generation" class="stage-feature">산출물 생성 자동화</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="process-arrow">→</div>
+                                    <div class="process-stage design-stage">
+                                        <div class="stage-header">
+                                            <h3 class="stage-title">2. 설계</h3>
+                                            <div class="stage-features">
+                                                <a href="#domain-model" class="stage-feature">도메인 모델 상세 설계</a>
+                                                <a href="#event-storming" class="stage-feature">이벤트스토밍 설계 자동화</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="process-arrow">→</div>
+                                    <div class="process-stage implementation-stage">
+                                        <div class="stage-header" id="implementation-stage">
+                                            <h3 class="stage-title">3. 구현</h3>
+                                            <div class="stage-features">
+                                                <span class="stage-feature">코드 생성 자동화</span>
+                                                <span class="stage-feature">디버깅 자동화</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="process-arrow">→</div>
+                                    <div class="process-stage operation-stage">
+                                        <div class="stage-header" id="operation-stage">
+                                            <h3 class="stage-title">4. 배포/운영</h3>
+                                            <div class="stage-features">
+                                                <span class="stage-feature">운영 자동화</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            
-                            <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
-                                <blockquote class="testimonials-6-item">
-                                                                                    
-                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
-                                    
-                                    <p class="testimonials-6-text mb-40">
-                                        설계 자동화
-                                    </p>
-                                    
-                                    <div class="section-line mb-10"></div>
-                                    
-                                    <footer>
-                                        <div class="testimonials-6-author-feature">
-                                            ✔ 요구사항 분석 결과를 바탕으로 이벤트스토밍(Event Storming) 모델 자동 생성<br> 
-                                            ✔ 커맨드(Command), 이벤트(Event), 폴리시(Policy) 간의 연관 관계 자동 구성<br> 
-                                            ✔ 프로세스 기반의 읽기 전용(Query Model) 기능 자동 생성<br> 
-                                            ✔ 일반(Generic) 도메인의 경우 MSA Easy 내장 PBC(Packaged Business Capabilities)를 활용한 컴포저블 엔터프라이즈 환경 구축<br> 
-                                        </div>
-                                    </footer>
-                                    
-                                </blockquote>
-                            </div>                            
-                            
-                        </div>
-                        <!-- End Testimonial -->
+                        </div> -->
 
-                        <!-- Testimonial -->
-                        <div class="row mb-100 mb-sm-80">                            
-                            
-                            <div class="col-md-6 col-lg-7 offset-lg-1 mb-sm-40">
-                                <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/pc-03.png" alt="마이크로서비스 설계" class="wow scaleOutIn" />
-                                </div>
-                                <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/mo-03.png" alt="마이크로서비스 설계" class="wow scaleOutIn" />
-                                </div>
+                        <!-- 분석 영역 -->
+                        <div class="row mb-60">
+                            <div class="col-md-12 text-center">
+                                <h3 class="section-title-small analysis-title"><span class="wow charsAnimIn" data-splitting="chars">분석 단계</span></h3>
                             </div>
-                            
-                            <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
-                                <blockquote class="testimonials-6-item">
-                                                                                    
-                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
-                                    
-                                    <p class="testimonials-6-text mb-40">
-                                        도메인 모델 상세 설계
-                                    </p>
-                                    
-                                    <div class="section-line mb-10"></div>
-                                    
-                                    <footer>
-                                        <div class="testimonials-6-author-feature">
-                                            ✔ 요구사항으로부터 핵심 개념과 역할, 책임을 분석하여 애그리거트(Aggregate) 후보 자동 도출<br> 
-                                            ✔ 유저 스토리(User Story)와 엔티티(Entity) 간의 연관성을 고려하여 응집도 높은 애그리거트 경계 설정<br> 
-                                            ✔ 상태값(Enum), 불변 객체(Value Object) 등을 요구사항 조건과 제약 사항에 따라 자동 구성<br> 
-                                            ✔ 연관된 프로세스 흐름 및 이벤트를 고려한 참조 ID 객체를 통한 자동 연결<br> 
-                                            ✔ 유비쿼터스 언어(Ubiquitous Language) 추출을 통해 도메인 중심의 명확한 모델 구성요소 명명<br> 
-                                        </div>
-                                    </footer>
-                                    
-                                </blockquote>
-                            </div>                            
-                            
                         </div>
-                        <!-- End Testimonial -->
 
-                        <!-- Testimonial -->
-                        <div class="row mb-100 mb-sm-80">                            
-                            
-                            <div class="col-md-6 offset-md-1 col-lg-7 offset-lg-1 order-md-last mb-sm-40">
-                                <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/pc-04.png" alt="코드 생성 자동화" class="wow scaleOutIn" />
+                        <!-- 분석 단계 (밸류 스트림 분석) -->
+                        <div id="analysis" class="process-section">
+                            <div class="row mb-100 mb-sm-80">                            
+                                
+                                <div class="col-md-6 offset-md-1 col-lg-7 offset-lg-1 order-md-last mb-sm-40">
+                                    <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/value-stream.png" alt="밸류 스트림 분석" class="wow scaleOutIn" />
+                                    </div>
+                                    <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/value-stream.png" alt="밸류 스트림 분석" class="wow scaleOutIn" />
+                                    </div>
                                 </div>
-                                <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/mo-04.png" alt="코드 생성 자동화" class="wow scaleOutIn" />
-                                </div>
+                                
+                                <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                    <blockquote class="testimonials-6-item">
+                                                                                        
+                                        <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
+                                        
+                                        <p class="testimonials-6-text mb-40">
+                                            밸류 스트림 분석
+                                        </p>
+                                        
+                                        <div class="section-line mb-10"></div>
+                                        
+                                        <footer>
+                                            <div class="testimonials-6-author-feature">
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">요구사항 분석 결과를 바탕으로 도메인 <br>이벤트들의 순서를 표현하여 <br> 요구사항에 따른 밸류 흐름 분석 </span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">밸류 흐름 분석 결과를 바탕으로 <br> 도메인 이벤트 간의 연관 관계를 BPM을 <br> 통해 자동 구성</span>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                        
+                                    </blockquote>
+                                </div>                            
+                                
                             </div>
-                            
-                            <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
-                                <blockquote class="testimonials-6-item">
-                                                                                    
-                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
-                                    
-                                    <p class="testimonials-6-text mb-40">
-                                        코드 생성 자동화
-                                    </p>
-                                    
-                                    <div class="section-line mb-10"></div>
-                                    
-                                    <footer>
-                                        <div class="testimonials-6-author-feature">
-                                            ✔ 하위 도메인별 적합한 프로그래밍 언어와 프레임워크 선택 및 구조화된 코드 자동 생성<br> 
-                                            ✔ 분석된 요구사항 기반의 테스트 케이스('Example')를 추출하여 단위 테스트 코드 자동 생성<br> 
-                                            ✔ 정의된 코드 생성 가이드라인에 맞추어 코드 포맷, 명명 규칙, 구조 자동 조정<br> 
-                                        </div>
-                                    </footer>
-                                    
-                                </blockquote>
-                            </div>                            
-                            
                         </div>
-                        <!-- End Testimonial -->
+                        <!-- End 분석 단계 -->
 
-                        <!-- Testimonial -->
-                        <div class="row mb-100 mb-sm-80">                            
-                            
-                            <div class="col-md-6 col-lg-7 offset-lg-1 mb-sm-40">
-                                <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/pc-05.png" alt="디버깅 자동화" class="wow scaleOutIn" />
+                        <!-- 분석 단계 (바운디드 컨텍스트 분리 자동화) -->
+                        <div id="analysis" class="process-section">
+                            <div class="row mb-100 mb-sm-80">                            
+                                
+                                <div class="col-md-6 col-lg-7 offset-lg-1 mb-sm-40">
+                                    <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/bc-dicomposition.png" alt="시스템 분석 자동화" class="wow scaleOutIn" />
+                                        <!-- <img src="../images/vibe-coding/pc-01.png" alt="시스템 분석 자동화" class="wow scaleOutIn" /> -->
+                                    </div>
+                                    <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/bc-dicomposition.png" alt="시스템 분석 자동화" class="wow scaleOutIn" />
+                                        <!-- <img src="../images/vibe-coding/mo-01.png" alt="시스템 분석 자동화" class="wow scaleOutIn" /> -->
+                                    </div>
                                 </div>
-                                <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/mo-05.png" alt="디버깅 자동화" class="wow scaleOutIn" />
-                                </div>
+                                
+                                <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                    <blockquote class="testimonials-6-item">
+                                                                                        
+                                        <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
+                                        
+                                        <p class="testimonials-6-text mb-40">
+                                            바운디드 컨텍스트 <br>분리 자동화
+                                        </p>
+                                        <div class="section-line mb-10"></div>
+                                        <footer>
+                                            <div class="testimonials-6-author-feature">
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">사용자가 지정한 분리전략을 통해 <br> 바운디드 컨텍스트 자동 분리</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">하위 도메인별 목적과 비즈니스 가치를 <br> 기준으로 서비스 자동 분할</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">중요도(Core, Supporting, Generic)에 따라 하위 도메인 자동 분류</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">사용자와의 상호작용을 통한 최적화된 <br> 구현 전략 맞춤화</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">분리된 도메인의 비즈니스 우선순위를 <br> 자동 선별하여 시각적으로 제시</span>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                        
+                                    </blockquote>
+                                </div>                            
                             </div>
-                            
-                            <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
-                                <blockquote class="testimonials-6-item">
-                                                                                    
-                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
-                                    
-                                    <p class="testimonials-6-text mb-40">
-                                        디버깅 자동화
-                                    </p>
-                                    
-                                    <div class="section-line mb-10"></div>
-                                    
-                                    <footer>
-                                        <div class="testimonials-6-author-feature">
-                                            ✔ 시스템 실행 시 발생한 예외와 로그를 분석하여 반복적인 오류 패턴과 원인 자동 식별<br> 
-                                            ✔ 오류가 발생한 위치의 관련 도메인 모델 및 비즈니스 로직을 고려한 코드 수정안 자동 제안<br> 
-                                            ✔ 실패한 테스트 케이스를 활용해 문제 상황 자동 재현 및 변경 전후 영향 자동 분석<br> 
-                                        </div>
-                                    </footer>
-                                    
-                                </blockquote>
-                            </div>                            
-                            
                         </div>
-                        <!-- End Testimonial -->
+                        <!-- End 분석 단계 -->
 
-                        <!-- Testimonial -->
-                        <div class="row mb-100 mb-sm-80">                            
-                            
-                            <div class="col-md-6 offset-md-1 col-lg-7 offset-lg-1 order-md-last mb-sm-40">
-                                <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/pc-06.png" alt="운영 자동화" class="wow scaleOutIn" />
+                        <!-- 분석 단계 (산출물 생성 자동화) -->
+                        <div id="analysis" class="process-section">
+                            <div class="row mb-100 mb-sm-80">                            
+                                
+                                <div class="col-md-6 offset-md-1 col-lg-7 offset-lg-1 order-md-last mb-sm-40">
+                                    <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/pdf.png" alt="산출물 자동화" class="wow scaleOutIn" />
+                                    </div>
+                                    <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/pdf.png" alt="산출물 자동화" class="wow scaleOutIn" />
+                                    </div>
                                 </div>
-                                <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
-                                    <img src="../images/vibe-coding/mo-06.png" alt="운영 자동화" class="wow scaleOutIn" />
-                                </div>
+                                
+                                <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                    <blockquote class="testimonials-6-item">
+                                                                                        
+                                        <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
+                                        
+                                        <p class="testimonials-6-text mb-40">
+                                            산출물 생성 자동화
+                                        </p>
+                                        
+                                        <div class="section-line mb-10"></div>
+                                        
+                                        <footer>
+                                            <div class="testimonials-6-author-feature">
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">요구사항을 통해 분석된 결과물을 <br>바탕으로 산출물 생성 자동화 </span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">분석 단계에서 생성된 결과물을 <br>PDF 형식의 문서로 자동 변환하여 <br>활용 가능한 산출물 제공</span>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                        
+                                    </blockquote>
+                                </div>                            
+                                
                             </div>
-                            
-                            <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
-                                <blockquote class="testimonials-6-item">
-                                                                                    
-                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
-                                    
-                                    <p class="testimonials-6-text mb-40">
-                                        운영 자동화
-                                    </p>
-                                    
-                                    <div class="section-line mb-10"></div>
-                                    
-                                    <footer>
-                                        <div class="testimonials-6-author-feature">
-                                            ✔ 도메인 모델 기반 Dockerfile 및 Kubernetes 매니페스트(YAML) 자동 생성으로 운영 환경 자동화<br> 
-                                            ✔ 코드 변경 시 자동 빌드, 테스트 및 배포가 포함된 통합 DevOps 파이프라인을 도메인 단위로 자동 구성<br> 
-                                            ✔ 개발, 스테이징, 프로덕션 환경별 배포 전략(Canary, Blue-Green 등) 자동 적용 <br> 
-                                        </div>
-                                    </footer>
-                                    
-                                </blockquote>
-                            </div>                            
-                            
                         </div>
-                        <!-- End Testimonial -->
+                        <!-- End 분석 단계 -->
+
+                        <!-- 설계 영역 -->
+                        <div class="row mb-60">
+                            <div class="col-md-12 text-center">
+                                <h3 class="section-title-small design-title"><span class="wow charsAnimIn" data-splitting="chars">설계 단계</span></h3>
+                            </div>
+                        </div>
+
+                        <!-- 설계 단계 (도메인 모델 상세 설계) -->
+                        <div id="modeling" class="process-section">
+                            <div class="row mb-100 mb-sm-80">                            
+                                
+                                <div class="col-md-6 col-lg-7 offset-lg-1 mb-sm-40">
+                                    <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/pc-03.png" alt="마이크로서비스 설계" class="wow scaleOutIn" />
+                                    </div>
+                                    <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/mo-03.png" alt="마이크로서비스 설계" class="wow scaleOutIn" />
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                    <blockquote class="testimonials-6-item">
+                                                                                        
+                                        <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
+                                        
+                                        <p class="testimonials-6-text mb-40">
+                                            도메인 모델 상세 설계
+                                        </p>
+                                        
+                                        <div class="section-line mb-10"></div>
+                                        
+                                        <footer>
+                                            <div class="testimonials-6-author-feature">
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">요구사항으로부터 핵심 개념과 역할, 책임을 분석하여 애그리거트(Aggregate) 후보 자동 도출을 통한 리드타임 단축</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">유저 스토리(User Story)와 엔티티(Entity) 간의 연관성을 고려하여 응집도 높은 애그리거트 경계 설정</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">상태값(Enum), 불변 객체(Value Object) 등을 요구사항 조건과 제약 사항에 따라 자동 구성</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">연관된 프로세스 흐름 및 이벤트를 고려한 참조 ID 객체를 통한 자동 연결</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">유비쿼터스 언어(Ubiquitous Language) 추출을 통해 도메인 중심의 명확한 모델 구성요소 명명</span>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                        
+                                    </blockquote>
+                                </div>                            
+                                
+                            </div>
+                        </div>
+                        <!-- End 설계 단계 -->
+
+                        <!-- 설계 단계 (설계 자동화) -->
+                        <div id="design" class="process-section">
+                            <div class="row mb-100 mb-sm-80">                            
+                                
+                                <div class="col-md-6 offset-md-1 col-lg-7 offset-lg-1 order-md-last mb-sm-40">
+                                    <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/pc-02.png" alt="설계 자동화" class="wow scaleOutIn" />
+                                    </div>
+                                    <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/mo-02.png" alt="설계 자동화" class="wow scaleOutIn" />
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                    <blockquote class="testimonials-6-item">
+                                                                                        
+                                        <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
+                                        
+                                        <p class="testimonials-6-text mb-40">
+                                            이벤트스토밍 설계 자동화
+                                        </p>
+                                        
+                                        <div class="section-line mb-10"></div>
+                                        
+                                        <footer>
+                                            <div class="testimonials-6-author-feature">
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">요구사항 분석 결과를 바탕으로 <br> 이벤트스토밍(Event Storming)을 <br> 자동 생성하여 도메인 이벤트 중심 <br> 업무 흐름을 시각화</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">커맨드(Command), 이벤트(Event), <br> 폴리시(Policy) 간의 연관 관계 자동 구성</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">프로세스 기반의 읽기 전용 <br>(Query Model) 기능 자동 생성</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">일반(Generic) 도메인의 경우 MSA Easy 내장 PBC를 활용한 컴포저블 엔터프라이즈 환경 구축</span>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                        
+                                    </blockquote>
+                                </div>                            
+                                
+                            </div>
+                        </div>
+                        <!-- End 설계 단계 -->
+
+                        <!-- 구현 영역 -->
+                        <div class="row mb-60">
+                            <div class="col-md-12 text-center">
+                                <h3 class="section-title-small implementation-title"><span class="wow charsAnimIn" data-splitting="chars">구현 단계</span></h3>
+                            </div>
+                        </div>
+
+                        <!-- 구현 단계 (코드 생성 자동화) -->
+                        <div id="implementation" class="process-section">
+                            <div class="row mb-100 mb-sm-80">                            
+                                
+                                <div class="col-md-6 offset-md-1 col-lg-7 offset-lg-1 order-md-last mb-sm-40">
+                                    <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/pc-04.png" alt="코드 생성 자동화" class="wow scaleOutIn" />
+                                    </div>
+                                    <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/mo-04.png" alt="코드 생성 자동화" class="wow scaleOutIn" />
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                    <blockquote class="testimonials-6-item">
+                                                                                        
+                                        <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
+                                        
+                                        <p class="testimonials-6-text mb-40">
+                                            코드 생성 자동화
+                                        </p>
+                                        
+                                        <div class="section-line mb-10"></div>
+                                        
+                                        <footer>
+                                            <div class="testimonials-6-author-feature">
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">하위 도메인별 적합한 프로그래밍 언어와 프레임워크 선택 및 구조화된 코드 자동 생성</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">분석된 요구사항 기반의 테스트 케이스('Example')를 추출하여 단위 테스트 코드 자동 생성</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">정의된 코드 생성 가이드라인에 맞추어 코드 포맷, 명명 규칙, 구조 자동 조정</span>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                        
+                                    </blockquote>
+                                </div>                            
+                                
+                            </div>
+                        </div>
+                        <!-- End 구현 단계 -->
+
+                        <!-- 디버깅 단계 -->
+                        <div id="debug" class="process-section">
+                            <div class="row mb-100 mb-sm-80">                            
+                                
+                                <div class="col-md-6 col-lg-7 offset-lg-1 mb-sm-40">
+                                    <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/pc-05.png" alt="디버깅 자동화" class="wow scaleOutIn" />
+                                    </div>
+                                    <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/mo-05.png" alt="디버깅 자동화" class="wow scaleOutIn" />
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                    <blockquote class="testimonials-6-item">
+                                                                                        
+                                        <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
+                                        
+                                        <p class="testimonials-6-text mb-40">
+                                            디버깅 자동화
+                                        </p>
+                                        
+                                        <div class="section-line mb-10"></div>
+                                        
+                                        <footer>
+                                            <div class="testimonials-6-author-feature">
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">시스템 실행 시 발생한 예외와 로그를 분석하여 반복적인 오류 패턴과 원인 자동 식별</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">오류가 발생한 위치의 관련 도메인 모델 및 비즈니스 로직을 고려한 코드 수정안 자동 제안</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">실패한 테스트 케이스를 활용해 문제 상황 자동 재현 및 변경 전후 영향 자동 분석을 통해 개발자의 디버깅 시간 단축</span>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                        
+                                    </blockquote>
+                                </div>                            
+                                
+                            </div>
+                        </div>
+                        <!-- End 디버깅 단계 -->
+
+                        <!-- 배포/운영 영역 -->
+                        <div class="row mb-60">
+                            <div class="col-md-12 text-center">
+                                <h3 class="section-title-small operation-title"><span class="wow charsAnimIn" data-splitting="chars">배포/운영 단계</span></h3>
+                            </div>
+                        </div>
+
+                        <!-- 운영 단계 -->
+                        <div id="operation" class="process-section">
+                            <div class="row mb-100 mb-sm-80">                            
+                                
+                                <div class="col-md-6 offset-md-1 col-lg-7 offset-lg-1 order-md-last mb-sm-40">
+                                    <div class="overflow-hidden pc-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/pc-06.png" alt="운영 자동화" class="wow scaleOutIn" />
+                                    </div>
+                                    <div class="overflow-hidden mo-img-on" style="border:7px solid #eee; border-radius: 5px;">
+                                        <img src="../images/vibe-coding/mo-06.png" alt="운영 자동화" class="wow scaleOutIn" />
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                    <blockquote class="testimonials-6-item">
+                                                                                        
+                                        <div class="testimonials-6-icon black opacity-005" aria-hidden="true">"</div>
+                                        
+                                        <p class="testimonials-6-text mb-40">
+                                            운영 자동화
+                                        </p>
+                                        
+                                        <div class="section-line mb-10"></div>
+                                        
+                                        <footer>
+                                            <div class="testimonials-6-author-feature">
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">도메인 모델 기반 Dockerfile 및 Kubernetes 매니페스트(YAML) 자동 생성으로 운영 환경 자동화</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">코드 변경 시 자동 빌드, 테스트 및 배포가 포함된 통합 DevOps 파이프라인을 도메인 단위로 자동 구성</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-text">개발, 스테이징, 프로덕션 환경별 배포 전략(Canary, Blue-Green 등) 자동 적용</span>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                        
+                                    </blockquote>
+                                </div>                            
+                                
+                            </div>
+                        </div>
+                        <!-- End 운영 단계 -->
 
                     </div>
                 </section>
                 <!-- End About Section -->
+
+
+                <section class="page-section">
+                    <div class="container">
+                        <div class="row mb-80">
+                            <div class="col-lg-10 offset-lg-1 text-center">
+                                <h3 class="section-title mb-40"><span class="wow charsAnimIn" data-splitting="chars">바이브 코딩 플랫폼 기능 둘러보기</span></h3>
+                                <p class="text-center mb-50" style="font-size: 1.2rem;">
+                                    바이브 코딩 플랫폼의 실제 사용 모습을 직접 확인하세요. <br>
+                                    AI 기반 코드 생성부터 자동 디버깅까지, 개발 생산성을 혁신적으로 향상시키는 주요 기능들을 영상으로 만나보실 수 있습니다.
+                                </p>
+                                
+                                <div class="video-container">
+                                    <div class="row">
+                                        <!-- 첫 번째 영상 -->
+                                        <div class="col-md-4 mb-30">
+                                            <div class="pc-show">
+                                                <iframe src="https://www.youtube.com/embed/Rh08Qzw3TUA" 
+                                                        title="바이브 코딩 플랫폼 활용 사례" 
+                                                        frameborder="0" 
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                        allowfullscreen="allowfullscreen" 
+                                                        style="width: 100%; height: 280px;"></iframe>
+                                            </div>
+                                            
+                                            <div class="mo-show">
+                                                <iframe src="https://www.youtube.com/embed/Rh08Qzw3TUA" 
+                                                        title="바이브 코딩 플랫폼 활용 사례" 
+                                                        frameborder="0" 
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                        allowfullscreen="allowfullscreen" 
+                                                        style="width: 100%; height: 200px;"></iframe>
+                                            </div>
+                                            <h5 class="text-center mt-15"><바이브 코딩 플랫폼 분석 과정></h5>
+                                        </div>
+                                        
+                                        <!-- 두 번째 영상 -->
+                                        <div class="col-md-4 mb-30">
+                                            <div class="pc-show">
+                                                <iframe src="https://www.youtube.com/embed/7qqQQiTygsw" 
+                                                        title="바이브 코딩 플랫폼 활용 사례" 
+                                                        frameborder="0" 
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                        allowfullscreen="allowfullscreen" 
+                                                        style="width: 100%; height: 280px;"></iframe>
+                                            </div>
+                                            
+                                            <div class="mo-show">
+                                                <iframe src="https://www.youtube.com/embed/7qqQQiTygsw" 
+                                                        title="바이브 코딩 플랫폼 활용 사례" 
+                                                        frameborder="0" 
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                        allowfullscreen="allowfullscreen" 
+                                                        style="width: 100%; height: 200px;"></iframe>
+                                            </div>
+                                            <h5 class="text-center mt-15"><바이브 코딩 플랫폼 설계 과정></h5>
+                                        </div>
+                                        
+                                        <!-- 세 번째 영상 -->
+                                        <div class="col-md-4 mb-30">
+                                            <div class="pc-show">
+                                                <iframe src="https://www.youtube.com/embed/KRy2wawbBeE" 
+                                                        title="바이브 코딩 플랫폼 활용 사례" 
+                                                        frameborder="0" 
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                        allowfullscreen="allowfullscreen" 
+                                                        style="width: 100%; height: 280px;"></iframe>
+                                            </div>
+                                            
+                                            <div class="mo-show">
+                                                <iframe src="https://www.youtube.com/embed/KRy2wawbBeE" 
+                                                        title="바이브 코딩 플랫폼 활용 사례" 
+                                                        frameborder="0" 
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                        allowfullscreen="allowfullscreen" 
+                                                        style="width: 100%; height: 200px;"></iframe>
+                                            </div>
+                                            <h5 class="text-center mt-15"><바이브 코딩 플랫폼 구현 과정></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
 
                 <!-- 도입효과 Section -->
                 <section class="page-section bg-dark-1 bg-dark-alpha-80 parallax-5" style="background-image: url(../images/full-width-images/section-bg-1.jpg)">
@@ -1464,7 +1934,7 @@
                                         <td class="border-left-n" style="text-align: left;">AI 활용성</td>
                                         <td style="text-align: left;">최신 AI 모델 학습/추론 최적화 환경 5명 이상 동시 사용자 운용 시에도 안정적 처리량 확보
                                         </td>
-                                        <td>GPT, LLaMA, SD 등 호환</td>
+                                        <td>GPT, LLaMA, SD 등 <br> 호환</td>
                                     </tr>
                                     <tr>
                                         <td class="border-left-n" style="text-align: left;">용도 사례</td>
@@ -2019,6 +2489,40 @@
         <script src="../js/all.js"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
         <!-- End JS -->  
+
+        <script>
+            $(document).ready(function() {
+                // 스테이지 링크 클릭 이벤트
+                $('.stage-feature').on('click', function(e) {
+                    e.preventDefault();
+                    const target = $(this).attr('href');
+                    
+                    // 해당 섹션으로 스크롤
+                    if($(target).length) {
+                        $('html, body').animate({
+                            scrollTop: $(target).offset().top - 100
+                        }, 800);
+                    }
+                });
+
+                // 스크롤 시 현재 위치에 따라 스테이지 하이라이트
+                $(window).scroll(function() {
+                    const scrollPosition = $(window).scrollTop();
+                    
+                    // 각 섹션 위치 확인 및 활성화
+                    $('.process-section').each(function() {
+                        const sectionTop = $(this).offset().top - 150;
+                        const sectionBottom = sectionTop + $(this).outerHeight();
+                        
+                        if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
+                            const id = $(this).attr('id');
+                            $('.stage-feature').removeClass('active');
+                            $('.stage-feature[href="#' + id + '"]').addClass('active');
+                        }
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
 
@@ -2068,4 +2572,4 @@
             }
         }
     });
-    </script>
+</script>

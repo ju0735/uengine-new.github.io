@@ -13458,3 +13458,135 @@ code.hljs, code[class*=language-], pre[class*=language-] {
         font-size: 12px;
     }
 }
+/* 주요기능 section */
+.process-visualization {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 60px;
+}
+.process-stage {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    margin: 10px 5px;
+    border-top: 5px solid #ddd;
+}
+.analysis-stage {
+    border-top-color: #3498db;
+}
+.design-stage {
+    border-top-color: #2ecc71;
+}
+.implementation-stage {
+    border-top-color: #e74c3c;
+}
+.operation-stage {
+    border-top-color: #9b59b6;
+}
+.process-stage:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+.stage-header {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.stage-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+.analysis-stage .stage-title {
+    color: #3498db;
+}
+.design-stage .stage-title {
+    color: #2ecc71;
+}
+.implementation-stage .stage-title {
+    color: #e74c3c;
+}
+.operation-stage .stage-title {
+    color: #9b59b6;
+}
+.stage-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.stage-feature {
+    background-color: #f0f4f8;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #3a7bd5;
+    display: inline-block;
+    text-align: center;
+}
+.analysis-stage .stage-feature {
+    background-color: #ebf7ff;
+    color: #3498db;
+}
+.design-stage .stage-feature {
+    background-color: #e8f8f5;
+    color: #2ecc71;
+}
+.implementation-stage .stage-feature {
+    background-color: #fdedec;
+    color: #e74c3c;
+}
+.operation-stage .stage-feature {
+    background-color: #f4ecf7;
+    color: #9b59b6;
+}
+.process-arrow {
+    display: flex;
+    align-items: center;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.section-title-small.analysis-title {
+    color: #3498db;
+}
+.section-title-small.design-title {
+    color: #2ecc71;
+}
+.section-title-small.implementation-title {
+    color: #e74c3c;
+}
+.section-title-small.operation-title {
+    color: #9b59b6;
+}
+.process-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+    .process-visualization {
+        flex-direction: column;
+    }
+    .process-arrow {
+        transform: rotate(90deg);
+        margin: 10px 0;
+    }
+    .process-stage {
+        width: 100%;
+        max-width: 100%;
+    }
+}
