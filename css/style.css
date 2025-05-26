@@ -22,7 +22,6 @@ Primary use: Multipurpose Template
 7. Buttons.
     7.1. Mobile menu button fix.
 8. Forms fields.
-    8.1. Input underline.
     8.2. Input Gradient.
 9. Home sections.
     9.1. Header common styles.
@@ -2254,68 +2253,6 @@ textarea:-webkit-autofill:focus{
 }
 
 /*
- * Input underline
- */
-
-.form input[type="text"].underline,
-.form input[type="email"].underline,
-.form input[type="number"].underline,
-.form input[type="url"].underline,
-.form input[type="search"].underline,
-.form input[type="tel"].underline,
-.form input[type="password"].underline,
-.form input[type="date"].underline,
-.form input[type="color"].underline,
-.form textarea.underline,
-.form select.underline{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    padding-left: 0;
-    border-width: 2px;
-    border-color: var(--color-dark-1);
-    border-radius: 0;
-}
-.form input[type="text"].underline,
-.form input[type="email"].underline,
-.form input[type="number"].underline,
-.form input[type="url"].underline,
-.form input[type="search"].underline,
-.form input[type="tel"].underline,
-.form input[type="password"].underline,
-.form input[type="date"].underline,
-.form input[type="color"].underline,
-.form textarea.underline{
-    padding-right: 0;
-}
-.form input[type="text"].underline:focus,
-.form input[type="email"].underline:focus,
-.form input[type="number"].underline:focus,
-.form input[type="url"].underline:focus,
-.form input[type="search"].underline:focus,
-.form input[type="tel"].underline:focus,
-.form input[type="password"].underline:focus,
-.form input[type="date"].underline:focus,
-.form input[type="color"].underline:focus,
-.form textarea.underline:focus,
-.form select.underline:focus{
-    box-shadow: none;
-}
-.light-content .form input[type="text"].underline,
-.light-content .form input[type="email"].underline,
-.light-content .form input[type="number"].underline,
-.light-content .form input[type="url"].underline,
-.light-content .form input[type="search"].underline,
-.light-content .form input[type="tel"].underline,
-.light-content .form input[type="password"].underline,
-.light-content .form input[type="date"].underline,
-.light-content .form input[type="color"].underline,
-.light-content .form textarea.underline,
-.light-content .form select.underline{
-    border-color: #fff;
-}
-
-/*
  * Input Gradient
  */
 
@@ -2855,7 +2792,7 @@ a.bg-video-button-pause{
     display: block;
     width: 160%;
     height: 520%;
-    background: var(--color-dark-2);
+    background: var(--color-dark-1);
     border-radius: 100%;
 }
 
@@ -10377,10 +10314,6 @@ a.blog-item-more:hover{
     cursor: default;
 }
 
-.light-content .pagination a{
-    border-color: rgba(255,255,255, .35);
-    color: var(--color-dark-mode-gray-1);
-}
 .light-content .pagination a:hover{
     border-color: var(--color-dark-mode-gray-1);
     color: #fff;
@@ -11728,6 +11661,14 @@ html:not(.mobile) .owl-animate-fadeInDown{
     font-size: 16px;
 }
 
+.testimonials-6-author-feature{
+    font-size: 17px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
 /*
  * Tabs
  */
@@ -12019,10 +11960,6 @@ html:not(.mobile) .owl-animate-fadeInDown{
 .light-content .accordion{
     border-color: #fff;
 }
-.light-content .accordion > dt > a{
-    color: #fff;
-    border-color: #fff;
-}
 .light-content .accordion > dt > a:after{
     color: #fff;
 }
@@ -12123,8 +12060,7 @@ html:not(.mobile) .owl-animate-fadeInDown{
     text-decoration: none;
 }
 .accordion-1 > dt > a > span{
-    position: relative;
-    display: inline-block;    
+    position: relative;    
 }
 .accordion-1 > dt > a > span:before{
     content: "";
@@ -13387,4 +13323,270 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 
 .pc-img-on {
     display: block;
+}
+/* AI 네이티브 기업의 생산성 */
+.ai-stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.ai-stats-box {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.ai-stats-box.highlight {
+    background-color: #eef7ff;
+    border: 1px solid #007bff;
+}
+.ai-stats-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+.ai-stats-label {
+    font-size: 14px;
+    color: #666;
+}
+.productivity-chart {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.chart-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.chart-container {
+    margin-top: 20px;
+}
+.chart-bar-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.chart-label {
+    width: 130px;
+    text-align: right;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.chart-bar {
+    height: 30px;
+    background-color: #6c757d;
+    border-radius: 4px;
+    position: relative;
+    transition: width 1.5s ease-in-out;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.chart-bar.highlight {
+    background-color: #007bff;
+}
+.chart-value {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* 기업 연매출 차트 스타일 */
+.companies-revenue {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.companies-list {
+    margin-top: 20px;
+}
+.company-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.company-name {
+    width: 120px;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 15px;
+}
+.company-bar {
+    height: 28px;
+    background-color: #5b9bd5;
+    border-radius: 4px;
+    transition: width 1.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.company-value {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .ai-stats-box {
+        min-width: 120px;
+        margin: 5px;
+    }
+    .ai-stats-number {
+        font-size: 22px;
+    }
+    .chart-label {
+        width: 100px;
+        font-size: 12px;
+    }
+    .company-name {
+        width: 90px;
+        font-size: 12px;
+    }
+}
+/* 주요기능 section */
+.process-visualization {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 60px;
+}
+.process-stage {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    margin: 10px 5px;
+    border-top: 5px solid #ddd;
+}
+.analysis-stage {
+    border-top-color: #3498db;
+}
+.design-stage {
+    border-top-color: #2ecc71;
+}
+.implementation-stage {
+    border-top-color: #e74c3c;
+}
+.operation-stage {
+    border-top-color: #9b59b6;
+}
+.process-stage:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+.stage-header {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.stage-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+.analysis-stage .stage-title {
+    color: #3498db;
+}
+.design-stage .stage-title {
+    color: #2ecc71;
+}
+.implementation-stage .stage-title {
+    color: #e74c3c;
+}
+.operation-stage .stage-title {
+    color: #9b59b6;
+}
+.stage-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.stage-feature {
+    background-color: #f0f4f8;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #3a7bd5;
+    display: inline-block;
+    text-align: center;
+}
+.analysis-stage .stage-feature {
+    background-color: #ebf7ff;
+    color: #3498db;
+}
+.design-stage .stage-feature {
+    background-color: #e8f8f5;
+    color: #2ecc71;
+}
+.implementation-stage .stage-feature {
+    background-color: #fdedec;
+    color: #e74c3c;
+}
+.operation-stage .stage-feature {
+    background-color: #f4ecf7;
+    color: #9b59b6;
+}
+.process-arrow {
+    display: flex;
+    align-items: center;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.section-title-small.analysis-title {
+    color: #3498db;
+}
+.section-title-small.design-title {
+    color: #2ecc71;
+}
+.section-title-small.implementation-title {
+    color: #e74c3c;
+}
+.section-title-small.operation-title {
+    color: #9b59b6;
+}
+.process-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+    .process-visualization {
+        flex-direction: column;
+    }
+    .process-arrow {
+        transform: rotate(90deg);
+        margin: 10px 0;
+    }
+    .process-stage {
+        width: 100%;
+        max-width: 100%;
+    }
 }
