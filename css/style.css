@@ -13324,6 +13324,218 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 .pc-img-on {
     display: block;
 }
+
+/* 추천 대상 섹션 스타일 */
+.recommendation-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+    padding: 30px 20px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.recommendation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.recommendation-icon {
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.recommendation-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.recommendation-desc {
+    font-size: 0.95rem;
+    color: #636e72;
+    margin-bottom: 25px;
+    min-height: 100px;
+}
+
+.recommendation-points {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.recommendation-points .point {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+/* 대상별 고유 색상 */
+.recommendation-card:nth-child(1) .recommendation-icon {
+    color: #3498db;
+}
+
+.recommendation-card:nth-child(2) .recommendation-icon {
+    color: #2ecc71;
+}
+
+.recommendation-card:nth-child(3) .recommendation-icon {
+    color: #e74c3c;
+}
+
+.recommendation-card:nth-child(4) .recommendation-icon {
+    color: #9b59b6;
+}
+
+.recommendation-card:nth-child(5) .recommendation-icon {
+    color: #f39c12;
+}
+
+.recommendation-card:nth-child(6) .recommendation-icon {
+    color: #1abc9c;
+}
+
+@media (max-width: 768px) {
+    .recommendation-desc {
+        min-height: auto;
+    }
+}
+
+/* Biz-Dev-Ops Process 내비게이션 스타일 */
+.process-nav {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 20px 15px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+    transition: all 0.3s ease;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 항목 스타일 개선 */
+.testimonials-6-author-feature .feature-item {
+    margin-bottom: 18px;
+    position: relative;
+    padding-left: 24px;
+    line-height: 1.5;
+}
+
+.testimonials-6-author-feature .feature-bullet {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 17px;
+    height: 17px;
+
+    /* top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #3498db; */
+}
+
+.testimonials-6-author-feature .feature-text {
+    display: inline-block;
+    color: #333;
+    font-weight: 500;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    cursor: pointer;
+    padding: 10px 5px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.step-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.step-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.process-section {
+    scroll-margin-top: 150px;
+}
+
+.biz-dev-ops-image {
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.step-arrow {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.process-step:last-child .step-arrow {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .process-nav {
+        overflow-x: auto;
+        top: 60px;
+    }
+    
+    .process-steps {
+        width: max-content;
+        min-width: 100%;
+    }
+    
+    .process-step {
+        padding: 10px 15px;
+    }
+    
+    .step-label {
+        font-size: 0.8rem;
+    }
+}
+
 /* AI 네이티브 기업의 생산성 */
 .ai-stats-container {
     display: flex;
@@ -13458,6 +13670,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
         font-size: 12px;
     }
 }
+
 /* 주요기능 section */
 .process-visualization {
     display: flex;
@@ -13558,23 +13771,23 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     font-weight: bold;
     padding: 0 10px;
 }
-.section-title-small.analysis-title {
+.section-title-small.analysis-title, .testimonials-6-author-feature .feature-bullet.analysis {
     color: #3498db;
 }
-.section-title-small.design-title {
+.section-title-small.design-title, .testimonials-6-author-feature .feature-bullet.design {
     color: #2ecc71;
 }
-.section-title-small.implementation-title {
+.section-title-small.implementation-title, .testimonials-6-author-feature .feature-bullet.implementation {
     color: #e74c3c;
 }
-.section-title-small.operation-title {
+.section-title-small.operation-title, .testimonials-6-author-feature .feature-bullet.operation {
     color: #9b59b6;
 }
 .process-section {
     margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
     margin-bottom: 40px;
 }
 @media (max-width: 992px) {
