@@ -13771,16 +13771,40 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     font-weight: bold;
     padding: 0 10px;
 }
-.section-title-small.analysis-title, .testimonials-6-author-feature .feature-bullet.analysis {
+.section-title-small.analysis-title {
+    width: 160px;
+    border-bottom: 3px solid #3498db;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.section-title-small.design-title {
+    width: 160px;
+    border-bottom: 3px solid #2ecc71;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.section-title-small.implementation-title {
+    width: 160px;
+    border-bottom: 3px solid #e74c3c;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.section-title-small.operation-title {
+    width: 240px;
+    border-bottom: 3px solid #9b59b6;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.testimonials-6-author-feature .feature-bullet.analysis {
     color: #3498db;
 }
-.section-title-small.design-title, .testimonials-6-author-feature .feature-bullet.design {
+.testimonials-6-author-feature .feature-bullet.design {
     color: #2ecc71;
 }
-.section-title-small.implementation-title, .testimonials-6-author-feature .feature-bullet.implementation {
+.testimonials-6-author-feature .feature-bullet.implementation {
     color: #e74c3c;
 }
-.section-title-small.operation-title, .testimonials-6-author-feature .feature-bullet.operation {
+.testimonials-6-author-feature .feature-bullet.operation {
     color: #9b59b6;
 }
 .process-section {
