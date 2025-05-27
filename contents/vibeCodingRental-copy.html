@@ -26,215 +26,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
-
-        <style>
-            /* 추천 대상 섹션 스타일 */
-            .recommendation-card {
-                background-color: #fff;
-                border-radius: 12px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.07);
-                padding: 30px 20px;
-                height: 100%;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                position: relative;
-                overflow: hidden;
-                border: 1px solid rgba(0,0,0,0.05);
-            }
-            
-            .recommendation-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-            }
-            
-            .recommendation-icon {
-                margin-bottom: 20px;
-                color: #3498db;
-            }
-            
-            .recommendation-title {
-                font-size: 1.4rem;
-                font-weight: 600;
-                margin-bottom: 20px;
-                color: #2c3e50;
-            }
-            
-            .recommendation-desc {
-                font-size: 0.95rem;
-                color: #636e72;
-                margin-bottom: 25px;
-                min-height: 100px;
-            }
-            
-            .recommendation-points {
-                text-align: left;
-                padding-left: 15px;
-            }
-            
-            .recommendation-points .point {
-                font-size: 0.9rem;
-                margin-bottom: 8px;
-                color: #2c3e50;
-            }
-            
-            /* 대상별 고유 색상 */
-            .recommendation-card:nth-child(1) .recommendation-icon {
-                color: #3498db;
-            }
-            
-            .recommendation-card:nth-child(2) .recommendation-icon {
-                color: #2ecc71;
-            }
-            
-            .recommendation-card:nth-child(3) .recommendation-icon {
-                color: #e74c3c;
-            }
-            
-            .recommendation-card:nth-child(4) .recommendation-icon {
-                color: #9b59b6;
-            }
-            
-            .recommendation-card:nth-child(5) .recommendation-icon {
-                color: #f39c12;
-            }
-            
-            .recommendation-card:nth-child(6) .recommendation-icon {
-                color: #1abc9c;
-            }
-            
-            @media (max-width: 768px) {
-                .recommendation-desc {
-                    min-height: auto;
-                }
-            }
-
-            /* Biz-Dev-Ops Process 내비게이션 스타일 */
-            .process-nav {
-                background-color: #fff;
-                border-radius: 8px;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-                padding: 20px 15px;
-                margin-bottom: 30px;
-                position: sticky;
-                top: 80px;
-                z-index: 100;
-                transition: all 0.3s ease;
-                max-width: 1100px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            /* 항목 스타일 개선 */
-            .testimonials-6-author-feature .feature-item {
-                margin-bottom: 18px;
-                position: relative;
-                padding-left: 24px;
-                line-height: 1.5;
-            }
-
-            .testimonials-6-author-feature .feature-bullet {
-                position: absolute;
-                left: 0;
-                top: 4px;
-                width: 12px;
-                height: 12px;
-                border-radius: 50%;
-                background-color: #3498db;
-            }
-
-            .testimonials-6-author-feature .feature-text {
-                display: inline-block;
-                color: #333;
-                font-weight: 500;
-            }
-
-            .process-steps {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            .process-step {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                position: relative;
-                flex: 1;
-                cursor: pointer;
-                padding: 10px 5px;
-                transition: all 0.3s ease;
-                border-radius: 6px;
-                background-color: transparent;
-            }
-
-            .step-icon {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background-color: #f5f5f5;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #555;
-                margin-bottom: 8px;
-                transition: all 0.3s ease;
-            }
-
-            .step-label {
-                font-size: 0.9rem;
-                font-weight: 500;
-                color: #555;
-                transition: all 0.3s ease;
-            }
-
-            .process-section {
-                scroll-margin-top: 150px;
-            }
-
-            .biz-dev-ops-image {
-                max-width: 100%;
-                border-radius: 8px;
-                overflow: hidden;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-                margin-bottom: 30px;
-            }
-
-            .step-arrow {
-                position: absolute;
-                right: -10px;
-                top: 50%;
-                transform: translateY(-50%);
-                color: #aaa;
-                font-weight: bold;
-                z-index: 1;
-            }
-
-            .process-step:last-child .step-arrow {
-                display: none;
-            }
-
-            @media (max-width: 768px) {
-                .process-nav {
-                    overflow-x: auto;
-                    top: 60px;
-                }
-                
-                .process-steps {
-                    width: max-content;
-                    min-width: 100%;
-                }
-                
-                .process-step {
-                    padding: 10px 15px;
-                }
-                
-                .step-label {
-                    font-size: 0.8rem;
-                }
-            }
-        </style>
     </head>
 
     <body class="appear-animate">
@@ -1112,53 +903,6 @@
                             </div>
                         </div>
 
-                        <!-- 단계별 기능 시각화 -->
-                        <!-- <div class="row mb-80">
-                            <div class="col-12">
-                                <div class="process-visualization">
-                                    <div class="process-stage analysis-stage">
-                                        <div class="stage-header">
-                                            <h3 class="stage-title">1. 분석</h3>
-                                            <div class="stage-features">
-                                                <a href="#value-stream-analysis" class="stage-feature">밸류 스트림 분석</a>
-                                                <a href="#bounded-context" class="stage-feature">바운디드 컨텍스트 분리 자동화</a>
-                                                <a href="#artifact-generation" class="stage-feature">산출물 생성 자동화</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="process-arrow">→</div>
-                                    <div class="process-stage design-stage">
-                                        <div class="stage-header">
-                                            <h3 class="stage-title">2. 설계</h3>
-                                            <div class="stage-features">
-                                                <a href="#domain-model" class="stage-feature">도메인 모델 상세 설계</a>
-                                                <a href="#event-storming" class="stage-feature">이벤트스토밍 설계 자동화</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="process-arrow">→</div>
-                                    <div class="process-stage implementation-stage">
-                                        <div class="stage-header" id="implementation-stage">
-                                            <h3 class="stage-title">3. 구현</h3>
-                                            <div class="stage-features">
-                                                <span class="stage-feature">코드 생성 자동화</span>
-                                                <span class="stage-feature">디버깅 자동화</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="process-arrow">→</div>
-                                    <div class="process-stage operation-stage">
-                                        <div class="stage-header" id="operation-stage">
-                                            <h3 class="stage-title">4. 배포/운영</h3>
-                                            <div class="stage-features">
-                                                <span class="stage-feature">운영 자동화</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
                         <!-- 분석 영역 -->
                         <div class="row mb-60">
                             <div class="col-md-12 text-center">
@@ -1193,11 +937,19 @@
                                         <footer>
                                             <div class="testimonials-6-author-feature">
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet analysis">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">요구사항 분석 결과를 바탕으로 도메인 <br>이벤트들의 순서를 표현하여 <br> 요구사항에 따른 밸류 흐름 분석 </span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet analysis">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">밸류 흐름 분석 결과를 바탕으로 <br> 도메인 이벤트 간의 연관 관계를 BPM을 <br> 통해 자동 구성</span>
                                                 </div>
                                             </div>
@@ -1237,23 +989,43 @@
                                         <footer>
                                             <div class="testimonials-6-author-feature">
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet analysis">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">사용자가 지정한 분리전략을 통해 <br> 바운디드 컨텍스트 자동 분리</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet analysis">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">하위 도메인별 목적과 비즈니스 가치를 <br> 기준으로 서비스 자동 분할</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet analysis">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">중요도(Core, Supporting, Generic)에 따라 하위 도메인 자동 분류</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet analysis">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">사용자와의 상호작용을 통한 최적화된 <br> 구현 전략 맞춤화</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet analysis">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">분리된 도메인의 비즈니스 우선순위를 <br> 자동 선별하여 시각적으로 제시</span>
                                                 </div>
                                             </div>
@@ -1292,11 +1064,19 @@
                                         <footer>
                                             <div class="testimonials-6-author-feature">
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet analysis">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">요구사항을 통해 분석된 결과물을 <br>바탕으로 산출물 생성 자동화 </span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet analysis">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">분석 단계에서 생성된 결과물을 <br>PDF 형식의 문서로 자동 변환하여 <br>활용 가능한 산출물 제공</span>
                                                 </div>
                                             </div>
@@ -1343,23 +1123,43 @@
                                         <footer>
                                             <div class="testimonials-6-author-feature">
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet design">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">요구사항으로부터 핵심 개념과 역할, 책임을 분석하여 애그리거트(Aggregate) 후보 자동 도출을 통한 리드타임 단축</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet design">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">유저 스토리(User Story)와 엔티티(Entity) 간의 연관성을 고려하여 응집도 높은 애그리거트 경계 설정</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet design">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">상태값(Enum), 불변 객체(Value Object) 등을 요구사항 조건과 제약 사항에 따라 자동 구성</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet design">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">연관된 프로세스 흐름 및 이벤트를 고려한 참조 ID 객체를 통한 자동 연결</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet design">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">유비쿼터스 언어(Ubiquitous Language) 추출을 통해 도메인 중심의 명확한 모델 구성요소 명명</span>
                                                 </div>
                                             </div>
@@ -1399,19 +1199,35 @@
                                         <footer>
                                             <div class="testimonials-6-author-feature">
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet design">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">요구사항 분석 결과를 바탕으로 <br> 이벤트스토밍(Event Storming)을 <br> 자동 생성하여 도메인 이벤트 중심 <br> 업무 흐름을 시각화</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet design">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">커맨드(Command), 이벤트(Event), <br> 폴리시(Policy) 간의 연관 관계 자동 구성</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet design">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">프로세스 기반의 읽기 전용 <br>(Query Model) 기능 자동 생성</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet design">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">일반(Generic) 도메인의 경우 MSA Easy 내장 PBC를 활용한 컴포저블 엔터프라이즈 환경 구축</span>
                                                 </div>
                                             </div>
@@ -1458,15 +1274,27 @@
                                         <footer>
                                             <div class="testimonials-6-author-feature">
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet implementation">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">하위 도메인별 적합한 프로그래밍 언어와 프레임워크 선택 및 구조화된 코드 자동 생성</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet implementation">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">분석된 요구사항 기반의 테스트 케이스('Example')를 추출하여 단위 테스트 코드 자동 생성</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet implementation">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">정의된 코드 생성 가이드라인에 맞추어 코드 포맷, 명명 규칙, 구조 자동 조정</span>
                                                 </div>
                                             </div>
@@ -1506,15 +1334,27 @@
                                         <footer>
                                             <div class="testimonials-6-author-feature">
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet implementation">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">시스템 실행 시 발생한 예외와 로그를 분석하여 반복적인 오류 패턴과 원인 자동 식별</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet implementation">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">오류가 발생한 위치의 관련 도메인 모델 및 비즈니스 로직을 고려한 코드 수정안 자동 제안</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet implementation">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">실패한 테스트 케이스를 활용해 문제 상황 자동 재현 및 변경 전후 영향 자동 분석을 통해 개발자의 디버깅 시간 단축</span>
                                                 </div>
                                             </div>
@@ -1561,15 +1401,27 @@
                                         <footer>
                                             <div class="testimonials-6-author-feature">
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet operation">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">도메인 모델 기반 Dockerfile 및 Kubernetes 매니페스트(YAML) 자동 생성으로 운영 환경 자동화</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet operation">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">코드 변경 시 자동 빌드, 테스트 및 배포가 포함된 통합 DevOps 파이프라인을 도메인 단위로 자동 구성</span>
                                                 </div>
                                                 <div class="feature-item">
-                                                    <span class="feature-bullet"></span>
+                                                    <span class="feature-bullet operation">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                        </svg>
+                                                    </span>
                                                     <span class="feature-text">개발, 스테이징, 프로덕션 환경별 배포 전략(Canary, Blue-Green 등) 자동 적용</span>
                                                 </div>
                                             </div>
