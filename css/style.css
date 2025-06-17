@@ -13565,7 +13565,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 .chart-area {
     position: relative;
     height: 100%;
-    margin: 0 60px 60px 60px;
+    margin: 0 20px 60px 60px;
     border-left: 2px solid #e0e0e0;
     border-bottom: 2px solid #e0e0e0;
 }
@@ -13628,7 +13628,8 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #4A90E2;
+    background-color: #555;
+    /* background-color: #4A90E2; */
     border: 2px solid #fff;
     box-shadow: 0 2px 4px rgba(74, 144, 226, 0.3);
     transition: all 0.3s ease;
@@ -13638,12 +13639,12 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     background-color: #4A90E2;
     width: 10px;
     height: 10px;
-    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.5);
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.9);
 }
 
 .x-labels {
     position: absolute;
-    bottom: -50px;
+    bottom: -60px;
     left: 0;
     width: 100%;
     height: 50px;
@@ -13662,7 +13663,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 
 .x-label.highlight {
     color: #4A90E2;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 /* 반응형 디자인 */
@@ -13672,7 +13673,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     }
     
     .chart-area {
-        margin: 0 40px 80px 40px;
+        margin: 0 20px 80px 40px;
     }
     
     .y-labels {
@@ -13682,11 +13683,11 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     
     .x-label {
         font-size: 0.7rem;
-        width: 60px;
+        width: 40px;
     }
     
     .x-labels {
-        bottom: -70px;
+        bottom: -75px;
         height: 70px;
     }
     
@@ -13974,39 +13975,39 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 }
 .section-title-small.analysis-title {
     width: 160px;
-    border-bottom: 3px solid #3498db;
+    border-bottom: 3px solid #f4a016;
     margin: 0 auto;
     padding-bottom: 10px;
 }
 .section-title-small.design-title {
     width: 160px;
-    border-bottom: 3px solid #2ecc71;
+    border-bottom: 3px solid #3498db;
     margin: 0 auto;
     padding-bottom: 10px;
 }
 .section-title-small.implementation-title {
     width: 160px;
-    border-bottom: 3px solid #e74c3c;
+    border-bottom: 3px solid #8f71b0;
     margin: 0 auto;
     padding-bottom: 10px;
 }
 .section-title-small.operation-title {
     width: 240px;
-    border-bottom: 3px solid #9b59b6;
+    border-bottom: 3px solid #9bcc73;
     margin: 0 auto;
     padding-bottom: 10px;
 }
 .testimonials-6-author-feature .feature-bullet.analysis {
-    color: #3498db;
+    color: #f4a016;
 }
 .testimonials-6-author-feature .feature-bullet.design {
-    color: #2ecc71;
+    color: #3498db;
 }
 .testimonials-6-author-feature .feature-bullet.implementation {
-    color: #e74c3c;
+    color: #8f71b0;
 }
 .testimonials-6-author-feature .feature-bullet.operation {
-    color: #9b59b6;
+    color: #9bcc73;
 }
 .process-section {
     margin-top: 20px;
