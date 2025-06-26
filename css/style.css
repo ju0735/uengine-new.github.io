@@ -6488,7 +6488,7 @@ img.services-image{
     overflow: hidden;
     font-size: 48px;
     line-height: 1;
-    color: var(--color-primary-3);
+    /* color: var(--color-primary-3); */
     border-radius: 100%;
     isolation: isolate;
     transform: translateZ(0);
@@ -6512,7 +6512,9 @@ img.services-image{
 .features-2-icon svg{
     width: 1em;
     height: 1em;
-    fill: url(#gradient-horizontal) var(--color-primary-3);   
+    /* fill: url(#gradient-horizontal) var(--color-primary-3); */
+    fill: var(--color-dark-1);
+
 }
 .features-2-title{
     margin-bottom: 15px;
@@ -12880,11 +12882,65 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     margin: 0 auto;
 }
 
-/* 헌집다오 새집줄게 이미지 */
+/* 이미지 */
 .legacy-to-modernization-img {
+    position: relative;
     display: block;
     width: 70%;
     margin: 0 auto;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+  
+.legacy-label, .modern-label {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.legacy-label {
+    background-color: #333;
+    color: white;
+}
+
+.modern-label {
+    background-color: #f70;
+    color: white;
+}
+  
+/* 레거시모더나이저 CTA */
+.get-started-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.get-started-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .get-started-content {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
 }
 
 /* 컨텐츠 숨기기 */
@@ -14061,10 +14117,33 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     background: linear-gradient(135deg, #f5f7fa 0%, #fff 100%);
 }
 
+.transition-text.legacy-modernizer-1 {
+    border: 0; 
+    width: 100%; 
+    color: var(--color-dark-1); 
+    background: #fff; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.transition-text.legacy-modernizer-1 p:first-child {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.transition-text.legacy-modernizer-1 p:last-child {
+    font-size: 1.2rem;
+}
+
 @media (max-width: 768px) {
     .transition-text {
         font-size: 1rem;
         padding: 30px 20px;
+    }
+
+    .transition-text.legacy-modernizer-1 p:first-child {
+        font-size: 1.5rem;
+    }
+    .transition-text.legacy-modernizer-1 p:last-child {
+        font-size: 1.1rem;
+        line-height: 1.5;
     }
 }
 
