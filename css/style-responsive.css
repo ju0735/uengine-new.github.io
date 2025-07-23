@@ -364,7 +364,8 @@
     }
     
     .number-title{
-        font-size: calc(2.273rem + 3.64vw);
+        /* font-size: calc(2.273rem + 3.64vw); */
+        font-size: calc(1.179rem + 2.5vw);
     }
     
     .item-carousel .owl-item{
@@ -657,7 +658,10 @@
     .split-column-right{
         padding-top: 80px;
         padding-bottom: 80px;
-    }    
+    }
+    .page-section.ai-native-strategy{
+        padding-top: 140px;
+    }
     .small-section{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -1087,6 +1091,9 @@
     .split-column-right{
         padding-top: 70px;
         padding-bottom: 70px;
+    }
+    .page-section.ai-native-strategy{
+        padding-top: 120px;
     }
     .small-section{
         padding: 30px 0;
