@@ -981,6 +981,13 @@
         width: 50%;
     }
 
+    /* 컨설팅 구성 이미지 */
+    .composition-pc {
+        display: none;
+    }
+    .composition-mo {
+        display: block;
+    }
 }
 
 
@@ -1044,14 +1051,7 @@
     .label-count {
         width: 110px;
     }
-    
-    /* 컨설팅 구성 이미지 */
-    .composition-pc {
-        display: none;
-    }
-    .composition-mo {
-        display: block;
-    }
+
 }
     
 @media only screen and (max-width: 480px) {
@@ -1323,7 +1323,7 @@
         margin-left: -5px;
         border-color: black transparent transparent transparent;
     }
-
+    
 }
 
 /* ==============================

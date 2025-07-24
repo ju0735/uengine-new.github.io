@@ -730,199 +730,24 @@
                 </section> -->
                 <!-- End 성공 사례 Section -->
 
-                <!-- FAQ Section -->
-                <section class="page-section pt-100">
-                    <div class="container position-relative">
-
-                        <div class="row mb-50 mb-sm-50">
-                            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 text-center">
-                                <h2 class="section-title-small mb-20">
-                                    FAQ
-                                </h2>
-                                <p class="text-gray mb-0" style="font-size: 15px;">
-                                    어떤 도움이 필요하신가요?
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row wow fadeInUp">
-                            <div class="col-md-8 offset-md-2">
-                                
-                                <!-- Accordion -->
-                                <dl class="toggle">
-                                    
-                                    <!-- Q1 -->
-                                    <dt>
-                                        <a href="#">Q1. MSA 도입을 위한 적합성 검토는 어떻게 진행되나요?</a>
-                                    </dt>
-                                    <dd class="text-gray">
-                                        <!-- <p>다음과 같은 정량적/정성적 기준으로 평가를 진행합니다.</p> -->
-                                        <span>다음과 같은 정량적/정성적 기준으로 평가를 진행합니다.</span>
-                                        <ul class="mt-10" style="color: #333;">
-                                            <li>비즈니스 확장성 (업무변경량, 확장가능성)</li>
-                                            <li>장애대응 (트랜잭션 발생량, 데이터 용량, 비즈니스 영향)</li>
-                                            <li>배포용이성 (소스 규모, 테이블 개수)</li>
-                                            <li>조직 독립성 (요구사항 요청 조직, 운영 조직 분리) 온라인 도구인 <b>CloudIQ</b><a href="http://cloudiq.msaez.io" target="_blank">(cloudiq.msaez.io)</a>를 활용하여 객관적인 평가도 가능합니다.</li>
-                                        </ul>
-                                    </dd>
-                                    
-                                    <!-- Q2 -->
-                                    <dt>
-                                        <a href="#">Q2. MSA 전환 컨설팅은 어떤 단계로 진행되나요?</a>
-                                    </dt>
-                                    <dd class="text-gray">
-                                        <span>크게 다음 단계로 진행됩니다.</span>
-                                        <ol class="mt-10" style="color: #333;">
-                                            <li>현행 시스템 분석 및 도입 적합성 평가</li>
-                                            <li>도메인 주도 설계(DDD) 기반 서비스 분해 전략 수립</li>
-                                            <li>이벤트 스토밍을 통한 도메인 모델링</li>
-                                            <li>마이크로서비스 아키텍처 설계</li>
-                                            <li>단계별 전환 로드맵 수립</li>
-                                            <li>파일럿 프로젝트 진행</li>
-                                        </ol>
-                                    </dd>
-
-                                    <!-- Q3 -->
-                                    <dt>
-                                        <a href="#">Q3. MSA 성숙도 모델은 어떻게 평가하나요?</a>
-                                    </dt>
-                                    <dd class="text-gray">
-                                        <span>다음 4단계로 구분하여 평가합니다.</span>
-                                        <ul class="mt-10" style="color: #333;">
-                                            <li><b style="font-weight: bold;">Early(Lv1):</b> 기초적인 MSA 도입 단계</li>
-                                            <li><b style="font-weight: bold;">Inception(Lv2): </b> MSA 기본 구조 확립 단계</li>
-                                            <li><b style="font-weight: bold;">Expanding(Lv3): </b> MSA 확장 단계</li>
-                                            <li><b style="font-weight: bold;">Mature(Lv4): </b> MSA 완성 단계 각 단계별로 기능분해, 데이터, SW아키텍처, 인프라스트럭처, 배포, 팀 구조 등을 평가합니다.</li>
-                                        </ul>
-                                    </dd>
-
-                                    <!-- Q4 -->
-                                    <dt>
-                                        <a href="#">Q4. 레거시 시스템의 MSA 전환은 어떻게 진행되나요?</a>
-                                    </dt>
-                                    <dd class="text-gray">
-                                        <span>Strangler Pattern을 활용한 점진적 전환을 권장합니다.</span>
-                                        <ol class="mt-10" style="color: #333;">
-                                            <li>전환 대상 서비스 식별</li>
-                                            <li>API Gateway를 통한 라우팅 구성</li>
-                                            <li>신규 마이크로서비스 개발 및 테스트</li>
-                                            <li>점진적인 기능 이전</li>
-                                            <li>레거시 시스템 축소 및 제거</li>
-                                        </ol>
-                                    </dd>
-                                    
-                                    <!-- Q5 -->
-                                    <dt>
-                                        <a href="#">Q5. MSA 도입 시 조직 구조는 어떻게 변경해야 하나요?</a>
-                                    </dt>
-                                    <dd class="text-gray">
-                                        <span>다음과 같은 조직 구조 변경을 제안합니다.</span>
-                                        <ul class="mt-10" style="color: #333;">
-                                            <li>서비스별 독립적인 제품 팀 구성</li>
-                                            <li>개발, 운영을 포괄하는 Cross-Functional 팀 구성</li>
-                                            <li>DevOps 문화 정착</li>
-                                            <li>팀 간 자율성과 책임 부여</li>
-                                        </ul>
-                                    </dd>
-                                    
-                                    <!-- Q6 -->
-                                    <dt>
-                                        <a href="#">Q6. MSA 구현을 위한 기술 스택은 어떻게 선정하나요?</a>
-                                    </dt>
-                                    <dd class="text-gray">
-                                        <span>다음 요소들을 고려하여 선정을 지원합니다.</span>
-                                        <ul class="mt-10" style="color: #333;">
-                                            <li><b style="font-weight: bold;">서비스 디스커버리:</b> Spring Cloud, Kubernetes</li>
-                                            <li><b style="font-weight: bold;">이벤트 스트리밍:</b> Kafka, RabbitMQ</li>
-                                            <li><b style="font-weight: bold;">데이터베이스:</b> 폴리글랏 퍼시스턴스 전략</li>
-                                            <li><b style="font-weight: bold;">CI/CD:</b> Jenkins, ArgoCD</li>
-                                            <li><b style="font-weight: bold;">모니터링:</b> Prometheus, Grafana</li>
-                                        </ul>
-                                    </dd>
-                                    
-                                    <!-- Q7 -->
-                                    <dt>
-                                        <a href="#">Q7. MSA 도입의 ROI는 어떻게 측정하나요?</a>
-                                    </dt>
-                                    <dd class="text-gray">
-                                        <span>다음과 같은 지표로 측정합니다.</span>
-                                        <ul class="mt-10" style="color: #333;">
-                                            <li>배포 주기 단축</li>
-                                            <li>시스템 안정성 향상</li>
-                                            <li>개발 생산성 향상</li>
-                                            <li>비즈니스 대응 속도 개선</li>
-                                            <li>운영 비용 절감</li>
-                                        </ul>
-                                    </dd>
-                                    
-                                    <!-- Q8 -->
-                                    <dt>
-                                        <a href="#">Q8. 컨설팅 기간은 얼마나 소요되나요?</a>
-                                    </dt>
-                                    <dd class="text-gray">
-                                        <span>프로젝트 규모와 범위에 따라 다르지만 일반적으로 1~3개월이 소요됩니다. 정확한 기간은 초기 분석 단계에서 산정됩니다.</span>
-                                        <ul class="mt-10" style="color: #333;">
-                                            <li><b style="font-weight: bold;">적합성 검토:</b> 2-3주</li>
-                                            <li><b style="font-weight: bold;">아키텍처 설계:</b> 1-2개월</li>
-                                            <li><b style="font-weight: bold;">파일럿 구현:</b> 3개월 이상</li>
-                                            <li><b style="font-weight: bold;">전체 전환:</b> 협의 후 진행</li>
-                                        </ul>
-                                    </dd>
-                                    
-                                    <!-- Q9 -->
-                                    <dt>
-                                        <a href="#">Q9. MSA 도입 후 운영 안정화를 위한 지원은 어떻게 이루어지나요?</a>
-                                    </dt>
-                                    <dd class="text-gray">
-                                        <span>다음과 같은 지원을 제공합니다.</span>
-                                        <ul class="mt-10" style="color: #333;">
-                                            <li>운영 모니터링 체계 구축</li>
-                                            <li>DevOps 프로세스 정립</li>
-                                            <li>SRE(Site Reliability Engineering) 체계 수립</li>
-                                            <li>장애 대응 프로세스 수립</li>
-                                            <li>운영 조직 교육 및 기술 이전</li>
-                                        </ul>
-                                    </dd>
-                                    
-                                    <!-- Q10 -->
-                                    <dt>
-                                        <a href="#">Q10. MSA 컨설팅에서 제공하는 산출물은 무엇인가요?</a>
-                                    </dt>
-                                    <dd class="text-gray">
-                                        <span>다음과 같은 산출물을 제공합니다.</span>
-                                        <ul class="mt-10" style="color: #333;">
-                                            <li>MSA 적합성 평가 보고서</li>
-                                            <li>도메인 모델 및 서비스 분해 설계서</li>
-                                            <li>마이크로서비스 아키텍처 설계서</li>
-                                            <li>기술 참조 모델</li>
-                                            <li>구현 가이드라인</li>
-                                            <li>전환 로드맵</li>
-                                            <li>파일럿 프로젝트 결과물</li>
-                                        </ul>
-                                    </dd>
-                                </dl>
-                                <!-- End Accordion -->
-                                
-                            </div>
-                        </div>
-                        
-                    </div>
-                </section>
-                <!-- End Section -->
-                                 
-                <!-- Divider -->
-                <hr class="mt-n50 mb-0"/>
-                <!-- End Divider -->
-
                 <!-- Call Action Section - Contact us -->
-                <section class="page-section mt-n50 mt-sm-n10 mb-sm-50">
+                <section class="page-section mt-n10 mt-sm-30 mb-sm-50">
                     <div class="container position-relative">
                         
                         <div class="row text-center wow fadeInUp">
                             <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                                <p class="section-title-tiny mb-50 mb-sm-30" style="font-size: 1.5rem;">
-                                    디지털 전환의 첫걸음, 지금 시작하세요!<br>
-                                    "빠르고 효율적인 클라우드 네이티브 구현의 모든 것."
+                                <p class="pc-show section-title-tiny mb-50 mb-sm-30" style="font-size: 1.5rem;">
+                                    <!-- 디지털 전환의 첫걸음, 지금 시작하세요!<br>
+                                    "빠르고 효율적인 클라우드 네이티브 구현의 모든 것." -->
+                                    더 이상 기다릴 필요 없습니다. 1주일 만에 검증되는 선도개발 구현<br>
+                                    - 지금 상담 신청하고 디지털 혁신을 시작하세요.
+                                </p>
+                                <p class="mo-show section-title-tiny mb-50 mb-sm-30" style="font-size: 1.5rem;">
+                                    <!-- 디지털 전환의 첫걸음, 지금 시작하세요!<br>
+                                    "빠르고 효율적인 클라우드 네이티브 구현의 모든 것." -->
+                                    더 이상 기다릴 필요 없습니다.<br>
+                                    1주일 만에 검증되는 선도개발 구현<br>
+                                    - 지금 상담 신청하고 디지털 혁신을 시작하세요.
                                 </p>
                                 <div class="local-scroll">
                                     <!-- <a class="btn btn-mod btn-large btn-round btn-hover-anim" href="https://www.msaschool.io/operation/introduction/one-point-lesson/" target="_blank"> -->
