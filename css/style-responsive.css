@@ -988,6 +988,11 @@
     .composition-mo {
         display: block;
     }
+
+    /* 교육페이지 - 바이브코딩 */
+    .curriculum-title {
+        font-size: 1.4rem;
+    }
 }
 
 

@@ -6607,6 +6607,10 @@ img.services-image{
     padding-left: 30px;
     border-left: 1px solid var(--color-gray-light-3);
 }
+.alt-features-item.border-left.border-gray{
+    padding-left: 30px;
+    border-left: 1px solid #999 !important;
+}
 .alt-features-item.box-shadow{
     width: 100%;
     padding: 30px;
@@ -14206,3 +14210,126 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     }
 }
 
+/* 교육페이지 - 바이브코딩 */
+.education-course-card {
+    height: 100%;
+    background: #fff; 
+    border-radius: 7px; 
+    padding: 30px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+}
+.special-number {
+    width: 42px; 
+    height: 42px; 
+    line-height: 42px; 
+    text-align: center; 
+    background: #eee; 
+    border-radius: 50%; 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin: 0 10px 20px 0;
+}
+.curriculum-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: -20px;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+}
+.curriculum-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.curriculum-card > div {
+    flex: 1;
+    min-width: 380px;
+    margin: 10px;
+    background-color: #f8f9fa; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.tool-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 12px;
+    color: #fff;
+    background: var(--color-dark-1);
+    border: 1px solid transparent;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.065em;
+    border-radius: 0;
+    box-shadow: none;
+    border-radius: var(--border-radius-default);
+    width: 100%;
+}
+
+/* 강사진 */
+.instructor-img{
+    width: 150px; 
+    height: 150px; 
+    border-radius: 100%; 
+    margin: 0 auto; 
+    margin-top: 10px; 
+    overflow: hidden; 
+    border: 1px solid #e6e9f9;
+}
+.instructor-name {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 3px 13px;
+    color: #fff;
+    background: var(--color-dark-1);
+    border: 1px solid transparent;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    border-radius: 0;
+    box-shadow: none;
+    transition: var(--transition-default);
+    border-radius: var(--border-radius-default);
+    width: 100%;
+    margin-top: -25px !important;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+.instructor-title {
+    position: relative;
+    margin-bottom: 3px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.instructor-subtitle {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.instructor-features {
+    /* max-width: 180px; */
+    /* margin: 0 auto 10px; */
+    text-align: left;
+    letter-spacing: 0;
+}
+.ir-list {
+    margin: 0;
+    padding: 0;
+    color: var(--color-gray-1);
+    font-size: 16px;
+}
+.ir-list li {
+    /* margin-bottom: 12px; */
+    padding: 0;
+    list-style: none;
+}
+.ir-list li:last-child {
+    margin-bottom: 0;
+}
+.ir-list li > i {
+    margin: 0 5px;
+    font-size: 12px;
+}
