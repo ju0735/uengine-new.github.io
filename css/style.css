@@ -10131,6 +10131,9 @@ a.link-to-top.color:before{
 .blog-media iframe{
     width: 100%;
 }
+.blog-media.average-percentage-chart-img img {
+    width: 80%;
+}
 .blog-item-title{
     margin: 0 0 .35em 0;
     padding: 0;
