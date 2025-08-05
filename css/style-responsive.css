@@ -709,7 +709,7 @@
         margin-bottom: 15px;
         font-size: 16px;
     }
-    .blog-media.average-percentage-chart-img img {
+    .blog-media.average-percentage-chart-img {
         width: 100%;
     }
     .blog-item-body .small{
@@ -995,6 +995,9 @@
     /* 교육페이지 - 바이브코딩 */
     .curriculum-title {
         font-size: 1.4rem;
+    }
+    .tool-box {
+        margin-top: 5px;
     }
 }
 
