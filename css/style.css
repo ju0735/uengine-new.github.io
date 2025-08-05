@@ -10131,8 +10131,10 @@ a.link-to-top.color:before{
 .blog-media iframe{
     width: 100%;
 }
-.blog-media.average-percentage-chart-img img {
+.blog-media.average-percentage-chart-img {
+    margin: 0 auto;
     width: 80%;
+    line-height: 1.2;
 }
 .blog-item-title{
     margin: 0 0 .35em 0;
@@ -14260,7 +14262,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 12px;
+    padding: 7px 12px;
     color: #fff;
     background: var(--color-dark-1);
     border: 1px solid transparent;
@@ -14270,7 +14272,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     border-radius: 0;
     box-shadow: none;
     border-radius: var(--border-radius-default);
-    width: 100%;
+    display: inline-block;
 }
 
 /* 강사진 */
