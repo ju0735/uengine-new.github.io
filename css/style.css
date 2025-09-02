@@ -13004,13 +13004,6 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     background-color: white;
 }
 
-@media (max-width: 768px) {
-    .get-started-content {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-}
-
 /* 컨텐츠 숨기기 */
 .cont-blind {
     position: absolute;
@@ -13233,37 +13226,38 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     align-items: center;
     margin-bottom: 20px;
 }
-#contact_form .form-group {
+#contact_form .form-group, #register_form .form-group {
     text-align: left;
 }
 
-#contact_form .form-group label {
+#contact_form .form-group label, #register_form .form-group label {
     display: block;
     text-align: left;
     width: 100%;
 }
-#contact_form .form-group label span {
+
+#contact_form .form-group label span, #register_form .form-group label span {
     color: red;
 }
-#contact_form .form-group textarea {
+#contact_form .form-group textarea, #register_form .form-group textarea {
     width: 100%;
     height: 10em;
     resize: none;
 }
 
 /* contact us 폼 - 개인정보동의 모달 */
-#contact_form .contact_form_policy {
+#contact_form .contact_form_policy, #register_form .contact_form_policy {
     /* position: relative; */
     padding-bottom: 15px;
     text-align: left;
 }
 
-#contact_form .contact_form_policy label {
+#contact_form .contact_form_policy label, #register_form .contact_form_policy label {
     font-size: 14px;
     text-align: left;
 }
 
-#contact_form .contact_form_policy label button {
+#contact_form .contact_form_policy label button, #register_form .contact_form_policy label button {
     color: #3e81f6;
     cursor: pointer;
     background: none;
@@ -13271,7 +13265,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     text-decoration: underline;
     padding: 0;
 }
-#contact_form .contact_form_modal {
+#contact_form .contact_form_modal, #register_form .contact_form_modal {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -13280,11 +13274,11 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     z-index: 9999;
 }
 
-#contact_form .contact_form_modal.blind {
+#contact_form .contact_form_modal.blind, #register_form .contact_form_modal.blind {
     display: none !important;
 }
 
-#contact_form .contact_form_modal_bg {
+#contact_form .contact_form_modal_bg, #register_form .contact_form_modal_bg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -13293,7 +13287,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     z-index: 1;
 }
 
-#contact_form .contact_form_ad_modal_bg {
+#contact_form .contact_form_ad_modal_bg, #register_form .contact_form_ad_modal_bg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -13302,7 +13296,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     z-index: 1;
 }
 
-#contact_form .contact_form_modal_body {
+#contact_form .contact_form_modal_body, #register_form .contact_form_modal_body {
     background: #fff;
     width: 94%;
     max-width: 500px;
@@ -13314,19 +13308,19 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     border-radius: 5px;
 }
 
-#contact_form .contact_form_modal_body p {
+#contact_form .contact_form_modal_body p, #register_form .contact_form_modal_body p {
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
 
-#contact_form .contact_form_modal_title {
+#contact_form .contact_form_modal_title, #register_form .contact_form_modal_title {
     font-size: 18px;
     font-weight: 600;
     padding: 30px;
     color: #333;
 }
 
-#contact_form .contact_form_modal_text {
+#contact_form .contact_form_modal_text, #register_form .contact_form_modal_text {
     font-size: 16px;
     line-height: 1.71;
     color: #333;
@@ -13336,12 +13330,12 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     white-space: initial !important;
 }
 
-#contact_form .contact_form_modal_btn {
+#contact_form .contact_form_modal_btn, #register_form .contact_form_modal_btn {
     padding: 30px;
     text-align: center;
 }
 
-#contact_form .contact_form_modal_btn button {
+#contact_form .contact_form_modal_btn button, #register_form .contact_form_modal_btn button {
     width: 100px;
     height: 40px;
     line-height: 30px;
@@ -13351,7 +13345,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     cursor: pointer;
 }
 
-#contact_form .contact_form_msg_error {
+#contact_form .contact_form_msg_error, #register_form .contact_form_msg_error {
     color: red;
     font-size: 0.9rem;
 }
@@ -13541,12 +13535,6 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     color: #1abc9c;
 }
 
-@media (max-width: 768px) {
-    .recommendation-desc {
-        min-height: auto;
-    }
-}
-
 /* Biz-Dev-Ops Process 내비게이션 스타일 */
 .process-nav {
     background-color: #fff;
@@ -13659,25 +13647,6 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     display: none;
 }
 
-@media (max-width: 768px) {
-    .process-nav {
-        overflow-x: auto;
-        top: 60px;
-    }
-    
-    .process-steps {
-        width: max-content;
-        min-width: 100%;
-    }
-    
-    .process-step {
-        padding: 10px 15px;
-    }
-    
-    .step-label {
-        font-size: 0.8rem;
-    }
-}
 
 /* 소프트웨어 개발의 변화 차트 스타일 */
 .paradigm-evolution-chart {
@@ -13806,66 +13775,10 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     font-weight: 800;
 }
 
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-    .evolution-chart-container {
-        height: 350px;
-    }
-    
-    .chart-area {
-        margin: 0 20px 80px 40px;
-    }
-    
-    .y-labels {
-        left: -40px;
-        width: 40px;
-    }
-    
-    .x-label {
-        font-size: 0.7rem;
-        width: 40px;
-    }
-    
-    .x-labels {
-        bottom: -75px;
-        height: 70px;
-    }
-    
-    .paradigm-evolution-chart {
-        padding: 20px;
-    }
-    
-    .chart-title-paradigm {
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .evolution-chart-container {
-        height: 300px;
-    }
-    
-    .x-label {
-        font-size: 0.65rem;
-        width: 50px;
-    }
-    
-    .x-labels {
-        bottom: -80px;
-        height: 80px;
-    }
-}
-
 /* 카드 호버 효과 */
 .feature-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
-}
-
-@media (max-width: 768px) {
-    .feature-card {
-        margin-bottom: 20px;
-    }
 }
 
 /* AI 네이티브 기업의 생산성 */
@@ -13993,24 +13906,6 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     color: white;
     font-weight: 600;
     font-size: 14px;
-}
-
-@media (max-width: 768px) {
-    .ai-stats-box {
-        min-width: 120px;
-        margin: 5px;
-    }
-    .ai-stats-number {
-        font-size: 22px;
-    }
-    .chart-label {
-        width: 100px;
-        font-size: 12px;
-    }
-    .company-name {
-        width: 90px;
-        font-size: 12px;
-    }
 }
 
 /* 주요기능 section */
@@ -14200,21 +14095,6 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
-    .transition-text {
-        font-size: 1rem;
-        padding: 30px 20px;
-    }
-
-    .transition-text.legacy-modernizer-1 p:first-child {
-        font-size: 1.5rem;
-    }
-    .transition-text.legacy-modernizer-1 p:last-child {
-        font-size: 1.1rem;
-        line-height: 1.5;
-    }
-}
-
 /* 교육페이지 - 바이브코딩 */
 .education-course-card {
     height: 100%;
@@ -14337,4 +14217,20 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 .ir-list li > i {
     margin: 0 5px;
     font-size: 12px;
+}
+
+/* 교육 신청하기 페이지 */
+.register-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.register-info {
+    width: 65%;
+}
+.register-payment {
+    width: 33%;
+    border: 1px solid #e8e8e8; 
+    padding: 20px; 
+    border-radius: 10px;
 }

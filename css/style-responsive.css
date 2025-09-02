@@ -744,6 +744,97 @@
         padding-left: 0;
         text-align: center;
     }
+    .stack-images{
+        padding: 16% 0;
+    }
+
+    /* 레거시모더나이저 CTA */
+    .get-started-content {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    /* 추천 대상 섹션 스타일 */
+    .recommendation-desc {
+        min-height: auto;
+    }
+
+    /* Biz-Dev-Ops Process 내비게이션 스타일 */
+    .process-nav {
+        overflow-x: auto;
+        top: 60px;
+    }
+    
+    .process-steps {
+        width: max-content;
+        min-width: 100%;
+    }
+    
+    .process-step {
+        padding: 10px 15px;
+    }
+    
+    .step-label {
+        font-size: 0.8rem;
+    }
+
+    /* 소프트웨어 개발의 변화 차트 스타일 */
+    .evolution-chart-container {
+        height: 350px;
+    }
+    
+    .chart-area {
+        margin: 0 20px 80px 40px;
+    }
+    
+    .y-labels {
+        left: -40px;
+        width: 40px;
+    }
+    
+    .x-label {
+        font-size: 0.7rem;
+        width: 40px;
+    }
+    
+    .x-labels {
+        bottom: -75px;
+        height: 70px;
+    }
+    
+    .paradigm-evolution-chart {
+        padding: 20px;
+    }
+    
+    .chart-title-paradigm {
+        font-size: 1.3rem;
+    }
+
+    /* 결론 부분 */
+    .transition-text {
+        font-size: 1rem;
+        padding: 30px 20px;
+    }
+
+    .transition-text.legacy-modernizer-1 p:first-child {
+        font-size: 1.5rem;
+    }
+    .transition-text.legacy-modernizer-1 p:last-child {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    /* 교육 신청하기 페이지 */
+    .register-container {
+        display: block;
+    }
+    .register-info,
+    .register-payment {
+        width: 100%;
+    }
+    .register-payment {
+        margin-top: 50px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1256,6 +1347,43 @@
         line-height: 28px;
         border-radius: 14px;
     }
+
+    /* 소프트웨어 개발의 변화 차트 스타일 */
+    .evolution-chart-container {
+        height: 300px;
+    }
+    
+    .x-label {
+        font-size: 0.65rem;
+        width: 50px;
+    }
+    
+    .x-labels {
+        bottom: -80px;
+        height: 80px;
+    }
+
+    /* 카드 스타일 */
+    .feature-card {
+        margin-bottom: 20px;
+    }
+
+    /* AI 네이티브 기업의 생산성 */
+    .ai-stats-box {
+        min-width: 120px;
+        margin: 5px;
+    }
+    .ai-stats-number {
+        font-size: 22px;
+    }
+    .chart-label {
+        width: 100px;
+        font-size: 12px;
+    }
+    .company-name {
+        width: 90px;
+        font-size: 12px;
+    }
 }
     
 @media only screen and (max-width: 360px) {
@@ -1276,19 +1404,6 @@
         border-radius: 11px;
     }
 }
-
-/* ==============================
-   Max Height 768
-   ============================== */
-
-@media only screen and (max-height: 768px) {
-    
-    .stack-images{
-        padding: 16% 0;
-    }
-    
-}
-
 
 /* ==============================
    Max Height 374
