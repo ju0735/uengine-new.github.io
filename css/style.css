@@ -14234,3 +14234,15 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     padding: 20px; 
     border-radius: 10px;
 }
+
+/* 교육페이지들 공통 - 서비스 제공 설명 */
+.service-provision {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.service-provision-descr {
+    font-size: 14px;
+    color: rgba(255,255,255, .7);
+    margin: 2px 4px 0;
+}
