@@ -669,6 +669,9 @@
     .small-title{
         font-size: 18px;
     }
+    .number-title{
+        font-size: 24px;
+    }
     
     .section-features li{
         font-size: 11px;
@@ -834,6 +837,14 @@
     }
     .register-payment {
         margin-top: 50px;
+    }
+    
+    /* 교육페이지들 공통 - 서비스 제공 설명 */
+    .service-provision {
+        align-items: flex-start;
+    }
+    .service-provision-descr {
+        margin: 4px 4px 0;
     }
 }
 

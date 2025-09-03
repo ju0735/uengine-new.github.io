@@ -3,10 +3,10 @@ Register form
  --------------------------------------------- */
  $(document).ready(function(){
     // Contact Us 버튼 & 폼 토글 기능
-    $("#contact_btn").click(function () {
-        $("#contact_form_container").fadeIn();
-        $(this).hide();
-    });
+    // $("#submit_btn").click(function () {
+    //     $("#contact_form_container").fadeIn();
+    //     $(this).hide();
+    // });
 
     // X 버튼 클릭 시 폼 숨기고 초기화
     $("#close_btn").click(function () {
@@ -23,7 +23,7 @@ Register form
     });
 
     // submit 버튼 클릭 이벤트
-    $("#contact_form").submit(function (event) {
+    $("#register_form").submit(function (event) {
         
         // 필수 입력 필드 검사
         let isValid = true;
@@ -31,7 +31,7 @@ Register form
             'name': '이름',
             'email': '이메일',
             'company': '회사',
-            'message': '문의내용'
+            'phone-number': '연락처'
         };
 
         // 입력 필드 검증
@@ -64,7 +64,7 @@ Register form
     });
 
     // 입력 필드 변경 시 테두리 색상 초기화
-    $("#contact_form input, #contact_form textarea").on("input", function () {
+    $("#register_form input, #register_form textarea").on("input", function () {
         $(this).css("border-color", "");
         $("#result").slideUp();
     });
@@ -78,10 +78,10 @@ Register form
 
     // 폼 초기화 함수
     function resetForm() {
-        $("#contact_form")[0].reset();
-        $("#contact_form input, #contact_form textarea").css("border-color", "");
+        $("#register_form")[0].reset();
+        $("#register_form input, #register_form textarea").css("border-color", "");
         $("#contact_form_container").fadeOut();
-        $("#contact_btn").fadeIn();
+        // $("#submit_btn").fadeIn();
         $("#result").slideUp();
         $('#contact_policy_error').text('');
     }
