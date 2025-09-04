@@ -280,188 +280,162 @@
                     <div class="container register-container">
                         
                         <div class="register-info">
-                            <div class="text-left mb-40">
-                                <p class="testimonials-6-author mt-0" style="font-size: 1.8rem; font-weight: 600;">
+                            <div class="text-left">
+                                <p class="testimonials-6-author mt-0 mb-20" style="font-size: 1.8rem; font-weight: 600;">
                                     수강 교육 정보
                                 </p>
                             </div>
 
-                            <div class="row mb-80">
-                            
-                                <div class="row col-md-10">
-                                    
-                                    <div class="d-flex mb-10">
-                                        <div class="ci-text col-md-2" style="min-width: 100px;">
-                                            과목명
-                                        </div>
-                                        <h4 class="ci-title">
-                                            <!-- 바이브코딩으로 하루 만에 마스터하는 Agentic AI 실무 -->
-                                            AI 에이전트 플랫폼 개발 교육과정
-                                        </h4>
-                                    </div>
-
-                                    <div class="d-flex mb-10">
-                                        <div class="ci-text col-md-2" style="min-width: 100px;">
-                                            교육기간
-                                        </div>
-                                        <h4 class="ci-title">
-                                            2025-09-26(금)
-                                        </h4>
-                                    </div>
-
-                                    <div class="d-flex mb-10">
-                                        <div class="ci-text col-md-2" style="min-width: 100px;">
-                                            교육시간
-                                        </div>
-                                        <h4 class="ci-title">
-                                            1일간 9:30 ~ 17:30
-                                        </h4>
-                                    </div>
-
-                                    <div class="d-flex">
-                                        <div class="ci-text col-md-2" style="min-width: 100px;">
-                                            수강료
-                                        </div>
-                                        <h4 class="ci-title">
-                                            300,000원 (VAT별도)
-                                        </h4>
-                                    </div>
-
-                                </div>
-                                
-                            </div>
-    
                             <!-- Divider -->
-                            <hr class="mt-0 mb-80"/>
+                            <hr class="mt-0 mb-40"/>
                             <!-- End Divider -->
-    
-                            <div class="text-left mb-40">
-                                <p class="testimonials-6-author mt-0" style="font-size: 1.8rem; font-weight: 600;">
-                                    신청하시는 분 정보
-                                </p>
-                                <!-- <p class="text-dark-gray mt-0 mb-100 mb-sm-50">
-                                    서비스 문의, 솔루션 상담 요청, 기타 문의사항 등 남겨주시면 담당자 확인 후 답변 드리겠습니다.
-                                </p> -->
-                            </div>
-    
-                            <!-- Contact Form -->                            
-                            <div class="row">
-                                <div class="col-md-10">
-                                    
-                                    <!-- 전체 문의하기 운영용(help계정 연결) - xgvarzyg / 테스트용 - mqapyyrq -->
-                                    <form id="register_form" action="https://formspree.io/f/mqapyyrq" method="POST" class="form contact-form fadeInUp wch-unset">
-                                        <div class="row">
-                                            <input type="hidden" name="classification" value="Register for AI Agent Course">
-                                            <div class="col-md-12">
-                                                <!-- Name -->
-                                                <div class="form-group d-flex align-items-center">
-                                                    <label for="name" style="width: 120px; min-width: 100px;">이름 <span>*</span></label>
-                                                    <input type="text" name="name" id="name" class="input-lg round form-control" placeholder="이름을 입력해 주세요">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <!-- Email -->
-                                                <div class="form-group d-flex align-items-center">
-                                                    <label for="email" style="width: 120px; min-width: 100px;">이메일 <span>*</span></label>
-                                                    <input type="email" name="email" id="email" class="input-lg round form-control" placeholder="이메일 주소를 입력해 주세요">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <!-- phone-number -->
-                                                <div class="form-group d-flex align-items-center">
-                                                    <label for="phone-number" style="width: 120px; min-width: 100px;">연락처 <span>*</span></label>
-                                                    <input type="tel" name="phone-number" id="phone-number" class="input-lg round form-control" placeholder="연락처를 입력해 주세요" maxlength="20" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <!-- company -->
-                                                <div class="form-group d-flex align-items-center">
-                                                    <label for="company" style="width: 120px; min-width: 100px;">회사명 <span>*</span></label>
-                                                    <input type="text" name="company" id="company" class="input-lg round form-control" placeholder="회사명 또는 소속기관을 입력해 주세요">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <!-- Inform Tip -->
-                                                <div class="form-tip pt-0">
-                                                    <div class="contact_form_policy">
-                                                        <label style="color: var(--color-gray-light-6);">
-                                                            <input type="checkbox" name="contact_policy" id="contact_policy" value="동의" style="vertical-align: middle; width: 15px; height: 15px;">
-                                                            <span style="color: var(--color-gray-light-6);">(필수)</span>
-                                                            <button id="contact_form_modal_open" data-modal="contact_form_policy_modal" type="button">개인정보 수집 및 이용</button>
-                                                            <span style="color: var(--color-gray-light-6);">에 동의합니다.</span>
-                                                        </label>
-                                                        <div class="contact_form_msg_error" id="contact_policy_error"></div>
-                                                        <div class="contact_form_modal blind" id="contact_form_policy_modal">
-                                                            <div class="contact_form_modal_body">
-                                                                <h1 class="contact_form_modal_title">
-                                                                    개인정보 수집 및 이용
-                                                                </h1>
-                                                                <div class="contact_form_modal_text">
-                                                                    유엔진솔루션즈(이하 "회사")가 신청하신 내용에 대한 답변 제공 및 확인을 하기 위해 개인정보를 수집·이용하고자 하는 경우에는 ｢개인정보 보호법｣등 관계 법령에 따라 본인의 동의가 필요합니다. 
-                                                                    <br>회사 제품 구매 및 컨설팅 문의 응답, 회사가 제공하는 서비스 이용과정을 위한 최소한의 개인정보를 수집하고 이용합니다.
-                                                                    <br>수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료될 경우 즉시 파기됩니다.
-                                                                </div>
-                                                                <div class="contact_form_modal_btn">
-                                                                    <button id="contact_form_modal_close" 
-                                                                        class="contact_form_modal_close_btn btn btn-mod btn-round" 
-                                                                        data-modal="contact_form_policy_modal" 
-                                                                        type="button"
-                                                                        style="background-color: var(--color-dark-3); 
-                                                                        color: var(--color-gray-light-3);">닫기</button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="contact_form_modal_bg" id="contact_form_modal_bg"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Send Button -->
-                                            <!-- <div class="text-end pt-20 pt-xs-40">
-                                                <button class="submit_btn btn btn-mod btn-large btn-round btn-hover-anim" id="submit_btn" aria-controls="result">
-                                                    <span>결제하기</span>
-                                                </button>
-                                            </div> -->
-                                        </div>
-                                       
-                                       <div id="result" role="region" aria-live="polite" aria-atomic="true"></div>
-                                    </form>
-                                    
+                            
+                            <div>
+                                <div class="d-flex mb-10">
+                                    <div class="ci-text col-md-2" style="min-width: 100px;">
+                                        과목명
+                                    </div>
+                                    <h4 class="ci-title">
+                                        <!-- 바이브코딩으로 하루 만에 마스터하는 Agentic AI 실무 -->
+                                        AI 에이전트 플랫폼 개발 교육과정
+                                    </h4>
+                                </div>
+
+                                <div class="d-flex mb-10">
+                                    <div class="ci-text col-md-2" style="min-width: 100px;">
+                                        교육기간
+                                    </div>
+                                    <h4 class="ci-title">
+                                        2025-09-26(금)
+                                    </h4>
+                                </div>
+
+                                <div class="d-flex mb-10">
+                                    <div class="ci-text col-md-2" style="min-width: 100px;">
+                                        교육시간
+                                    </div>
+                                    <h4 class="ci-title">
+                                        1일간 9:30 ~ 17:30
+                                    </h4>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="ci-text col-md-2" style="min-width: 100px;">
+                                        수강료
+                                    </div>
+                                    <h4 class="ci-title">
+                                        300,000원 (VAT별도)
+                                    </h4>
                                 </div>
                             </div>
-                            <!-- End Contact Form -->
-                        </div>
-
+                        </div> 
 
                         <!-- 결제 정보 -->
                         <div class="register-payment" id="register-payment">
-                            
-                            <div class="text-center">
-                                <p class="testimonials-6-author mt-20 mb-20" style="font-size: 1.8rem;">
-                                    결제 정보
-                                </p>
-                                <!-- <p class="text-dark-gray mt-0 mb-100 mb-sm-50">
-                                    서비스 문의, 솔루션 상담 요청, 기타 문의사항 등 남겨주시면 담당자 확인 후 답변 드리겠습니다.
-                                </p> -->
-                            </div>
 
-                            <hr class="mt-0 mb-0"/>
+                            <div class="text-left">
+                                <p class="testimonials-6-author mt-0 mb-20" style="font-size: 1.8rem; font-weight: 600;">
+                                    신청하시는 분 정보
+                                </p>
+                            </div>
+    
+                            <!-- Divider -->
+                            <hr class="mt-0 mb-40"/>
+                            <!-- End Divider -->
 
                             <div>
-                                <!-- Send Button -->
-                                <div class="text-end pt-20 pt-xs-40">
-                                    <button class="submit_btn btn btn-mod btn-large btn-round btn-hover-anim" id="submit_btn" aria-controls="result">
-                                        <span>결제하기</span>
-                                    </button>
-                                </div>
+                                <!-- 전체 문의하기 운영용(help계정 연결) - xgvarzyg / 테스트용 - mqapyyrq -->
+                                <form id="register_form" action="https://formspree.io/f/xgvarzyg" method="POST" class="form contact-form fadeInUp wch-unset">
+                                    <div class="row">
+                                        <input type="hidden" name="classification" value="Register for AI Agent Course">
+                                        <div>
+                                            <!-- Name -->
+                                            <div class="form-group d-flex align-items-center">
+                                                <label for="name" style="width: 120px; min-width: 100px;">이름 <span>*</span></label>
+                                                <input type="text" name="name" id="name" class="input-lg round form-control" placeholder="이름을 입력해 주세요">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <!-- Email -->
+                                            <div class="form-group d-flex align-items-center">
+                                                <label for="email" style="width: 120px; min-width: 100px;">이메일 <span>*</span></label>
+                                                <input type="email" name="email" id="email" class="input-lg round form-control" placeholder="이메일 주소를 입력해 주세요">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <!-- phone-number -->
+                                            <div class="form-group d-flex align-items-center">
+                                                <label for="phone-number" style="width: 120px; min-width: 100px;">연락처 <span>*</span></label>
+                                                <input type="tel" name="phone-number" id="phone-number" class="input-lg round form-control" placeholder="연락처를 입력해 주세요" maxlength="20" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <!-- company -->
+                                            <div class="form-group d-flex align-items-center">
+                                                <label for="company" style="width: 120px; min-width: 100px;">회사명 <span>*</span></label>
+                                                <input type="text" name="company" id="company" class="input-lg round form-control" placeholder="회사명 또는 소속기관을 입력해 주세요">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div>
+                                            <!-- Inform Tip -->
+                                            <div class="form-tip pt-0">
+                                                <div class="contact_form_policy">
+                                                    <label style="color: var(--color-gray-light-6);">
+                                                        <input type="checkbox" name="contact_policy" id="contact_policy" value="동의" style="vertical-align: middle; width: 15px; height: 15px;">
+                                                        <span style="color: var(--color-gray-light-6);">(필수)</span>
+                                                        <button id="contact_form_modal_open" data-modal="contact_form_policy_modal" type="button">개인정보 수집 및 이용</button>
+                                                        <span style="color: var(--color-gray-light-6);">에 동의합니다.</span>
+                                                    </label>
+                                                    <div class="contact_form_msg_error" id="contact_policy_error"></div>
+                                                    <div class="contact_form_modal blind" id="contact_form_policy_modal">
+                                                        <div class="contact_form_modal_body">
+                                                            <h1 class="contact_form_modal_title">
+                                                                개인정보 수집 및 이용
+                                                            </h1>
+                                                            <div class="contact_form_modal_text">
+                                                                유엔진솔루션즈(이하 "회사")가 신청하신 내용에 대한 답변 제공 및 확인을 하기 위해 개인정보를 수집·이용하고자 하는 경우에는 ｢개인정보 보호법｣등 관계 법령에 따라 본인의 동의가 필요합니다. 
+                                                                <br>회사 제품 구매 및 컨설팅 문의 응답, 회사가 제공하는 서비스 이용과정을 위한 최소한의 개인정보를 수집하고 이용합니다.
+                                                                <br>수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료될 경우 즉시 파기됩니다.
+                                                            </div>
+                                                            <div class="contact_form_modal_btn">
+                                                                <button id="contact_form_modal_close" 
+                                                                    class="contact_form_modal_close_btn btn btn-mod btn-round" 
+                                                                    data-modal="contact_form_policy_modal" 
+                                                                    type="button"
+                                                                    style="background-color: var(--color-dark-3); 
+                                                                    color: var(--color-gray-light-3);">닫기</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contact_form_modal_bg" id="contact_form_modal_bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 결제 시스템 적용 전까지 안내할 문구 -->
+                                        <p class="payment-info text-dark-gray mt-20 mb-0">
+                                            교육관련 결제안내는 추후 입력한 메일로 발송 진행됩니다.
+                                        </p>
+                                        
+                                        <!-- Send Button -->
+                                        <div class="text-end pt-20 pt-sm-10">
+                                            <button class="submit_btn btn btn-mod btn-large btn-round btn-hover-anim" id="submit_btn" aria-controls="result">
+                                                <span style="font-size: 16px;">신청하기</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                
+                                    <div id="result" role="region" aria-live="polite" aria-atomic="true"></div>
+                                </form>
                             </div>
                         </div>
                     </div>

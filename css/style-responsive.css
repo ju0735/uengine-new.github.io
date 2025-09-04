@@ -838,6 +838,10 @@
     .register-payment {
         margin-top: 50px;
     }
+    .payment-info {
+        text-align: center;
+        padding: 0;
+    }
     
     /* 교육페이지들 공통 - 서비스 제공 설명 */
     .service-provision {
