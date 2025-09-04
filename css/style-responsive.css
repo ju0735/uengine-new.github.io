@@ -837,10 +837,17 @@
     }
     .register-payment {
         margin-top: 50px;
+        border: none;
+        padding: 20px;
     }
     .payment-info {
         text-align: center;
         padding: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .payment-btn {
+        text-align: center;
     }
     
     /* 교육페이지들 공통 - 서비스 제공 설명 */
