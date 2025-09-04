@@ -14231,12 +14231,15 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 }
 .register-payment {
     width: 45%;
-    padding: 20px; 
-    /* border: 1px solid #e8e8e8;
-    border-radius: 10px; */
+    padding: 20px 40px; 
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
 }
 .payment-info {
     font-weight: 600;
+    text-align: right;
+}
+.payment-btn {
     text-align: right;
 }
 
