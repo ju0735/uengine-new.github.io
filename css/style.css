@@ -14227,12 +14227,17 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 }
 .register-info {
     width: 40%;
+    padding: 20px;
 }
 .register-payment {
-    width: 40%;
-    border: 1px solid #e8e8e8; 
+    width: 45%;
     padding: 20px; 
-    border-radius: 10px;
+    /* border: 1px solid #e8e8e8;
+    border-radius: 10px; */
+}
+.payment-info {
+    font-weight: 600;
+    text-align: right;
 }
 
 /* 교육페이지들 공통 - 서비스 제공 설명 */

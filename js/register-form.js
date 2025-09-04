@@ -2,11 +2,6 @@
 Register form
  --------------------------------------------- */
  $(document).ready(function(){
-    // Contact Us 버튼 & 폼 토글 기능
-    // $("#submit_btn").click(function () {
-    //     $("#contact_form_container").fadeIn();
-    //     $(this).hide();
-    // });
 
     // X 버튼 클릭 시 폼 숨기고 초기화
     $("#close_btn").click(function () {
@@ -24,6 +19,7 @@ Register form
 
     // submit 버튼 클릭 이벤트
     $("#register_form").submit(function (event) {
+        event.preventDefault(); // 기본 폼 제출 방지
         
         // 필수 입력 필드 검사
         let isValid = true;
@@ -52,14 +48,37 @@ Register form
         }
 
         if (!isValid) {
-            event.preventDefault(); // 폼 제출 방지
             return false;
         }
 
-        // 유효한 경우에는 제출 후 숨기기 (submit 이후 실행됨)
-        setTimeout(() => {
-            resetForm();
-        }, 500);
+        // 제출 버튼 비활성화 및 로딩 상태 표시
+        const submitBtn = $('#submit_btn');
+        const originalText = submitBtn.find('span').text();
+        submitBtn.prop('disabled', true);
+        submitBtn.find('span').text('전송 중...');
+
+        // AJAX로 폼 데이터 전송
+        $.ajax({
+            url: $(this).attr('action'),
+            method: 'POST',
+            data: $(this).serialize(),
+            dataType: 'json',
+            success: function(response) {
+                // 성공 시 alert 메시지
+                alert('✅ 신청이 성공적으로 전송되었습니다!\n입력하신 이메일로 추후 안내를 드리겠습니다.');
+                resetForm();
+            },
+            error: function(xhr, status, error) {
+                // 실패 시 alert 메시지
+                alert('❌ 전송 중 오류가 발생했습니다.\n잠시 후 다시 시도해주세요.');
+                console.error('Form submission error:', error);
+            },
+            complete: function() {
+                // 제출 버튼 원상복구
+                submitBtn.prop('disabled', false);
+                submitBtn.find('span').text(originalText);
+            }
+        });
 
     });
 
@@ -81,7 +100,6 @@ Register form
         $("#register_form")[0].reset();
         $("#register_form input, #register_form textarea").css("border-color", "");
         $("#contact_form_container").fadeOut();
-        // $("#submit_btn").fadeIn();
         $("#result").slideUp();
         $('#contact_policy_error').text('');
     }
