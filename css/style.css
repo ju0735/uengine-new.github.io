@@ -13070,7 +13070,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     background-color: #f6f6f6;
     padding: 20px;
 }
-.chart-label {
+.chart-label-msa {
     display: block;
     align-content: center;
     text-align: center;
@@ -13841,7 +13841,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     align-items: center;
     margin-bottom: 15px;
 }
-.chart-label {
+.chart-label-productivity {
     width: 130px;
     text-align: right;
     margin-right: 15px;
@@ -13859,7 +13859,10 @@ code.hljs, code[class*=language-], pre[class*=language-] {
     justify-content: flex-end;
     padding-right: 10px;
 }
-.chart-bar.highlight {
+.chart-bar.best, .company-bar.best {
+    width: 85%;
+}
+.chart-bar.best.highlight {
     background-color: #007bff;
 }
 .chart-value {
