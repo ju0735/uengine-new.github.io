@@ -1166,7 +1166,7 @@
     .chart-box {
         display: block;
     }
-    .chart-label {
+    .chart-label-msa {
         display: flex;
         width: auto;
         justify-content: space-evenly;
@@ -1176,6 +1176,25 @@
         width: 110px;
     }
 
+    /* AI 네이티브 기업의 생산성 */
+    .ai-stats-box {
+        min-width: 120px;
+        margin: 5px;
+    }
+    .ai-stats-number {
+        font-size: 22px;
+    }
+    .chart-label-productivity {
+        width: 100px;
+        font-size: 12px;
+    }
+    .company-name {
+        width: 90px;
+        font-size: 12px;
+    }
+    .chart-bar.best, .company-bar.best {
+        width: 70%;
+    }
 }
     
 @media only screen and (max-width: 480px) {
@@ -1390,22 +1409,6 @@
         margin-bottom: 20px;
     }
 
-    /* AI 네이티브 기업의 생산성 */
-    .ai-stats-box {
-        min-width: 120px;
-        margin: 5px;
-    }
-    .ai-stats-number {
-        font-size: 22px;
-    }
-    .chart-label {
-        width: 100px;
-        font-size: 12px;
-    }
-    .company-name {
-        width: 90px;
-        font-size: 12px;
-    }
 }
     
 @media only screen and (max-width: 360px) {
