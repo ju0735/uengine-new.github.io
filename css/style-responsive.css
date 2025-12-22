@@ -1109,8 +1109,16 @@
     .curriculum-title {
         font-size: 1.4rem;
     }
+    .curriculum-card {
+        flex-direction: column;
+    }
     .tool-box {
         margin-top: 5px;
+    }
+
+    /* AI 네이티브 기업의 생산성 */
+    .productivity-result {
+        flex-direction: column;
     }
 }
 

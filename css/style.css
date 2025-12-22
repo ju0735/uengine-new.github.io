@@ -13799,7 +13799,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 }
 .productivity-result > div {
     flex: 1;
-    min-width: 380px;
+    /* min-width: 380px; */
     margin: 10px;
     background-color: #f8f9fa; 
     border-radius: 8px; 
@@ -14134,7 +14134,7 @@ code.hljs, code[class*=language-], pre[class*=language-] {
 }
 .curriculum-card > div {
     flex: 1;
-    min-width: 380px;
+    /* min-width: 380px; */
     margin: 10px;
     background-color: #f8f9fa; 
     border-radius: 8px; 
